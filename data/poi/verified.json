@@ -1,0 +1,1687 @@
+[
+  {
+    "id": "sekizen",
+    "name": "積善山",
+    "name_kana": "せきぜんざん",
+    "island": "岩城島",
+    "categories": [
+      "絶景 / 展望",
+      "自然",
+      "季節限定"
+    ],
+    "coordinates": {
+      "lat": 34.25873389514529,
+      "lng": 133.14723327755928
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/286"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-06-09",
+    "reference_date": "2026-10-05",
+    "location_scope": "県公式「積善山」代表地点。展望台入口ではありません。",
+    "summary": "桜の道をのぼり、瀬戸内の島々を見渡す。",
+    "description": "岩城島の中央にそびえる山。山頂の展望台からは、瀬戸内の島々を360度見渡せます。春は登山道路に沿って桜が咲く、島を代表する景観です。",
+    "deep_dive": [
+      {
+        "title": "地形・自然",
+        "text": "山頂には展望台があります。地図の印は県公式サイトが掲載する「積善山」の代表地点で、展望台入口の位置を示すものではありません。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+          "https://www.iyokannet.jp/spot/286"
+        ]
+      },
+      {
+        "title": "季節の見どころ",
+        "text": "春には約3,000本の桜が登山道路を彩ると公式サイトで紹介されています。開花状況は年ごとに変わります。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+          "https://www.iyokannet.jp/spot/286"
+        ]
+      },
+      {
+        "title": "撮影のヒント",
+        "text": "山頂から島々を見渡す風景を楽しめます。眺望や桜の状態は当日の天候・季節によります。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+          "https://www.iyokannet.jp/spot/286"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "岩城港、小漕港、長江港から 徒歩約2時間 車約20分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [
+      "春"
+    ],
+    "best_time": [
+      "朝",
+      "夕方"
+    ],
+    "related_topics": [
+      "桜",
+      "瀬戸内の眺望",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+      "https://www.iyokannet.jp/spot/286",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/sekizenzan-tenbodai/"
+    ],
+    "related_pois": [
+      "iwagi-museum",
+      "iwagi-center"
+    ],
+    "warnings": [
+      "山道の状況と桜の混雑情報を公式サイトで確認してください。"
+    ],
+    "tags": [
+      "桜",
+      "瀬戸内の眺望",
+      "島めぐり",
+      "絶景 / 展望",
+      "自然",
+      "季節限定"
+    ],
+    "access": {
+      "note": "岩城港、小漕港、長江港から 徒歩約2時間 車約20分",
+      "port": "岩城港",
+      "port_source_url": "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "kushi",
+    "name": "久司山展望台",
+    "name_kana": "くしやまてんぼうだい",
+    "island": "弓削島",
+    "categories": [
+      "絶景 / 展望",
+      "自然"
+    ],
+    "coordinates": {
+      "lat": 34.244463889256494,
+      "lng": 133.2058811187744
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2023-12-05",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "歩いて出会う、360度の海と島。",
+    "description": "標高142mの久司山にある展望台。島の南部から周囲の海と島々を見渡せる、ハイキングの目的地です。",
+    "deep_dive": [
+      {
+        "title": "地形・自然",
+        "text": "公式観光サイトは、麓から山頂まで約15分のハイキングを紹介しています。出発点や体力、道の状態によって時間は変わります。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/kushiyama_tenbodai/",
+          "https://www.iyokannet.jp/spot/3102"
+        ]
+      },
+      {
+        "title": "撮影のヒント",
+        "text": "展望台で広がる360度の景観が見どころです。歩きやすい靴を選び、日没前に戻れる行程を組んでください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/kushiyama_tenbodai/",
+          "https://www.iyokannet.jp/spot/3102"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "弓削港から徒歩で30分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/kushiyama_tenbodai/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [
+      "朝",
+      "夕方"
+    ],
+    "related_topics": [
+      "瀬戸内の眺望",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/kushiyama_tenbodai/",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/kushiyama_tenbodai/"
+    ],
+    "related_pois": [
+      "matsubara",
+      "fespa",
+      "ippuku",
+      "michishio"
+    ],
+    "warnings": [],
+    "tags": [
+      "瀬戸内の眺望",
+      "島めぐり",
+      "絶景 / 展望",
+      "自然"
+    ],
+    "access": {
+      "note": "弓削港から徒歩で30分",
+      "port": null,
+      "port_source_url": null,
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "matsubara",
+    "name": "松原海水浴場",
+    "name_kana": "まつばらかいすいよくじょう",
+    "island": "弓削島",
+    "categories": [
+      "海 / 海岸 / 海水浴場",
+      "自然"
+    ],
+    "coordinates": {
+      "lat": 34.25259630448884,
+      "lng": 133.20920705795288
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/305"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-08-12",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "松林の先にひらける、穏やかな砂浜。",
+    "description": "法王ヶ原の前に広がる海水浴場。公式観光サイトは、環境省の快水浴場百選に選ばれた砂浜として紹介しています。",
+    "deep_dive": [
+      {
+        "title": "地形・自然",
+        "text": "隣接する法王ヶ原の松林と、海辺の景観を合わせて楽しめる場所です。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/matsubara/",
+          "https://www.iyokannet.jp/spot/305"
+        ]
+      },
+      {
+        "title": "季節の見どころ",
+        "text": "夏には海水浴で訪れる人がいます。海開き・利用条件・キャンプの予約は、必ず最新の公式案内を確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/matsubara/",
+          "https://www.iyokannet.jp/spot/305"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "弓削港から車で5分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/matsubara/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [
+      "夏"
+    ],
+    "best_time": [],
+    "related_topics": [
+      "松林",
+      "海辺",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/matsubara/",
+      "https://www.iyokannet.jp/spot/305",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/matsubara/"
+    ],
+    "related_pois": [
+      "kushi",
+      "hoogahara",
+      "fespa",
+      "ippuku"
+    ],
+    "warnings": [],
+    "tags": [
+      "松林",
+      "海辺",
+      "島めぐり",
+      "海 / 海岸 / 海水浴場",
+      "自然"
+    ],
+    "access": {
+      "note": "弓削港から車で5分",
+      "port": "弓削港",
+      "port_source_url": "https://kamijima.info/sightseeing/matsubara/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "hoogahara",
+    "name": "法王ヶ原",
+    "name_kana": "ほうおうがはら",
+    "island": "弓削島",
+    "categories": [
+      "歴史 / 文化財",
+      "自然",
+      "海 / 海岸 / 海水浴場"
+    ],
+    "coordinates": {
+      "lat": 34.254263485560415,
+      "lng": 133.20853114128113
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/4381"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2023-12-05",
+    "reference_date": "2026-10-05",
+    "location_scope": "県公式「法王ヶ原」代表地点。弓削神社の本殿位置ではありません。",
+    "summary": "海辺の松林から、島の物語へ。",
+    "description": "松原海水浴場に隣接する海辺の景観。弓削神社とともに公式観光サイトで紹介されています。地図には県公式の「法王ヶ原」地点を表示しています。",
+    "deep_dive": [
+      {
+        "title": "歴史・文化",
+        "text": "公式紹介では、弓削神社の鳥居が海を向いて立つことや、京都・東寺の古文書に記された濱戸宮との関係が説明されています。神社の創建を確定するものではありません。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/yuge_jinja/",
+          "https://www.iyokannet.jp/spot/4381"
+        ]
+      },
+      {
+        "title": "人物・伝承",
+        "text": "道鏡を祀ったという伝説が紹介されています。伝説と史実を分けて読んでください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/yuge_jinja/",
+          "https://www.iyokannet.jp/spot/4381"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "弓削港から車で5分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/yuge_jinja/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "松林",
+      "東寺",
+      "塩",
+      "島の歴史"
+    ],
+    "related_people": [
+      "道鏡"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yuge_jinja/",
+      "https://www.iyokannet.jp/spot/4381",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/yuge_jinja/"
+    ],
+    "related_pois": [
+      "matsubara",
+      "loghouse"
+    ],
+    "warnings": [],
+    "tags": [
+      "松林",
+      "東寺",
+      "塩",
+      "島の歴史",
+      "歴史 / 文化財",
+      "自然",
+      "海 / 海岸 / 海水浴場"
+    ],
+    "access": {
+      "note": "弓削港から車で5分",
+      "port": "弓削港",
+      "port_source_url": "https://kamijima.info/sightseeing/yuge_jinja/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "iwagi-museum",
+    "name": "岩城郷土館",
+    "name_kana": "いわぎきょうどかん",
+    "island": "岩城島",
+    "categories": [
+      "歴史 / 文化財",
+      "島の暮らし"
+    ],
+    "coordinates": {
+      "lat": 34.2467164,
+      "lng": 133.1475707
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/290"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2023-12-17",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "島本陣の記憶と、文学の足跡。",
+    "description": "伊予松山藩の島本陣が置かれた旧三浦邸の一部を保存・修復した郷土館。建物と資料を通して岩城島の歴史をたどれます。",
+    "deep_dive": [
+      {
+        "title": "歴史",
+        "text": "旧三浦邸の御成門や部屋などを修復し、1982年に郷土館として開館したと公式紹介に記載されています。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/iwagi_kyodokan/",
+          "https://www.iyokannet.jp/spot/290"
+        ]
+      },
+      {
+        "title": "人物・文化",
+        "text": "若山牧水、吉井勇の資料を展示すると紹介されています。三浦家との関わりから、島と文学のつながりを知ることができます。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/iwagi_kyodokan/",
+          "https://www.iyokannet.jp/spot/290"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "岩城港から徒歩5分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/iwagi_kyodokan/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の歴史",
+      "文学",
+      "島めぐり"
+    ],
+    "related_people": [
+      "若山牧水",
+      "吉井勇"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/iwagi_kyodokan/",
+      "https://www.iyokannet.jp/spot/290",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/iwagi_kyodokan/"
+    ],
+    "related_pois": [
+      "sekizen",
+      "iwagi-center"
+    ],
+    "warnings": [
+      "公式ページ内で岩城港から徒歩3分と5分の記載が併存しています。歩行時間は目安として扱ってください。"
+    ],
+    "tags": [
+      "島の歴史",
+      "文学",
+      "島めぐり",
+      "歴史 / 文化財",
+      "島の暮らし"
+    ],
+    "access": {
+      "note": "岩城港から徒歩5分",
+      "port": "岩城港",
+      "port_source_url": "https://kamijima.info/sightseeing/iwagi_kyodokan/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "iwagi-center",
+    "name": "岩城観光センター",
+    "name_kana": "いわぎかんこうせんたー",
+    "island": "岩城島",
+    "categories": [
+      "買い物",
+      "食",
+      "島の暮らし"
+    ],
+    "coordinates": {
+      "lat": 34.24527095795341,
+      "lng": 133.1472909450531
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/3505"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-07-13",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "旅の途中に、島の柑橘と出会う。",
+    "description": "リモーネプラザとして紹介される岩城島の観光施設。公式サイトでは、島の野菜や柑橘が集まる場所として案内されています。",
+    "deep_dive": [
+      {
+        "title": "文化・産業",
+        "text": "岩城島の柑橘や農産物に触れる場所。品目や販売状況は季節・営業日により異なります。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/iwagi-kanko-center/",
+          "https://www.iyokannet.jp/spot/3505"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "岩城港から徒歩1分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/iwagi-kanko-center/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "レモン",
+      "島の暮らし",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/iwagi-kanko-center/",
+      "https://www.iyokannet.jp/spot/3505",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/iwagi-kanko-center/"
+    ],
+    "related_pois": [
+      "sekizen",
+      "iwagi-museum"
+    ],
+    "warnings": [],
+    "tags": [
+      "レモン",
+      "島の暮らし",
+      "島めぐり",
+      "買い物",
+      "食",
+      "島の暮らし"
+    ],
+    "access": {
+      "note": "岩城港から徒歩1分",
+      "port": "岩城港",
+      "port_source_url": "https://kamijima.info/sightseeing/iwagi-kanko-center/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "sanshuen",
+    "name": "三秀園",
+    "name_kana": "さんしゅうえん",
+    "island": "生名島",
+    "categories": [
+      "公園",
+      "歴史 / 文化財",
+      "島の暮らし"
+    ],
+    "coordinates": {
+      "lat": 34.280339926693784,
+      "lng": 133.17591950297356
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/296"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2023-12-04",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "麻生イトの足跡が残る、山の麓の公園。",
+    "description": "立石山の麓にある公園。公式紹介によれば、実業家の麻生イトが整備し、晩年を過ごした場所です。園内には巨石があります。",
+    "deep_dive": [
+      {
+        "title": "人物・歴史",
+        "text": "麻生イトは1876年に尾道で生まれ、1956年に生名島で亡くなった実業家として紹介されています。地域への寄付や三秀園の整備にも携わりました。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sansyuuen-asouito/",
+          "https://www.iyokannet.jp/spot/296"
+        ]
+      },
+      {
+        "title": "文化",
+        "text": "三秀園の名は、安芸・備後・伊予の3州の景色に由来すると公式紹介にあります。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sansyuuen-asouito/",
+          "https://www.iyokannet.jp/spot/296"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "立石港から車で1分、徒歩5分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/sansyuuen-asouito/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の歴史",
+      "巨石",
+      "島めぐり"
+    ],
+    "related_people": [
+      "麻生イト"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sansyuuen-asouito/",
+      "https://www.iyokannet.jp/spot/296",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/sansyuuen-asouito/"
+    ],
+    "related_pois": [
+      "tateishi"
+    ],
+    "warnings": [],
+    "tags": [
+      "島の歴史",
+      "巨石",
+      "島めぐり",
+      "公園",
+      "歴史 / 文化財",
+      "島の暮らし"
+    ],
+    "access": {
+      "note": "立石港から車で1分、徒歩5分",
+      "port": "立石港",
+      "port_source_url": "https://kamijima.info/sightseeing/sansyuuen-asouito/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "tateishi",
+    "name": "立石山",
+    "name_kana": "たていしやま",
+    "island": "生名島",
+    "categories": [
+      "絶景 / 展望",
+      "歴史 / 文化財",
+      "自然"
+    ],
+    "coordinates": {
+      "lat": 34.28078318288622,
+      "lng": 133.17266464233398
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/289"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2024-07-22",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "古代の祈りを、島の景色の中に。",
+    "description": "生名島にある山。町の公式観光紹介では、山頂に弥生時代の祭祀遺跡があるとされています。三秀園と合わせて、島の歴史をたどれます。",
+    "deep_dive": [
+      {
+        "title": "歴史・文化",
+        "text": "山頂の祭祀遺跡について公式観光サイトで紹介されています。年代や遺構の詳細は専門資料の追加確認が必要です。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/mt_tateishi/",
+          "https://www.iyokannet.jp/spot/289"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "立石港から徒歩約30分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/mt_tateishi/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の歴史",
+      "巨石",
+      "瀬戸内の眺望"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/mt_tateishi/",
+      "https://www.iyokannet.jp/spot/289",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/mt_tateishi/"
+    ],
+    "related_pois": [
+      "sanshuen"
+    ],
+    "warnings": [],
+    "tags": [
+      "島の歴史",
+      "巨石",
+      "瀬戸内の眺望",
+      "絶景 / 展望",
+      "歴史 / 文化財",
+      "自然"
+    ],
+    "access": {
+      "note": "立石港から徒歩約30分",
+      "port": "立石港",
+      "port_source_url": "https://kamijima.info/sightseeing/mt_tateishi/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "loghouse",
+    "name": "ログハウス弓削",
+    "name_kana": "ろぐはうすゆげ",
+    "island": "弓削島",
+    "categories": [
+      "買い物",
+      "食"
+    ],
+    "coordinates": {
+      "lat": 34.25699918717327,
+      "lng": 133.20421546697617
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/316"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-08-24",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "海苔、塩、お菓子。島の味を持ち帰る。",
+    "description": "上島町のお土産を扱うお店。公式観光紹介には弓削のり、弓削塩、芋菓子や、周辺の島々の品物が掲載されています。",
+    "deep_dive": [
+      {
+        "title": "食・産業",
+        "text": "弓削のりや弓削塩を通じて、海と島の産物に触れられます。商品の在庫・販売条件はお店の最新案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/eat/roghouse-yuge/",
+          "https://www.iyokannet.jp/spot/316"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "弓削港から徒歩7分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/eat/roghouse-yuge/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "塩",
+      "島の食",
+      "島の暮らし"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/eat/roghouse-yuge/",
+      "https://www.iyokannet.jp/spot/316",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/eat/roghouse-yuge/"
+    ],
+    "related_pois": [
+      "hoogahara",
+      "fespa",
+      "ippuku",
+      "oyatsu"
+    ],
+    "warnings": [],
+    "tags": [
+      "塩",
+      "島の食",
+      "島の暮らし",
+      "買い物",
+      "食"
+    ],
+    "access": {
+      "note": "弓削港から徒歩7分",
+      "port": "弓削港",
+      "port_source_url": "https://kamijima.info/eat/roghouse-yuge/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "fespa",
+    "name": "インランド・シー・リゾートフェスパ",
+    "name_kana": "いんらんどしーりぞーとふぇすぱ",
+    "island": "弓削島",
+    "categories": [
+      "宿泊",
+      "食"
+    ],
+    "coordinates": {
+      "lat": 34.251334,
+      "lng": 133.2096391
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/3077"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-08-20",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "島の旅に、海辺の滞在を。",
+    "description": "弓削島のリゾートホテル。公式観光サイトでは2026年4月のリブランドについて案内されています。宿泊プランや利用条件は施設の最新案内を確認してください。",
+    "deep_dive": [
+      {
+        "title": "島で過ごす",
+        "text": "日帰りの観光と宿泊では、移動の組み方が変わります。予約・料金・サービス内容は公式施設案内をご確認ください。",
+        "source_urls": [
+          "https://kamijima.info/lodging/fespa/",
+          "https://www.iyokannet.jp/spot/3077"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "公式施設案内でアクセスを確認してください。 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/lodging/fespa/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の暮らし",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/lodging/fespa/",
+      "https://www.iyokannet.jp/spot/3077",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/lodging/fespa/"
+    ],
+    "related_pois": [
+      "kushi",
+      "matsubara",
+      "loghouse",
+      "ippuku"
+    ],
+    "warnings": [
+      "宿泊料金、空室、サービスの提供状況はこの地図では確認できません。"
+    ],
+    "tags": [
+      "島の暮らし",
+      "島めぐり",
+      "宿泊",
+      "食"
+    ],
+    "access": {
+      "note": "公式施設案内でアクセスを確認してください。",
+      "port": null,
+      "port_source_url": null,
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "kamei-shrine",
+    "name": "亀居八幡神社",
+    "name_kana": "かめいはちまんじんじゃ",
+    "island": "魚島",
+    "categories": [
+      "神社 / 寺",
+      "歴史 / 文化財"
+    ],
+    "coordinates": {
+      "lat": 34.17650935813562,
+      "lng": 133.32073867321014
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/293"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2023-12-06",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "漁の祈りと、島に伝わる文化財。",
+    "description": "魚島の神社。公式観光サイトは、漁師の大漁祈願や海上安全との関わりを紹介しています。花崗岩製の宝篋印塔についても案内があります。",
+    "deep_dive": [
+      {
+        "title": "文化・産業",
+        "text": "海上安全や大漁への祈りと結びついた場所として紹介されています。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/kamei_hachimanjinjya/",
+          "https://www.iyokannet.jp/spot/293"
+        ]
+      },
+      {
+        "title": "歴史",
+        "text": "紹介ページでは、宝篋印塔を鎌倉時代後期の国指定重要文化財としています。文化財指定の個別資料は追加照合の対象です。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/kamei_hachimanjinjya/",
+          "https://www.iyokannet.jp/spot/293"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "魚島港から車で10分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/kamei_hachimanjinjya/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の歴史",
+      "島の暮らし",
+      "船旅"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/kamei_hachimanjinjya/",
+      "https://www.iyokannet.jp/spot/293",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/kamei_hachimanjinjya/"
+    ],
+    "related_pois": [],
+    "warnings": [
+      "公式紹介の再建年には元号と西暦の不整合があります。その年代は本文に採用していません。"
+    ],
+    "tags": [
+      "島の歴史",
+      "島の暮らし",
+      "船旅",
+      "神社 / 寺",
+      "歴史 / 文化財"
+    ],
+    "access": {
+      "note": "魚島港から車で10分",
+      "port": "魚島港",
+      "port_source_url": "https://kamijima.info/sightseeing/kamei_hachimanjinjya/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "tsuba",
+    "name": "津波島",
+    "name_kana": "つばじま",
+    "island": "津波島",
+    "categories": [
+      "自然",
+      "海 / 海岸 / 海水浴場",
+      "キャンプ",
+      "体験"
+    ],
+    "coordinates": {
+      "lat": 34.22340641787808,
+      "lng": 133.1528377532959
+    },
+    "coordinate_source": "愛媛県公式観光サイト自身の地点データ（名称・ID・latitude・longitude）",
+    "coordinate_source_urls": [
+      "https://www.iyokannet.jp/spot/3102",
+      "https://www.iyokannet.jp/spot/3608"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2024-08-27",
+    "reference_date": "2026-10-05",
+    "location_scope": "県公式「津波島」代表地点。桟橋やキャンプ受付位置ではありません。",
+    "summary": "渡船で訪れる、静かな無人島。",
+    "description": "岩城島の南方にある無人島。公式サイトには海辺の自然や、予約して利用するキャンプ場が紹介されています。地図の印は県公式の島の代表地点です。",
+    "deep_dive": [
+      {
+        "title": "自然",
+        "text": "海に囲まれた島で、砂浜や自然を楽しむ場所として紹介されています。",
+        "source_urls": [
+          "https://kamijima.info/activity/tsubajima-camping/",
+          "https://www.iyokannet.jp/spot/3608"
+        ]
+      },
+      {
+        "title": "アクセス・利用条件",
+        "text": "キャンプ場は予約が必要で、公式紹介は渡船または自船での来島を案内しています。定期航路の徒歩移動として扱わないでください。",
+        "source_urls": [
+          "https://kamijima.info/activity/tsubajima-camping/",
+          "https://www.iyokannet.jp/spot/3608"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "公式施設案内でアクセスを確認してください。 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/activity/tsubajima-camping/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [
+      "夏"
+    ],
+    "best_time": [],
+    "related_topics": [
+      "海辺",
+      "船旅",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/activity/tsubajima-camping/",
+      "https://www.iyokannet.jp/spot/3608",
+      "https://www.iyokannet.jp/spot/3102"
+    ],
+    "official_links": [
+      "https://kamijima.info/activity/tsubajima-camping/"
+    ],
+    "related_pois": [],
+    "warnings": [
+      "完全予約制。ログハウスの予約休止、水道水を生水として飲めない旨の記載があります。最新条件を予約先で確認してください。"
+    ],
+    "tags": [
+      "海辺",
+      "船旅",
+      "島めぐり",
+      "自然",
+      "海 / 海岸 / 海水浴場",
+      "キャンプ",
+      "体験"
+    ],
+    "access": {
+      "note": "公式施設案内でアクセスを確認してください。",
+      "port": null,
+      "port_source_url": null,
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "takaikami-light",
+    "name": "高井神島灯台",
+    "name_kana": "たかいかみじまとうだい",
+    "island": "高井神島",
+    "categories": [
+      "絶景 / 展望",
+      "歴史 / 文化財",
+      "島の暮らし"
+    ],
+    "coordinates": {
+      "lat": 34.1951071411947,
+      "lng": 133.26782405376434
+    },
+    "coordinate_source": "国土地理院・高井神島の灯台地物。公式紹介の島・種別と照合",
+    "coordinate_source_urls": [
+      "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/14/14257/6534.pbf",
+      "https://maps.gsi.go.jp/help/pdf/vector/dataspec.pdf"
+    ],
+    "verification_status": "multi_source_verified",
+    "confidence_score": 0.9,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2024-07-29",
+    "reference_date": "2026-10-05",
+    "location_scope": "国土地理院の灯台地物（ftCode 3221）の位置。島内で該当する地物1件を確認。",
+    "summary": "船の安全を見守る、島の灯台。",
+    "description": "高井神島の北部にある灯台。町公式の紹介では1921年に設営され、気象観測も行われているとされています。",
+    "deep_dive": [
+      {
+        "title": "歴史",
+        "text": "大正10年の設営、昭和33年まで灯台守が暮らしていたことが公式紹介に記載されています。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/takaikami-lighthouse/"
+        ]
+      },
+      {
+        "title": "文化・産業",
+        "text": "島の学校の校章にも使われた、島のシンボルとして紹介されています。船舶の安全と島の暮らしをつなぐ場所です。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/takaikami-lighthouse/"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "高井神島港から徒歩約30分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/takaikami-lighthouse/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "船旅",
+      "島の歴史",
+      "島の暮らし"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/takaikami-lighthouse/",
+      "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/14/14257/6534.pbf",
+      "https://maps.gsi.go.jp/help/pdf/vector/dataspec.pdf"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/takaikami-lighthouse/"
+    ],
+    "related_pois": [],
+    "warnings": [
+      "灯台内部への立ち入りや一般公開を保証する案内ではありません。現地の表示に従ってください。"
+    ],
+    "tags": [
+      "船旅",
+      "島の歴史",
+      "島の暮らし",
+      "絶景 / 展望",
+      "歴史 / 文化財",
+      "島の暮らし"
+    ],
+    "access": {
+      "note": "高井神島港から徒歩約30分",
+      "port": "高井神島港",
+      "port_source_url": "https://kamijima.info/sightseeing/takaikami-lighthouse/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "neginegi",
+    "name": "古民家ねぎねぎ",
+    "name_kana": "こみんかねぎねぎ",
+    "island": "佐島",
+    "categories": [
+      "宿泊",
+      "島の暮らし"
+    ],
+    "coordinates": {
+      "lat": 34.2515552,
+      "lng": 133.1863092
+    },
+    "coordinate_source": "町公式紹介ページに掲載された単一地点リンクの明示座標。Googleページ・APIは取得せず、視野中心の座標は不採用",
+    "coordinate_source_urls": [
+      "https://kamijima.info/lodging/neginegi/"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2024-08-27",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "古民家の時間を、島で過ごす。",
+    "description": "佐島の一棟貸し古民家として公式観光サイトに掲載されている宿。高校生が運営に関わる取り組みとして紹介されています。",
+    "deep_dive": [
+      {
+        "title": "島の暮らし",
+        "text": "島に滞在することで、日帰りとは違う時間の流れに触れられます。運営・予約・利用条件は施設の最新案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/lodging/neginegi/"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "公式施設案内でアクセスを確認してください。 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/lodging/neginegi/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の暮らし",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/lodging/neginegi/"
+    ],
+    "official_links": [
+      "https://kamijima.info/lodging/neginegi/"
+    ],
+    "related_pois": [],
+    "warnings": [],
+    "tags": [
+      "島の暮らし",
+      "島めぐり",
+      "宿泊",
+      "島の暮らし"
+    ],
+    "access": {
+      "note": "公式施設案内でアクセスを確認してください。",
+      "port": null,
+      "port_source_url": null,
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "richter",
+    "name": "ゲルハルト・リヒター 14枚のガラス／豊島",
+    "name_kana": "げるはるとりひたーじゅうよんまいのがらすとよしま",
+    "island": "豊島",
+    "categories": [
+      "アート",
+      "季節限定"
+    ],
+    "coordinates": {
+      "lat": 34.2310849,
+      "lng": 133.2581596
+    },
+    "coordinate_source": "町公式紹介ページに掲載された単一地点リンクの明示座標。Googleページ・APIは取得せず、視野中心の座標は不採用",
+    "coordinate_source_urls": [
+      "https://kamijima.info/sightseeing/richter/"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-06-22",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "船で渡り、ガラスの作品に向き合う。",
+    "description": "THE TOYOSHIMA HOUSEに恒久展示される、ゲルハルト・リヒターのガラスの立体作品。公開期間は限定され、事前の確認が必要です。",
+    "deep_dive": [
+      {
+        "title": "人物・アート",
+        "text": "ゲルハルト・リヒターによる「14枚のガラス／豊島」を展示する施設として公式サイトで紹介されています。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/richter/"
+        ]
+      },
+      {
+        "title": "季節・公開条件",
+        "text": "公式ページには2026年10月3日〜25日の土・日・祝に公開する案内があります。日付を過ぎた場合や変更の可能性があるため、訪問前に公開状況を確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/richter/"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "豊島港から徒歩約2分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/sightseeing/richter/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [
+      "秋"
+    ],
+    "best_time": [],
+    "related_topics": [
+      "アート",
+      "船旅",
+      "島めぐり"
+    ],
+    "related_people": [
+      "ゲルハルト・リヒター"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/richter/"
+    ],
+    "official_links": [
+      "https://kamijima.info/sightseeing/richter/"
+    ],
+    "related_pois": [],
+    "warnings": [
+      "不定期・限定公開。受付で身分証の提示などが必要と公式に記載されています。"
+    ],
+    "tags": [
+      "アート",
+      "船旅",
+      "島めぐり",
+      "アート",
+      "季節限定"
+    ],
+    "access": {
+      "note": "豊島港から徒歩約2分",
+      "port": "豊島港",
+      "port_source_url": "https://kamijima.info/sightseeing/richter/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "ippuku",
+    "name": "藤田住設 給食部 いっ福",
+    "name_kana": "ふじたじゅうせつきゅうしょくぶいっぷく",
+    "island": "弓削島",
+    "categories": [
+      "食"
+    ],
+    "coordinates": {
+      "lat": 34.2539397,
+      "lng": 133.2026551
+    },
+    "coordinate_source": "町公式紹介ページに掲載された単一地点リンクの明示座標。Googleページ・APIは取得せず、視野中心の座標は不採用",
+    "coordinate_source_urls": [
+      "https://kamijima.info/eat/ippuku/"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-06-15",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "島めぐりの途中に、石窯のピザ。",
+    "description": "石窯焼きピザのお店として町公式観光サイトに掲載されています。営業日・予約・メニューは最新の店舗案内で確認してください。",
+    "deep_dive": [
+      {
+        "title": "食",
+        "text": "公式サイトで紹介される食事の立ち寄り先です。食事時間と船の予定を合わせて行程を組んでください。",
+        "source_urls": [
+          "https://kamijima.info/eat/ippuku/"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "弓削港から車で5分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/eat/ippuku/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の食",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/eat/ippuku/"
+    ],
+    "official_links": [
+      "https://kamijima.info/eat/ippuku/"
+    ],
+    "related_pois": [
+      "kushi",
+      "matsubara",
+      "loghouse",
+      "fespa"
+    ],
+    "warnings": [],
+    "tags": [
+      "島の食",
+      "島めぐり",
+      "食"
+    ],
+    "access": {
+      "note": "弓削港から車で5分",
+      "port": "弓削港",
+      "port_source_url": "https://kamijima.info/eat/ippuku/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "oyatsu",
+    "name": "おやつタイム",
+    "name_kana": "おやつたいむ",
+    "island": "弓削島",
+    "categories": [
+      "食",
+      "買い物"
+    ],
+    "coordinates": {
+      "lat": 34.2744081,
+      "lng": 133.208085
+    },
+    "coordinate_source": "町公式紹介ページに掲載された単一地点リンクの明示座標。Googleページ・APIは取得せず、視野中心の座標は不採用",
+    "coordinate_source_urls": [
+      "https://kamijima.info/eat/oyatsu-time/"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-08-24",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "島のおやつで、ひと休み。",
+    "description": "町公式サイトは、かみりん焼を紹介しています。取扱商品や営業日は、訪問前にお店の最新情報で確認してください。",
+    "deep_dive": [
+      {
+        "title": "食・文化",
+        "text": "島の旅の途中で、地元のおやつを楽しむ立ち寄り先として紹介されています。",
+        "source_urls": [
+          "https://kamijima.info/eat/oyatsu-time/"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "上弓削港から車で2分 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/eat/oyatsu-time/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の食",
+      "島の暮らし"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/eat/oyatsu-time/"
+    ],
+    "official_links": [
+      "https://kamijima.info/eat/oyatsu-time/"
+    ],
+    "related_pois": [
+      "loghouse",
+      "fespa",
+      "ippuku",
+      "michishio"
+    ],
+    "warnings": [],
+    "tags": [
+      "島の食",
+      "島の暮らし",
+      "食",
+      "買い物"
+    ],
+    "access": {
+      "note": "上弓削港から車で2分",
+      "port": "弓削港",
+      "port_source_url": "https://kamijima.info/eat/oyatsu-time/",
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  },
+  {
+    "id": "michishio",
+    "name": "ゲストハウス みちしお",
+    "name_kana": "げすとはうすみちしお",
+    "island": "弓削島",
+    "categories": [
+      "宿泊",
+      "島の暮らし"
+    ],
+    "coordinates": {
+      "lat": 34.2683794,
+      "lng": 133.2040556
+    },
+    "coordinate_source": "町公式紹介ページに掲載された単一地点リンクの明示座標。Googleページ・APIは取得せず、視野中心の座標は不採用",
+    "coordinate_source_urls": [
+      "https://kamijima.info/lodging/michishio/"
+    ],
+    "verification_status": "official_verified",
+    "confidence_score": 0.85,
+    "last_verified_at": "2026-10-05",
+    "content_date": "2026-08-20",
+    "reference_date": "2026-10-05",
+    "location_scope": "公式掲載地点。入口・乗り場・移動経路を保証する座標ではありません。",
+    "summary": "丘の上から、島の暮らしに触れる。",
+    "description": "弓削島の丘の上にあるゲストハウスとして、公式観光サイトに紹介されています。予約・空室・利用条件は施設の最新情報で確認してください。",
+    "deep_dive": [
+      {
+        "title": "島で過ごす",
+        "text": "見晴らしの良い宿として公式一覧に紹介されています。宿泊する場合は帰りの航路や滞在中の移動も事前に確認してください。",
+        "source_urls": [
+          "https://kamijima.info/lodging/michishio/"
+        ]
+      },
+      {
+        "title": "徒歩・自転車・船のアクセス",
+        "text": "公式施設案内でアクセスを確認してください。 記載時間は公式ページの目安です。船の時刻は最新の町公式案内で確認してください。",
+        "source_urls": [
+          "https://kamijima.info/lodging/michishio/",
+          "https://kamijima.info/accessmap/"
+        ]
+      }
+    ],
+    "best_season": [],
+    "best_time": [],
+    "related_topics": [
+      "島の暮らし",
+      "瀬戸内の眺望",
+      "島めぐり"
+    ],
+    "related_people": [],
+    "source_urls": [
+      "https://kamijima.info/lodging/michishio/"
+    ],
+    "official_links": [
+      "https://kamijima.info/lodging/michishio/"
+    ],
+    "related_pois": [
+      "kushi",
+      "matsubara",
+      "loghouse",
+      "fespa"
+    ],
+    "warnings": [],
+    "tags": [
+      "島の暮らし",
+      "瀬戸内の眺望",
+      "島めぐり",
+      "宿泊",
+      "島の暮らし"
+    ],
+    "access": {
+      "note": "公式施設案内でアクセスを確認してください。",
+      "port": null,
+      "port_source_url": null,
+      "official_url": "https://kamijima.info/accessmap/",
+      "checked_at": "2026-10-05",
+      "modes": [
+        "walking",
+        "cycling",
+        "ferry"
+      ]
+    },
+    "hours": null,
+    "closed": null,
+    "fee": null
+  }
+]

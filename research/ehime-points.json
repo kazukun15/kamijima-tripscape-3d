@@ -1,0 +1,442 @@
+[
+  {
+    "id": "289",
+    "name": "立石山",
+    "lat": 34.28078318288622,
+    "lng": 133.17266464233398,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/289"
+  },
+  {
+    "id": "296",
+    "name": "三秀園",
+    "lat": 34.280339926693784,
+    "lng": 133.17591950297356,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/296"
+  },
+  {
+    "id": "3642",
+    "name": "蛙石展望台",
+    "lat": 34.26209347384075,
+    "lng": 133.1752073764801,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3642"
+  },
+  {
+    "id": "286",
+    "name": "積善山",
+    "lat": 34.25873389514529,
+    "lng": 133.14723327755928,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/286"
+  },
+  {
+    "id": "3512",
+    "name": "備前焼「宗兵衛窯」",
+    "lat": 34.26026905415332,
+    "lng": 133.2042932510376,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3512"
+  },
+  {
+    "id": "7230",
+    "name": "瀬戸内しまなみシーカヤック",
+    "lat": 34.250503631130655,
+    "lng": 133.19651638363814,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/7230"
+  },
+  {
+    "id": "316",
+    "name": "ログハウス弓削",
+    "lat": 34.25699918717327,
+    "lng": 133.20421546697617,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/316"
+  },
+  {
+    "id": "3101",
+    "name": "弓削大橋記念公園",
+    "lat": 34.252829091064186,
+    "lng": 133.20270538330078,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3101"
+  },
+  {
+    "id": "290",
+    "name": "岩城郷土館",
+    "lat": 34.2467164,
+    "lng": 133.1475707,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/290"
+  },
+  {
+    "id": "3505",
+    "name": "岩城観光センター",
+    "lat": 34.24527095795341,
+    "lng": 133.1472909450531,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3505"
+  },
+  {
+    "id": "292",
+    "name": "定光寺観音堂",
+    "lat": 34.250321613203056,
+    "lng": 133.2045078277588,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/292"
+  },
+  {
+    "id": "4381",
+    "name": "法王ヶ原",
+    "lat": 34.254263485560415,
+    "lng": 133.20853114128113,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4381"
+  },
+  {
+    "id": "305",
+    "name": "松原海水浴場",
+    "lat": 34.25259630448884,
+    "lng": 133.20920705795288,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/305"
+  },
+  {
+    "id": "3077",
+    "name": "INLAND SEA RESORT FESPA",
+    "lat": 34.251334,
+    "lng": 133.2096391,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3077"
+  },
+  {
+    "id": "3102",
+    "name": "久司山展望台",
+    "lat": 34.244463889256494,
+    "lng": 133.2058811187744,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3102"
+  },
+  {
+    "id": "3501",
+    "name": "レモンの散歩道",
+    "lat": 34.24951902713854,
+    "lng": 133.13416957855225,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3501"
+  },
+  {
+    "id": "3608",
+    "name": "津波島",
+    "lat": 34.22340641787808,
+    "lng": 133.1528377532959,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3608"
+  },
+  {
+    "id": "3322",
+    "name": "大角豆島",
+    "lat": 34.217959357163956,
+    "lng": 133.12717705965042,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3322"
+  },
+  {
+    "id": "4040",
+    "name": "喜多浦八幡神社",
+    "lat": 34.2288246,
+    "lng": 133.0936746,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4040"
+  },
+  {
+    "id": "4234",
+    "name": "砂田集落みかん園",
+    "lat": 34.2021121,
+    "lng": 133.1081851,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4234"
+  },
+  {
+    "id": "194",
+    "name": "開山公園",
+    "lat": 34.228835385227214,
+    "lng": 133.0652904510498,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/194"
+  },
+  {
+    "id": "3541",
+    "name": "船折瀬戸観潮台",
+    "lat": 34.19707717433987,
+    "lng": 133.08649599552155,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3541"
+  },
+  {
+    "id": "198",
+    "name": "道の駅　多々羅しまなみ公園",
+    "lat": 34.25468470959287,
+    "lng": 133.0543738603592,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/198"
+  },
+  {
+    "id": "214",
+    "name": "村上三島記念館（上浦歴史民俗資料館）",
+    "lat": 34.25573554351241,
+    "lng": 133.05370330810547,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/214"
+  },
+  {
+    "id": "215",
+    "name": "甘崎城跡",
+    "lat": 34.24441954459831,
+    "lng": 133.0561065673828,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/215"
+  },
+  {
+    "id": "259",
+    "name": "多々羅キャンプ場",
+    "lat": 34.2577839,
+    "lng": 133.0523168,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/259"
+  },
+  {
+    "id": "255",
+    "name": "道の駅　伯方S・Cパーク マリンオアシスはかた",
+    "lat": 34.202805094809264,
+    "lng": 133.07551503181458,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/255"
+  },
+  {
+    "id": "6930",
+    "name": "愛の地産地消レストラン",
+    "lat": 34.20426043498778,
+    "lng": 133.07414613660083,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/6930"
+  },
+  {
+    "id": "3286",
+    "name": "鶏小島観潮台",
+    "lat": 34.19377157452867,
+    "lng": 133.0824887752533,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3286"
+  },
+  {
+    "id": "4553",
+    "name": "ドルフィンファームしまなみ",
+    "lat": 34.200810868894415,
+    "lng": 133.07598027327913,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4553"
+  },
+  {
+    "id": "195",
+    "name": "見近島",
+    "lat": 34.1952459,
+    "lng": 133.073549,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/195"
+  },
+  {
+    "id": "4241",
+    "name": "吉田農園",
+    "lat": 34.26847752281511,
+    "lng": 133.03989797830582,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4241"
+  },
+  {
+    "id": "4068",
+    "name": "甘藷地蔵",
+    "lat": 34.2282854,
+    "lng": 133.0496494,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4068"
+  },
+  {
+    "id": "211",
+    "name": "能島城跡",
+    "lat": 34.18297977496668,
+    "lng": 133.08082580566406,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/211"
+  },
+  {
+    "id": "197",
+    "name": "鼻栗瀬戸展望台",
+    "lat": 34.21603860763173,
+    "lng": 133.05192232131958,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/197"
+  },
+  {
+    "id": "284",
+    "name": "宮窪瀬戸潮流体験",
+    "lat": 34.1696166,
+    "lng": 133.0875511,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/284"
+  },
+  {
+    "id": "212",
+    "name": "村上海賊ミュージアム",
+    "lat": 34.168833415776895,
+    "lng": 133.0874629318714,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/212"
+  },
+  {
+    "id": "193",
+    "name": "カレイ山展望公園",
+    "lat": 34.18412025653173,
+    "lng": 133.07028204202652,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/193"
+  },
+  {
+    "id": "3369",
+    "name": "友浦園芸",
+    "lat": 34.1460455810668,
+    "lng": 133.07882219552994,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3369"
+  },
+  {
+    "id": "7487",
+    "name": "台ダム",
+    "lat": 34.2297245,
+    "lng": 133.0135304,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/7487"
+  },
+  {
+    "id": "3323",
+    "name": "生樹の御門",
+    "lat": 34.24774865484637,
+    "lng": 133.00839811563492,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3323"
+  },
+  {
+    "id": "2495",
+    "name": "大山祇神社",
+    "lat": 34.247900529196,
+    "lng": 133.00579637289047,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/2495"
+  },
+  {
+    "id": "282",
+    "name": "道の駅　しまなみの駅御島",
+    "lat": 34.24894257938551,
+    "lng": 133.00532698631287,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/282"
+  },
+  {
+    "id": "4258",
+    "name": "おみやげナガノ",
+    "lat": 34.2490596,
+    "lng": 133.0050977,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4258"
+  },
+  {
+    "id": "4072",
+    "name": "安神山わくわくパーク",
+    "lat": 34.24616227208164,
+    "lng": 133.00508826971054,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/4072"
+  },
+  {
+    "id": "4243",
+    "name": "おみやげ大心",
+    "lat": 34.2487763,
+    "lng": 133.004095,
+    "source": "https://www.iyokannet.jp/spot/289",
+    "own_url": "https://www.iyokannet.jp/spot/4243"
+  },
+  {
+    "id": "217",
+    "name": "大三島美術館",
+    "lat": 34.249079,
+    "lng": 133.0032673,
+    "source": "https://www.iyokannet.jp/spot/289",
+    "own_url": "https://www.iyokannet.jp/spot/217"
+  },
+  {
+    "id": "4073",
+    "name": "せとうち茶屋",
+    "lat": 34.2477375,
+    "lng": 133.0031701,
+    "source": "https://www.iyokannet.jp/spot/289",
+    "own_url": "https://www.iyokannet.jp/spot/4073"
+  },
+  {
+    "id": "3955",
+    "name": "鶴姫公園",
+    "lat": 34.248930385255775,
+    "lng": 133.00183072686195,
+    "source": "https://www.iyokannet.jp/spot/289",
+    "own_url": "https://www.iyokannet.jp/spot/3955"
+  },
+  {
+    "id": "306",
+    "name": "魚島大木海水浴場",
+    "lat": 34.18065882517969,
+    "lng": 133.3157765865326,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/306"
+  },
+  {
+    "id": "3509",
+    "name": "魚島開発総合センター魚島郷土資料館",
+    "lat": 34.179110010547866,
+    "lng": 133.32163453102112,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3509"
+  },
+  {
+    "id": "3508",
+    "name": "魚島の風景",
+    "lat": 34.17931415393126,
+    "lng": 133.3217740058899,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/3508"
+  },
+  {
+    "id": "293",
+    "name": "亀居八幡神社",
+    "lat": 34.17650935813562,
+    "lng": 133.32073867321014,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/293"
+  },
+  {
+    "id": "209",
+    "name": "吉海郷土文化センター",
+    "lat": 34.155297291204405,
+    "lng": 133.04239511489868,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/209"
+  },
+  {
+    "id": "210",
+    "name": "よしうみバラ公園",
+    "lat": 34.15436062385751,
+    "lng": 133.0421268939972,
+    "source": "https://www.iyokannet.jp/spot/3102",
+    "own_url": "https://www.iyokannet.jp/spot/210"
+  }
+]

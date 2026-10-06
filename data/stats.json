@@ -1,0 +1,17 @@
+{
+  "verified": 18,
+  "pending": 133,
+  "official_inventory": 148,
+  "additional_pois": 3,
+  "by_island": {
+    "弓削島": 8,
+    "佐島": 1,
+    "生名島": 2,
+    "岩城島": 3,
+    "魚島": 1,
+    "高井神島": 1,
+    "豊島": 1,
+    "津波島": 1
+  },
+  "checked_at": "2026-10-05"
+}

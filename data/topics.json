@@ -1,0 +1,193 @@
+[
+  {
+    "id": "桜",
+    "name": "桜",
+    "kind": "季節",
+    "summary": "積善山の春の景観を、山と道の関係からたどる。",
+    "related_topics": [
+      "瀬戸内の眺望",
+      "島めぐり"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sekizenzan-tenbodai/"
+    ]
+  },
+  {
+    "id": "瀬戸内の眺望",
+    "name": "瀬戸内の眺望",
+    "kind": "自然",
+    "summary": "積善山と久司山。それぞれの高さと視点から海を見る。",
+    "related_topics": [
+      "桜",
+      "島めぐり"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/kushiyama_tenbodai/"
+    ]
+  },
+  {
+    "id": "塩",
+    "name": "塩",
+    "kind": "産業・食",
+    "summary": "ログハウス弓削の弓削塩から、島の産物に触れる。歴史的な製塩の年代や荘園との関係は、追加資料の照合が必要。",
+    "related_topics": [
+      "東寺",
+      "島の食"
+    ],
+    "source_urls": [
+      "https://kamijima.info/eat/roghouse-yuge/"
+    ]
+  },
+  {
+    "id": "東寺",
+    "name": "東寺",
+    "kind": "歴史",
+    "summary": "公式の弓削神社紹介には、東寺の古文書と濱戸宮の関係が記されている。",
+    "related_topics": [
+      "塩",
+      "島の歴史"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yuge_jinja/"
+    ]
+  },
+  {
+    "id": "松林",
+    "name": "松林",
+    "kind": "自然・文化",
+    "summary": "法王ヶ原と松原海水浴場を、海辺の景観として一緒にたどる。",
+    "related_topics": [
+      "海辺",
+      "島の歴史"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yuge_jinja/"
+    ]
+  },
+  {
+    "id": "島の歴史",
+    "name": "島の歴史",
+    "kind": "歴史",
+    "summary": "三秀園、岩城郷土館、島の神社。場所から人物と時代をたどる。",
+    "related_topics": [
+      "文学",
+      "巨石",
+      "東寺"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/iwagi_kyodokan/"
+    ]
+  },
+  {
+    "id": "文学",
+    "name": "文学",
+    "kind": "文化",
+    "summary": "若山牧水と吉井勇の資料を紹介する岩城郷土館から、島と文学の関係へ。",
+    "related_topics": [
+      "島の歴史"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/iwagi_kyodokan/"
+    ]
+  },
+  {
+    "id": "巨石",
+    "name": "巨石",
+    "kind": "文化",
+    "summary": "三秀園の巨石と立石山の祭祀遺跡。由来や詳細には追加資料の確認が必要。",
+    "related_topics": [
+      "島の歴史"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sansyuuen-asouito/"
+    ]
+  },
+  {
+    "id": "レモン",
+    "name": "レモン",
+    "kind": "産業・食",
+    "summary": "岩城観光センターに集まる柑橘から、島の農産物を知る。",
+    "related_topics": [
+      "島の食",
+      "島の暮らし"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/iwagi-kanko-center/"
+    ]
+  },
+  {
+    "id": "アート",
+    "name": "アート",
+    "kind": "文化",
+    "summary": "豊島の作品は公開日を確認して訪ねる。高井神島の壁画は位置未確認のため調査台帳に保持。",
+    "related_topics": [
+      "船旅"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/richter/"
+    ]
+  },
+  {
+    "id": "船旅",
+    "name": "船旅",
+    "kind": "移動",
+    "summary": "魚島、高井神島、豊島や津波島へは船の移動を計画する。時刻や運航条件は公式案内で確認。",
+    "related_topics": [
+      "島めぐり"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/takaikami-lighthouse/"
+    ]
+  },
+  {
+    "id": "海辺",
+    "name": "海辺",
+    "kind": "自然",
+    "summary": "松原海水浴場と津波島の自然。海の状態と利用条件を確認して訪ねる。",
+    "related_topics": [
+      "松林",
+      "船旅"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/matsubara/"
+    ]
+  },
+  {
+    "id": "島の食",
+    "name": "島の食",
+    "kind": "食",
+    "summary": "島で紹介されるお店や産物を、出典とともに探す。",
+    "related_topics": [
+      "レモン",
+      "塩"
+    ],
+    "source_urls": [
+      "https://kamijima.info/eat/roghouse-yuge/"
+    ]
+  },
+  {
+    "id": "島の暮らし",
+    "name": "島の暮らし",
+    "kind": "暮らし",
+    "summary": "公園、お店、宿。島の滞在を支える場所をたどる。",
+    "related_topics": [
+      "島めぐり"
+    ],
+    "source_urls": [
+      "https://kamijima.info/lodging/neginegi/"
+    ]
+  },
+  {
+    "id": "島めぐり",
+    "name": "島めぐり",
+    "kind": "島",
+    "summary": "主要8島を地図で選び、確認済みの地点を探索する。",
+    "related_topics": [
+      "船旅",
+      "島の暮らし"
+    ],
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sekizenzan-tenbodai/"
+    ]
+  }
+]

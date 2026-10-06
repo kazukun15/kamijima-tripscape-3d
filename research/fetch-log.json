@@ -1,0 +1,942 @@
+[
+  {
+    "url": "https://kamijima.info/activity/yoga-supyoga/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f93fdfa02f36307fb788bcbef7a3bb7fafd89dbee05a91ed3020a05ea601466c"
+  },
+  {
+    "url": "https://kamijima.info/eat/marine9750-stay9750/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f03be82d52373d89caeea03b50a04a9ac7e8d927289d9c32ae24b7bf750f73e2"
+  },
+  {
+    "url": "https://kamijima.info/eat/yorimichi-shichiuku/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8be80d4a03d6ee6ae5ec8e84bfd2715515e8b1d652753fa38b87c31aaa3986a9"
+  },
+  {
+    "url": "https://kamijima.info/lodging/shimanamiislandstay-sakuranbo/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "853ceb8393d0e2e3a7177c5f7a1c34e1df457e41f387c9b4129e06f33e79c5ba"
+  },
+  {
+    "url": "https://kamijima.info/activity/shimanami-solo-campsite/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "9cc2b735704ab6fa36b9311d5a956b98da949aa1650fbc11eb8d7e34ac7702b1"
+  },
+  {
+    "url": "https://kamijima.info/eat/mehmeh/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "11c6fea088b24d0b545b09a177bb5ce597172a16a6d9f5fc2ec5441722fedf87"
+  },
+  {
+    "url": "https://kamijima.info/lodging/yanagida/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "d30ebdbd28b8fa92b9cf3bdd1a099364f368516dde5210cceb3f77454c9bd7af"
+  },
+  {
+    "url": "https://kamijima.info/lodging/mizunomiba/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b6be5fcceeff644e15725cc5162f39ea00d45ef5c7b074ed63cf6454cb363569"
+  },
+  {
+    "url": "https://kamijima.info/activity/sup-umito/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "0e862dbfbf6df3555fc4911d3219be2a97a0fbeadef7d7c466cfec8ab7112672"
+  },
+  {
+    "url": "https://kamijima.info/lodging/bike-cafe-and-inn-yorimichi/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "6ab26800cd53a7ca7f7c73579dd33f573561193591f7b25403a2ca2bb750f95b"
+  },
+  {
+    "url": "https://kamijima.info/activity/yumeshima-rental-car/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1c7b176feaf9745432fb363d908a42c60b64edaeae80a36302cd3406ab230281"
+  },
+  {
+    "url": "https://kamijima.info/eat/imosyo/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3f9ea4edf213570f8dff1172b4bf294a2968723b6c1eca49090fa854cd5247f2"
+  },
+  {
+    "url": "https://kamijima.info/activity/%e9%80%b1%e6%9c%ab%e9%99%90%e5%ae%9a%ef%bc%81%e3%81%8b%e3%81%bf%e3%82%8a%e3%82%93cpod/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "056fae82b3eab0c085e95cad892c911924329119b3aec3c3618608a2fbb6ad9f"
+  },
+  {
+    "url": "https://kamijima.info/eat/kadoya/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "41d7f9a528915ae558ac57129f2bf50ac87897da4b84fc4102396098a373081c"
+  },
+  {
+    "url": "https://kamijima.info/activity/mickey-yoga/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "01606dd832207ba1007c3e26d0bd7cde510a73d9d65dbde61671d3c49c201d85"
+  },
+  {
+    "url": "https://kamijima.info/lodging/the-nomad-inn-yugejima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c74d4ffeadc8dc4c0bf1bddb33b7bdd2efb89d3c190c02bd4b7313d0f3733381"
+  },
+  {
+    "url": "https://kamijima.info/lodging/common-yado-myojin/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "59f7b50b3797f396ac1ab618e56dec38d5e52f426cfe2f7d158ddcb68db781e4"
+  },
+  {
+    "url": "https://kamijima.info/eat/yumeshimacofee_wabizuki/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "91b0a85e65f824dee0d0e664edecdc404674e88c3a3647655879626ea3804954"
+  },
+  {
+    "url": "https://kamijima.info/eat/manga-tei/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "bdaea37f418e0287d41842d6d257cf4b24bae4abc3e7cee5e169419fcf3d8a48"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/sashima-hachiman/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "20988348a2bbce29be9b5e79c1c68beadf897fda699955280d9f156acd36bdea"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/takaikami-lighthouse/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c205d918313024c29373ec2b37666a151f71ceef77a15c8d52e484e231f02859"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/nataorenoki/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "38672904b6a35ce34f63735f70da47e80f101195089712300789d9fa6ab92b33"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/kyonokojima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "458d9be11b95fab9549bea3a56c60725296c920367eb528b86df9d3a8f17bb89"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/yumeshima-circle-iwagi/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "4f6104b532eee971a886e92764adeaca528e73af29eb59873294afb22d66c766"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/yumeshima-circle-ikina/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c20693f5bf9a9e70bb061ee8490a58d620035f95ec0a4b05d67de13ecda00f50"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/yumeshima-circle-yuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f97f3f2158bb07f18a52ed4a41286a4eb5345a2f3bef608369a1a6e7507aad27"
+  },
+  {
+    "url": "https://kamijima.info/activity/townguide/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b837bf23b118d54b6b60b92fb75e2df85c2e6444351f76864d8afa6a05ddbf4b"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/iwagihashi/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f7c8b8f2f767fd8c341eb972479b4ed2180a15bbd94ea7794fefdd6997fd7965"
+  },
+  {
+    "url": "https://kamijima.info/activity/believer_sup/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c20bcf809581aa42a5ec2891624c71d35ea385d5d4ddeacb489ccc14ecf441a9"
+  },
+  {
+    "url": "https://kamijima.info/eat/poplar-ikina/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "11257d1fc34ec058eb68652e9e1fa25978eb23af46ebdf75b5636ffc63b01d3a"
+  },
+  {
+    "url": "https://kamijima.info/eat/kano-shoten/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a1464fea9eda9ba928f4bba3d995fa0348f7e0966161db0cf17d4c4ef3caa072"
+  },
+  {
+    "url": "https://kamijima.info/eat/acoop-iwagi/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "bd2cfa02689826c80cb317058be17203ab0098a4b28a553e7753e697c792865a"
+  },
+  {
+    "url": "https://kamijima.info/eat/yamazaki-murakami/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "7b7b75b7def31023eb7ec3de0d3a1905b0cc043345667ba8c5dc15903530eb36"
+  },
+  {
+    "url": "https://kamijima.info/eat/yamazaki-yuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a4a3d1ec645df599b725b3cfbeb5a5c619f883da5a0a4fb07905c0a61dcfca21"
+  },
+  {
+    "url": "https://kamijima.info/eat/fourenir-yuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "ca90650eacf6d2a771654625cc4ff779ffd2cc4227d8be8cdfe36b4e96eef097"
+  },
+  {
+    "url": "https://kamijima.info/eat/acoop-yuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e6deacd2b339295ea03d367195c1efbbfbd3a7708a68d44f358745cce90c9736"
+  },
+  {
+    "url": "https://kamijima.info/eat/uoroku/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3eff6bb18b453840b86a12483e0f278bfc0c9c793e78beb0ee4c28119d5f5ec6"
+  },
+  {
+    "url": "https://kamijima.info/eat/honya-chan/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f5a59ade778fd02e63c1a4f710f91a8b6aa52492ba74f1fc155042e70d5e271a"
+  },
+  {
+    "url": "https://kamijima.info/lodging/michishio/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "ee07dc9e45373cc50e696af3b38ff7c686d5d87cb735f7b7016efb6f0aff6dc0"
+  },
+  {
+    "url": "https://kamijima.info/activity/citrus-fieldwork/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "112d64623e6a96bcf0e949353a7f085d0e211a6d05af00fec260d4f18dd50ed0"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/matsubara/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1b3641a37e5a7d1325bc1feebd0ad6defa8a105adfa0a6d853e0eb0644c55d5a"
+  },
+  {
+    "url": "https://kamijima.info/activity/tsubajima-camping/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "4ce1babe773ffaa13103f8dbc28fc3becd7bc79c5cddb06833a717213f21e624"
+  },
+  {
+    "url": "https://kamijima.info/activity/hiking/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "2a54b45069362b05766b6910d04df5604a391fe209c000a0e4c592a7c211b8ac"
+  },
+  {
+    "url": "https://kamijima.info/activity/sup-ikina/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "d141bfc86e5772adef84ecf8b76463ae9aac1245348b5d3288eeeb6ed62ff119"
+  },
+  {
+    "url": "https://kamijima.info/lodging/neginegi/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "499155ce9226e7aecb25cf0884c195d5c71d9dc41b7b37ec9946586a4365b75d"
+  },
+  {
+    "url": "https://kamijima.info/activity/strawberry-picking/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e381d2593247926a5cf4d57fa843e9d390b45f1be68fa76cf361f9bde131f630"
+  },
+  {
+    "url": "https://kamijima.info/eat/don_ramen/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f98217ff5f246d11417259f9f1016edbdf663af840e5ebc58f65343bb9defbc6"
+  },
+  {
+    "url": "https://kamijima.info/eat/oyatsu-time/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "4e2d83e6431763fae861a9c806702283c38673aed5252a5b79724beb460bff75"
+  },
+  {
+    "url": "https://kamijima.info/eat/ippuku/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c3b8ee357e9f387cfc02970a343c9138491cfd005b109349ef7d44bf30fd18d1"
+  },
+  {
+    "url": "https://kamijima.info/activity/sutra-copying/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e04b9e0382aea43b20be26ff3c9e9e285cdadf5ea4768b9cce910b8a2d0c5244"
+  },
+  {
+    "url": "https://kamijima.info/eat/nouson808/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8b864c5986e65c3fd791b53399b08e1234aff4ad08d665cadc1ee77bd7dd3bec"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/richter/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e905e198a83213efb48cb95afd80813b7032302e87b36aa7cdfa58fd698536dc"
+  },
+  {
+    "url": "https://kamijima.info/lodging/sudomari_m/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c77510e028d86b7b21363bc612429996f201d7e141d67d2d3eeb3af81b30e18e"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/yumeshima-kaido/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "18b2ffdfe8eb465444276b7e2cb9723082d319380475fe9b3ad2975f145aa64f"
+  },
+  {
+    "url": "https://kamijima.info/activity/hakanda_camp/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "ae53f27393b2f20d1ceb108e0c91a7355e02ba3344ebc9659faed9df85c3335a"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/setouchi-koryukan/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e32f6533198256aac934a3c4e56477850f9c7185da21e1cb78ad275bec026b8c"
+  },
+  {
+    "url": "https://kamijima.info/activity/shimatabi_yachts/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "37779961cbf6a41f5e295e2033f103cdcbc32af7232164710d39161d75305fed"
+  },
+  {
+    "url": "https://kamijima.info/activity/shimatabi_cycles/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "6ba6a437cb68620f0c103fd229665b3d1613e36ec95140c724a890559aa0c44a"
+  },
+  {
+    "url": "https://kamijima.info/eat/trattoria-aru/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "74bc9bc91f214c72a65d8c674d730a48967944ecc210d3dfafaad973a6a83483"
+  },
+  {
+    "url": "https://kamijima.info/activity/scooter/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "48f29c6b118dd191fb963bcece1c4712329058d8a41ba10d27d9c943f3ad2262"
+  },
+  {
+    "url": "https://kamijima.info/eat/warashibe/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "21b6720f156f153a2c642e8e599907094cc6a56efe8dff56e5e33ebc4ae16588"
+  },
+  {
+    "url": "https://kamijima.info/activity/e-kickboard/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1d60537f8fa76b6f07e3f6f18e52f19f4b6e319c1ba454ea7a0c89f73920ae28"
+  },
+  {
+    "url": "https://kamijima.info/activity/sup-yuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8d94b08e6b029c07a7c86ee511e1f6fd2d8c9b430561d4b6384acb78e31e71d4"
+  },
+  {
+    "url": "https://kamijima.info/eat/taiya/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "36a9ad8391923bf4c84654b96c52a2c6f46a4e29b5a0f7d646d4b23a16773d22"
+  },
+  {
+    "url": "https://kamijima.info/eat/suikotei/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "5b5f6704f3719ea08e7a21d95b6f982b222791482656a9fbad4c2a793bdcb592"
+  },
+  {
+    "url": "https://kamijima.info/activity/family-camp/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f8b2198f4e8d46233b8ec6b736ca2e3dcc899efab1b3c26f87c3505b4a0b5748"
+  },
+  {
+    "url": "https://kamijima.info/activity/yacht-sailing/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "87ee1bb6c5b40f281b6e000d3df4e31439941e046ed69140a4e8714f8b4bc3b3"
+  },
+  {
+    "url": "https://kamijima.info/eat/miyuki/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e4a8c566dc155dc8230d4f641c7ef9d1607593427a4113193461fdcecf08cd76"
+  },
+  {
+    "url": "https://kamijima.info/eat/yakiniku-donguri/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3fc3e0d177331d31ca45523a0f86188a3dff683187664bbb92ab58c904eaa49a"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/nishibe-beach/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "9fa2eb7df0c886763bd20b4f3b8934287ad1c692e1a2be191579c5f6de549e18"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/shounji/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "d3ea34be10ade63d6928b605b59108d9d6106a414a1f480e19ab03a8f0d03aed"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/iwagi_kyodokan/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "45d4bbed1c5077fb986b902993adc7a09973da8614da9a61cb74fdbbc8368e35"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/iwagi-kanko-center/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "ad71fbf736f384edddac65ee7f4cf07a616fc1289a144fb72dd76a514293d1be"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/shipyard_landscape/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "df3ef8622fde9dd8877b53e9823e5fe954ec0de2fa060839280124089b541607"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/nagae_port/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "91a4441e020a7006cb12e091f71cd08a8d1ddc989aa3057dbc95556c9c8f2c1f"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/sekizenzan_sansaro/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a3419fb5246f5e0045b186395e8f004ab50aada223f2c256f6de65dbb8541928"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/umatatenohana/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a22794b7c8c7eeb7619fef743d9042a77c530eac7d499e99167bdf132df734d3"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/karyo-no22/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "0f4173a2137e986fb2ab758fa18aa2cc2e771a845c3e7c6cedcd73c2f0d4449e"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/yuge_jinja/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "405d336a4b9e3bdad898ea4adc41c0a056ce028655ab3be79ac29010e66e45f8"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/ishizuchi_jinjya/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "4d62f28ea8b94f72a2373f88b4e01dbdb6cca42bddf7c4594e2a34ea81d4f0f5"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/kamei_hachimanjinjya/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3d064b6141dbb32b8ee03521debb90132724678052e3c012fd66a282a2e32d78"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/saihouji/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "dc2d7f98e5e00c47750c490bd507b2442118de603ae9969b17f833c3363fe9a3"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/hidamari_park/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "72261a202f9362bb22b9b0377de84cee84df8ab46f33248bcbe9e5bd4425223c"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/ikina-sporec/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "d9d91b3fb340f3576e6fadfb926435f4c76ff9d12c7b4f88fc4ec0e09a4978f5"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/ikinabashi_park/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "7a4b748a7bd7aa0e645be3003fd4532262eba39a9ba886dac8a06bcd77ccb257"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/bouhateiart_uminootowokiku/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8a6c5ab680709a7780c7375e18c336737ccb6cf2ab8fe521c1f5f25e62078f30"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/hyoutanjima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c3e736142eafa402fc68223759717813bf9f1e197a611b63dae2dd386c13568f"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/bouhateiart_minnanokujira/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c8a63ba6331cc1a184d47c411b0bfd8379603da70ffee99e7fc242523a6499cb"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/bouhateiart_soranohana/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1478d92796bfc7025269ef3e0d9405887f266c37e8d7711d077d06981f61a855"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/tateishi_port/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8e927b60da502d6f781f47a1edb191918bf37d351c183a414bd3d01077d4af90"
+  },
+  {
+    "url": "https://kamijima.info/lodging/kominka_yugenoyado/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "2bfd34db03780ef83cea041d1c5bb3f2df694fb04cf349915e27672b9e8a9cfd"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/sansyuuen-asouito/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1fb456ba5a7641bc5f6a66afd19e2576f0935fe0875316907bfd02d96ad721a9"
+  },
+  {
+    "url": "https://kamijima.info/lodging/guesthouse-tokonoma/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "290c8b5b8320a924276c0e47ece77f87e0b9e9cd349535dad9d57dbdedd0b7ad"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/tateishi-menhiru/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "aac465d4ccc1146c592bd133f65131e136c85a68ef5e4ea2ad060c8a932f8948"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/uoshima_port/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "769bf0716390eb199ba15bcb7963c16d98a32b46702b794c1b5d8e69562a1c63"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/kamiyuge-machinami/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b5139da1f5a519ac5f1202840172db62c30fa032b21583a2b6281656314ff1bd"
+  },
+  {
+    "url": "https://kamijima.info/activity/lemon-yoga/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "306ab880ebd2b81e66426d6537e97c3050cf798cf3af2f390ae0caf1f2f14c8f"
+  },
+  {
+    "url": "https://kamijima.info/activity/ladyrose-pain/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "22faf516900f134d4aa5057c8c032fe74912668e2aef2ac381fd058f51574692"
+  },
+  {
+    "url": "https://kamijima.info/activity/shimanomegumi-syuukaku/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1a0c0cf4b9123ce9d75d4c9cb36292d564a53fe232bbe2c880b22568037145aa"
+  },
+  {
+    "url": "https://kamijima.info/activity/yasai-kansatsu-fieldwork/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "ec0d7673a2e6e62587332738ae39ea3e8e9c1ad6bbe7ba25b1ea04f77f25b3bb"
+  },
+  {
+    "url": "https://kamijima.info/activity/happy-pain/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "5681a691ab3b169bc2933d6e7eb9d84d74441d379f68a70a826ccc82308ae6dd"
+  },
+  {
+    "url": "https://kamijima.info/activity/seaweed_art/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a621fcdeaea839387cb8083b33e25fe4787f0ce59e031e00a5b6f3c5014bba35"
+  },
+  {
+    "url": "https://kamijima.info/activity/minitemaridukuri/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3f1dd835b564483bc6f77c0b6b7b3ef9a49550e52943bba6bd43d81788d41a2e"
+  },
+  {
+    "url": "https://kamijima.info/activity/dekkai-sakana/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a5267f9ba436d4c4dad06313904b1de5665dec5dc0961325e56106fbbb54c1c3"
+  },
+  {
+    "url": "https://kamijima.info/activity/kunsei/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "6bda635eb76205f19810b68ebd817239b1c04a46f91ce01a871b55df2787764a"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/ikinajima-hamadakunitarou/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c271ffd913ecddcab70c847438a9a5b989bd1a929d131e6ea239b0d3d164401b"
+  },
+  {
+    "url": "https://kamijima.info/activity/moshio/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "35b70c92ab8c841e120b14b95f1596fa01b77ccbfe20c32319b00f27a95f62bf"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/manga_hekigaart/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "85821270d4bf443d6c66ce371b0e3e38668bde4cc7fb7a072589e8b7f087ea98"
+  },
+  {
+    "url": "https://kamijima.info/eat/shimanohiroba/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b25fdf3a1769c15c89b284dfb7af2cfc333b07a2dbd05b5e590bd731450eb1bd"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/shimanohiroba-2/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "5a3367295df6c1a579a2b79507997278545d25fe9a11e57106bac0b42d3267a7"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/yuge_otani/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "206e7e89d996eb9a3d2162264f940cc2ff77e7873212a51ff8f5fc14711424b1"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/sekizenzan-tenbodai/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "90053c0005ff1c08b4061a98298e8855b947a70dbe712b6120386a73a1b248ee"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/u-turn_blueline/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "35ccdfdc053174780adf965070c90632b391ef8804f64f14ce2e24e75a4f8699"
+  },
+  {
+    "url": "https://kamijima.info/eat/uoshima-shoten/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "28ab07e24c84d28d8cc0d54a05e6faa4c02da9141f02f7a8352acebdf08fc7cb"
+  },
+  {
+    "url": "https://kamijima.info/eat/roghouse-yuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1dd4379c38d670e67f1df9096bec98b572b357c48fa2446206e9a6e47afdd41a"
+  },
+  {
+    "url": "https://kamijima.info/eat/rimone-plaza/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "813b250f8004ac778f9775416b93d2fa1684c6403b5750872044b2067ae07d03"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/engawa/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "5476b9c1fdd72a119af1052b81272d217ea2e580f09922c666b7be03bf7dd0f7"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/seastation-flat/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8d32ddb23b687bbd3e982e00161ba6afa63a7161f039c2017ce356bedf538bda"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/omori_shrine/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "511e22c2aa483615c1a90a3b1f371b5b6840c98813f732d66f6f4bc078637d4b"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/%e9%ab%98%e6%bf%b1%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "9fbfc916107a5815cf8c6afbfd14a0ad7e0beea58661671f89a7638b38850390"
+  },
+  {
+    "url": "https://kamijima.info/lodging/guesthouse_nataorenoki/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b1bc4e114c64eafc5b94ae9551ee1d118561f7b86750ca47c248ca9977be11e5"
+  },
+  {
+    "url": "https://kamijima.info/eat/misty-kamei/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "476d8c57f196c57fe5c82f27aecf2a26a7d014fc04a2fe31d3011938634776f0"
+  },
+  {
+    "url": "https://kamijima.info/eat/lemon-heart/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "e8d482af4a6e125dfef0e857f070dec7bc61c44def27c782b35edf334bb5fb85"
+  },
+  {
+    "url": "https://kamijima.info/eat/yoshimasa/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8b413c7a501b084539e3fba0cc36862be51b3865eb6837ea75830557a5aa9333"
+  },
+  {
+    "url": "https://kamijima.info/eat/nakaura/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "85a331afff60497aa311f468091489825e0d5fd46b11233cf00e541f0f909bbc"
+  },
+  {
+    "url": "https://kamijima.info/eat/kitchen-313-kamiyuge/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "c3f1388845f877dcbcd8ee5e7a1fb76e7fb33da713fed32097828f9e68d5f006"
+  },
+  {
+    "url": "https://kamijima.info/eat/okaerinasai/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1a263f02c8608f3c8944ec6edb991110cea9d2239d4f7c85ee1dfc8b6d48989b"
+  },
+  {
+    "url": "https://kamijima.info/eat/nishino/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "30d8eb384a11c69d6eb1ec4e532dc182376cba1a44d2f4aa03cf19ab860e83d9"
+  },
+  {
+    "url": "https://kamijima.info/eat/book-cafe-okappa/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8011e926ff3c14d39c5bcce2c54843e0f5dd8e4d3ab49f3610d1db29c3b90f13"
+  },
+  {
+    "url": "https://kamijima.info/eat/sagyousho-popcorn/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "42970112eee5016dbea730d51044ac491960e524ef04c27c84a919ab6ac262eb"
+  },
+  {
+    "url": "https://kamijima.info/eat/michikusa/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "21fcdeb8c8262836f359c4cbabba61da10a123f415a905975a41cec0d31f1c32"
+  },
+  {
+    "url": "https://kamijima.info/eat/shimade-cafe/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "6d9ceecaf6a710c5c844a981d119a59ce52c313444facd8489e65a72d86e8542"
+  },
+  {
+    "url": "https://kamijima.info/eat/yugeshima-sai/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "9ae31eb40bbbe141e851db4250b5dd79ccb2dbda2c99cc7a98026b9892124579"
+  },
+  {
+    "url": "https://kamijima.info/eat/suhiizakaya-totoya/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "705090eb424048d2ae23fd7bfc7870bd31b756c1a72369b3c3d78c720ac99ffc"
+  },
+  {
+    "url": "https://kamijima.info/lodging/garuishi-so/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "2b2143c85507959e58595aa8015453eabbbc731a10619fa7b0a09545b85294b7"
+  },
+  {
+    "url": "https://kamijima.info/lodging/fespa/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1274f059db79b7f70d072f631219b1ad33cf1ac181a63383330f9d8b83027853"
+  },
+  {
+    "url": "https://kamijima.info/lodging/guesthouse_nakatsuka/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "1d5c5f8aa668d6415c13494605fc9ebae69d998366c32c3c51eda629a4798642"
+  },
+  {
+    "url": "https://kamijima.info/activity/sea-kayak/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "d1c854dfadad8803aaa2b4c6378f9edb81c55f8922f931d7e07064b79e608f4d"
+  },
+  {
+    "url": "https://kamijima.info/activity/pottery/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "ae2ea82f7b7e6b5676c7ef6529e6e115ed8075999ba07b349742a9b521824fd4"
+  },
+  {
+    "url": "https://kamijima.info/lodging/shiomihouse/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3e439a6a7b714baa72efe07ddc09c779f608098b141d3ede9448560fa73fe054"
+  },
+  {
+    "url": "https://kamijima.info/lodging/kamei-ryokan/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "815d03cdb40cc408f4b341dca99e7fb72ad26ed59f548fd5f765039b0a075682"
+  },
+  {
+    "url": "https://kamijima.info/eat/hamaoka/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b885182f393302c641e9b94004dae820a353eaf2ac4c4ade4dc8e4d1e69cd76c"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/mt_tateishi/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "5197059587882e2d65bb0e9897e64f505d8c2aa7591a4ca3eedd8d67e00e9912"
+  },
+  {
+    "url": "https://kamijima.info/eat/ramento/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "f9a4b583f797e98adb0e6f2578a7694f373ab9386470ae5dfa0f55a2fbd55040"
+  },
+  {
+    "url": "https://kamijima.info/lodging/uoshima_tourism_center/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "3af67de29099af859ec2bfd71d72933869dd1137b2ac02b7b3a867ea43acbed1"
+  },
+  {
+    "url": "https://kamijima.info/sightseeing/kushiyama_tenbodai/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8518d2a5033aaffbce5248ee31841fd671083d1f4257f46b413c057630e1f66a"
+  },
+  {
+    "url": "https://kamijima.info/yugejima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "a949991417cd0ca6846fa5cfee8ae72450948cdb35d58cda63be44d76b9c0562"
+  },
+  {
+    "url": "https://kamijima.info/sashima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "78c8e5b4970e99390038da4743f0b0a9b2dd77f76f5acb45378357d89d920ab4"
+  },
+  {
+    "url": "https://kamijima.info/ikinajima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "71b3afa8730b56c01cc67c0adfedfad205d963d8b7d60f0682f9b0b5398c109f"
+  },
+  {
+    "url": "https://kamijima.info/iwagijima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "253ff6d917160a4d564d96d676a34acd37d388ec9e34a3a5000509c76e035f96"
+  },
+  {
+    "url": "https://kamijima.info/uoshima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "aa78e218bb598bb0f68ebfc26cdb6521e2a49e558450a34437c43dd32d667469"
+  },
+  {
+    "url": "https://kamijima.info/takaikamijima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "b36fb728cb384e1b931723715dfe9bcb0ec0ed3581a606d222ca92f11baa61cb"
+  },
+  {
+    "url": "https://kamijima.info/toyoshima/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "38bd5d58ca103a10a85952483d56cce370bbec048d021b98fbdd4984af8d2da5"
+  },
+  {
+    "url": "https://kamijima.info/tsunamijima/",
+    "error": "Error: 404: https://kamijima.info/tsunamijima/",
+    "checked_at": "2026-10-05"
+  },
+  {
+    "url": "https://kamijima.info/concerned/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "8dfd22aec64ff2ac4978507d633d4d474abc22541bd659dcb03d86d9091bd60c"
+  },
+  {
+    "url": "https://kamijima.info/access/",
+    "status": 200,
+    "checked_at": "2026-10-05",
+    "sha256": "bc3574e9f58a93495714b77ca4f0114cd82c359409015d2ba3b550f9fd9140b8"
+  },
+  {
+    "source": "OSM",
+    "error": "Error: Overpass 406",
+    "checked_at": "2026-10-05"
+  }
+]

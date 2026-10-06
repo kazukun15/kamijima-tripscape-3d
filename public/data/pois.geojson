@@ -1,0 +1,293 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sekizen",
+        "name": "積善山",
+        "island": "岩城島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.14723327755928,
+          34.25873389514529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kushi",
+        "name": "久司山展望台",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2058811187744,
+          34.244463889256494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "matsubara",
+        "name": "松原海水浴場",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.20920705795288,
+          34.25259630448884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hoogahara",
+        "name": "法王ヶ原",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.20853114128113,
+          34.254263485560415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iwagi-museum",
+        "name": "岩城郷土館",
+        "island": "岩城島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.1475707,
+          34.2467164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iwagi-center",
+        "name": "岩城観光センター",
+        "island": "岩城島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.1472909450531,
+          34.24527095795341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sanshuen",
+        "name": "三秀園",
+        "island": "生名島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.17591950297356,
+          34.280339926693784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tateishi",
+        "name": "立石山",
+        "island": "生名島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.17266464233398,
+          34.28078318288622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "loghouse",
+        "name": "ログハウス弓削",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.20421546697617,
+          34.25699918717327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fespa",
+        "name": "インランド・シー・リゾートフェスパ",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2096391,
+          34.251334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kamei-shrine",
+        "name": "亀居八幡神社",
+        "island": "魚島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.32073867321014,
+          34.17650935813562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tsuba",
+        "name": "津波島",
+        "island": "津波島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.1528377532959,
+          34.22340641787808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "takaikami-light",
+        "name": "高井神島灯台",
+        "island": "高井神島",
+        "verification_status": "multi_source_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.26782405376434,
+          34.1951071411947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "neginegi",
+        "name": "古民家ねぎねぎ",
+        "island": "佐島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.1863092,
+          34.2515552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "richter",
+        "name": "ゲルハルト・リヒター 14枚のガラス／豊島",
+        "island": "豊島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2581596,
+          34.2310849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ippuku",
+        "name": "藤田住設 給食部 いっ福",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2026551,
+          34.2539397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "oyatsu",
+        "name": "おやつタイム",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.208085,
+          34.2744081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "michishio",
+        "name": "ゲストハウス みちしお",
+        "island": "弓削島",
+        "verification_status": "official_verified"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2040556,
+          34.2683794
+        ]
+      }
+    }
+  ]
+}

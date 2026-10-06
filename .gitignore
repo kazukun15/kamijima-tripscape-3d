@@ -1,0 +1,16 @@
+node_modules/
+dist/
+work/
+research/raw/
+research/official-details.json
+research/inventory.json
+research/*-links.json
+test-results/
+playwright-report/
+.codex-remote-attachments/
+*.tsbuildinfo
+outputs/*.zip
+outputs/*.zip.sha256
+scripts/__pycache__/
+.env
+.env.*

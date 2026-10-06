@@ -1,0 +1,1997 @@
+[
+  {
+    "id": "activity-yoga-supyoga",
+    "name": "サンセットSUPヨガ体験",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/yoga-supyoga/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-marine9750-stay9750",
+    "name": "Marine9750 Stay9750",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/marine9750-stay9750/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-marine9750-stay9750",
+    "name": "マリンスポーツ体験",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/marine9750-stay9750/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yorimichi-shichiuku",
+    "name": "よりみち七福 ごゆるり食堂",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yorimichi-shichiuku/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-shimanamiislandstay-sakuranbo",
+    "name": "さくらんぼ",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/shimanamiislandstay-sakuranbo/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-shimanami-solo-campsite",
+    "name": "しまなみソロキャンプ場",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/shimanami-solo-campsite/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-mehmeh",
+    "name": "お好み焼き めぇめぇ",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/mehmeh/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-yanagida",
+    "name": "ゲストハウス やなぎだ",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/yanagida/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-mizunomiba",
+    "name": "みずのみば",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/mizunomiba/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-sup-umito",
+    "name": "SUP体験(岩城島：UMITO-Island SUP Kamijima）",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/sup-umito/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-bike-cafe-and-inn-yorimichi",
+    "name": "Bike, Cafe and Inn 寄り道",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/bike-cafe-and-inn-yorimichi/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-yumeshima-rental-car",
+    "name": "上島町をオープンカーで満喫しよう！",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/yumeshima-rental-car/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-imosyo",
+    "name": "ゆめしまやきいも 芋笑",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/imosyo/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-%e9%80%b1%e6%9c%ab%e9%99%90%e5%ae%9a%ef%bc%81%e3%81%8b%e3%81%bf%e3%82%8a%e3%82%93cpod",
+    "name": "週末限定！かみりんCpod",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/%e9%80%b1%e6%9c%ab%e9%99%90%e5%ae%9a%ef%bc%81%e3%81%8b%e3%81%bf%e3%82%8a%e3%82%93cpod/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-kadoya",
+    "name": "かどや",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/kadoya/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-mickey-yoga",
+    "name": "穏やかに、女性のためのヨガ",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/mickey-yoga/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-the-nomad-inn-yugejima",
+    "name": "The Nomad Inn Yugejima",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/the-nomad-inn-yugejima/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-common-yado-myojin",
+    "name": "Common 宿 みょうじん",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/common-yado-myojin/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yumeshimacofee_wabizuki",
+    "name": "ゆめしま珈琲焙煎所 -侘数奇-",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yumeshimacofee_wabizuki/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-manga-tei",
+    "name": "高井神島 食事処「まんが亭」",
+    "island": "高井神島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/manga-tei/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-sashima-hachiman",
+    "name": "佐島八幡神社",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sashima-hachiman/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-nataorenoki",
+    "name": "ナタオレノキ",
+    "island": "高井神島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/nataorenoki/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-kyonokojima",
+    "name": "京ノ小島",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/kyonokojima/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-yumeshima-circle-iwagi",
+    "name": "YUMESHIMA CIRCLE IWAGI",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yumeshima-circle-iwagi/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-yumeshima-circle-ikina",
+    "name": "YUMESHIMA CIRCLE IKINA",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yumeshima-circle-ikina/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-yumeshima-circle-yuge",
+    "name": "YUMESHIMA CIRCLE YUGE",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yumeshima-circle-yuge/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-townguide",
+    "name": "タウンガイドツアー（サイクリング）",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/townguide/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-iwagihashi",
+    "name": "岩城橋",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/iwagihashi/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-believer_sup",
+    "name": "SUP体験(岩城島：Believer）",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/believer_sup/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-poplar-ikina",
+    "name": "ポプラ 生名店",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/poplar-ikina/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-kano-shoten",
+    "name": "加納商店",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/kano-shoten/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-acoop-iwagi",
+    "name": "Aコープ いわぎ（JAおちいまばり）",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/acoop-iwagi/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yamazaki-murakami",
+    "name": "Ｙショップ むらかみ",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yamazaki-murakami/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yamazaki-yuge",
+    "name": "ニューヤマザキデイリーストア 弓削店",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yamazaki-yuge/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-fourenir-yuge",
+    "name": "フレニール弓削店",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/fourenir-yuge/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-acoop-yuge",
+    "name": "Aコープ弓削店（JAおちいまばり）",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/acoop-yuge/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-uoroku",
+    "name": "さかなの店 魚六",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/uoroku/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-honya-chan",
+    "name": "本とお茶の店 ゆたかの本屋ちゃん",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/honya-chan/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-citrus-fieldwork",
+    "name": "柑橘フィールドワーク",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/citrus-fieldwork/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-tsubajima-camping",
+    "name": "無人島でサバイバルキャンプ場",
+    "island": "津波島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/tsubajima-camping/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "周辺の山・景勝地・島は公開済み。個別施設入口の座標は未確認。"
+  },
+  {
+    "id": "activity-hiking",
+    "name": "ハイキング",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/hiking/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-sup-ikina",
+    "name": "SUP体験（生名島：Rakuoli）",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/sup-ikina/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "一覧の島名と施設名に不整合。再確認が必要。"
+  },
+  {
+    "id": "activity-strawberry-picking",
+    "name": "いちご＆レモン狩り体験",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/strawberry-picking/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-don_ramen",
+    "name": "どんラーメン",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/don_ramen/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-sutra-copying",
+    "name": "お寺で写経体験 ＊R8年度内は休止",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/sutra-copying/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-nouson808",
+    "name": "nouson808",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/nouson808/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-sudomari_m",
+    "name": "民宿すどまりM",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/sudomari_m/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-yumeshima-kaido",
+    "name": "ゆめしま海道",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yumeshima-kaido/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-hakanda_camp",
+    "name": "サウンド波間田キャンプ場",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/hakanda_camp/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-setouchi-koryukan",
+    "name": "せとうち交流館",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/setouchi-koryukan/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-shimatabi_yachts",
+    "name": "ヨットセーリング（島旅ヨット）",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/shimatabi_yachts/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-shimatabi_cycles",
+    "name": "電動ミニベロレンタル（島旅サイクル）",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/shimatabi_cycles/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-trattoria-aru",
+    "name": "TRATTORIA アル《休業中》",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/trattoria-aru/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-scooter",
+    "name": "スクーターレンタル・ガイドツアー",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/scooter/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-warashibe",
+    "name": "わらしべ。岩城島BASE 不定期営業",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/warashibe/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-e-kickboard",
+    "name": "電動キックボードレンタル・ガイドツアー",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/e-kickboard/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-sup-yuge",
+    "name": "SUP体験（弓削島：上島町観光協会）",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/sup-yuge/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-taiya",
+    "name": "Takeout & Cafe たい屋",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/taiya/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-suikotei",
+    "name": "酔虎亭",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/suikotei/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-family-camp",
+    "name": "ファミリーキャンプ",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/family-camp/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-yacht-sailing",
+    "name": "ボートクルーズ教室",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/yacht-sailing/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-miyuki",
+    "name": "みゆき",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/miyuki/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yakiniku-donguri",
+    "name": "焼肉どんぐり",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yakiniku-donguri/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-nishibe-beach",
+    "name": "西部海水浴場",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/nishibe-beach/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-shounji",
+    "name": "祥雲寺",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/shounji/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-shipyard_landscape",
+    "name": "造船所のある風景",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/shipyard_landscape/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-nagae_port",
+    "name": "長江港",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/nagae_port/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-sekizenzan_sansaro",
+    "name": "積善山三叉路",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sekizenzan_sansaro/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-umatatenohana",
+    "name": "馬立の鼻",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/umatatenohana/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-karyo-no22",
+    "name": "狩尾22番札所",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/karyo-no22/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-yuge_jinja",
+    "name": "弓削神社／法王ヶ原",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yuge_jinja/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "周辺の山・景勝地・島は公開済み。個別施設入口の座標は未確認。"
+  },
+  {
+    "id": "sightseeing-ishizuchi_jinjya",
+    "name": "石鎚神社",
+    "island": "魚島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/ishizuchi_jinjya/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-saihouji",
+    "name": "西方寺",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/saihouji/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-hidamari_park",
+    "name": "ひだまり公園",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/hidamari_park/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-ikina-sporec",
+    "name": "いきなスポレク公園",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/ikina-sporec/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-ikinabashi_park",
+    "name": "生名橋記念公園",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/ikinabashi_park/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-bouhateiart_uminootowokiku",
+    "name": "防波堤アート「海のおとを聴く」",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/bouhateiart_uminootowokiku/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-hyoutanjima",
+    "name": "瓢箪島が見える海岸",
+    "island": "魚島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/hyoutanjima/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-bouhateiart_minnanokujira",
+    "name": "防波堤アート「みんなのクジラ」",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/bouhateiart_minnanokujira/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-bouhateiart_soranohana",
+    "name": "防波堤アート「天の花」",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/bouhateiart_soranohana/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-tateishi_port",
+    "name": "立石港",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/tateishi_port/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-kominka_yugenoyado",
+    "name": "古民家 弓削の宿",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/kominka_yugenoyado/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-guesthouse-tokonoma",
+    "name": "ゲストハウスとこのま",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/guesthouse-tokonoma/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-tateishi-menhiru",
+    "name": "立石メンヒル（巨石）",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/tateishi-menhiru/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-uoshima_port",
+    "name": "魚島漁港",
+    "island": "魚島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/uoshima_port/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-kamiyuge-machinami",
+    "name": "上弓削の古い町並み",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/kamiyuge-machinami/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-lemon-yoga",
+    "name": "レモンの島でリフレッシュヨガ",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/lemon-yoga/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-ladyrose-pain",
+    "name": "上島の四季を彩るパン作り",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/ladyrose-pain/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-shimanomegumi-syuukaku",
+    "name": "島の恵み収穫体験",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/shimanomegumi-syuukaku/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-yasai-kansatsu-fieldwork",
+    "name": "島の畑で野菜観察フィールドワーク",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/yasai-kansatsu-fieldwork/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-happy-pain",
+    "name": "上島特産パン作り",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/happy-pain/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-seaweed_art",
+    "name": "海藻押し葉アート",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/seaweed_art/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-minitemaridukuri",
+    "name": "想いを込めた「ミニ手まり」作り",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/minitemaridukuri/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-dekkai-sakana",
+    "name": "遊漁船で釣り体験",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/dekkai-sakana/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-kunsei",
+    "name": "プロパンボンベの釜で燻製作り",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/kunsei/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-ikinajima-hamadakunitarou",
+    "name": "生名島厳島（濱田國太郎銅像）",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/ikinajima-hamadakunitarou/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-moshio",
+    "name": "藻塩づくり体験",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/moshio/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-manga_hekigaart",
+    "name": "高井神島マンガ壁画アート",
+    "island": "高井神島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/manga_hekigaart/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-shimanohiroba",
+    "name": "佐島しまのひろば",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/shimanohiroba/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-shimanohiroba-2",
+    "name": "佐島しまのひろば",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/shimanohiroba-2/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-yuge_otani",
+    "name": "弓削大谷からの景色",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/yuge_otani/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-sekizenzan-tenbodai",
+    "name": "積善山展望台",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/sekizenzan-tenbodai/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "周辺の山・景勝地・島は公開済み。個別施設入口の座標は未確認。"
+  },
+  {
+    "id": "sightseeing-u-turn_blueline",
+    "name": "Uターンブルーライン",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/u-turn_blueline/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-uoshima-shoten",
+    "name": "魚島商店",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/uoshima-shoten/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "一覧の島名と施設名に不整合。再確認が必要。"
+  },
+  {
+    "id": "eat-rimone-plaza",
+    "name": "リモーネ・プラザ",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/rimone-plaza/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-engawa",
+    "name": "ENGAWA",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/engawa/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-seastation-flat",
+    "name": "海の駅舎 ふらっと",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/seastation-flat/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-omori_shrine",
+    "name": "大森神社",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/omori_shrine/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "sightseeing-%e9%ab%98%e6%bf%b1%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be",
+    "name": "高濱八幡神社",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/sightseeing/%e9%ab%98%e6%bf%b1%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-guesthouse_nataorenoki",
+    "name": "民宿なたおれの木",
+    "island": "高井神島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/guesthouse_nataorenoki/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-misty-kamei",
+    "name": "ミスティー亀井",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/misty-kamei/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-lemon-heart",
+    "name": "レモン・ハート",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/lemon-heart/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yoshimasa",
+    "name": "居酒屋 よし正",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yoshimasa/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-nakaura",
+    "name": "なかうら",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/nakaura/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-kitchen-313-kamiyuge",
+    "name": "Kitchen 313 Kamiyuge",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/kitchen-313-kamiyuge/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-okaerinasai",
+    "name": "おかえりなさい",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/okaerinasai/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-nishino",
+    "name": "西野",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/nishino/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-book-cafe-okappa",
+    "name": "book cafe okappa",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/book-cafe-okappa/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-sagyousho-popcorn",
+    "name": "さぎょうしょポップコーンのいえ",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/sagyousho-popcorn/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-michikusa",
+    "name": "みちくさ",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/michikusa/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-shimade-cafe",
+    "name": "しまでCafe",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/shimade-cafe/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-yugeshima-sai",
+    "name": "ゆげしまダイニング 彩－SAI－",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/yugeshima-sai/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-suhiizakaya-totoya",
+    "name": "寿司居酒屋 ととや",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/suhiizakaya-totoya/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-garuishi-so",
+    "name": "宿泊研修施設 蛙石荘",
+    "island": "生名島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/garuishi-so/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-guesthouse_nakatsuka",
+    "name": "民宿 中塚",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/guesthouse_nakatsuka/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-sea-kayak",
+    "name": "シーカヤック体験",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/sea-kayak/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "activity-pottery",
+    "name": "土ひねり体験教室",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/activity/pottery/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-shiomihouse",
+    "name": "古民家ゲストハウス 汐見の家",
+    "island": "佐島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/shiomihouse/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-kamei-ryokan",
+    "name": "亀井旅館",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/kamei-ryokan/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-hamaoka",
+    "name": "ジャンボたこ焼き 濱岡",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/hamaoka/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "eat-ramento",
+    "name": "お好み焼き ラーメン党",
+    "island": "弓削島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/eat/ramento/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-yoshimasa",
+    "name": "活魚・民宿よし正",
+    "island": "岩城島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/yoshimasa/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  },
+  {
+    "id": "lodging-uoshima_tourism_center",
+    "name": "魚島観光センター（休館中）",
+    "island": "魚島",
+    "verification_status": "pending",
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "source_urls": [
+      "https://kamijima.info/lodging/uoshima_tourism_center/"
+    ],
+    "last_verified_at": "2026-10-05",
+    "reason": "位置・説明・公開条件の追加照合が必要。推測座標は付けていません。"
+  }
+]

@@ -1,0 +1,2848 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.09887170791626,
+        34.38047407717045
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "尾道糸崎港",
+      "annoCtg": 431,
+      "knj": "尾道糸崎港",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08192014694214,
+        34.37037925601055
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "須波駅",
+      "annoCtg": 422,
+      "kana": "すなみえき",
+      "knj": "須波駅",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08172702789307,
+        34.359379829243665
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "呉線",
+      "annoCtg": 421,
+      "kana": "くれせん",
+      "knj": "呉線",
+      "arrng": 2,
+      "arrngAgl": 258,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.09878587722778,
+        34.37539139824567
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "三原湾",
+      "annoCtg": 345,
+      "kana": "みはらわん",
+      "knj": "三原湾",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.10372114181519,
+        34.368112181518214
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "小佐木島",
+      "annoCtg": 352,
+      "kana": "こさぎしま",
+      "knj": "小佐木島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.06737184524536,
+        34.323732478930594
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "高根島",
+      "annoCtg": 352,
+      "kana": "こうねしま",
+      "knj": "高根島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.07026863098145,
+        34.31175213584547
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "高根山",
+      "annoCtg": 312,
+      "kana": "こうねやま",
+      "knj": "高根山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.10466527938843,
+        34.33849288696649
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "佐木島",
+      "annoCtg": 352,
+      "kana": "さぎしま",
+      "knj": "佐木島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.11612367630005,
+        34.37052094612926
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "宿祢島",
+      "annoCtg": 352,
+      "kana": "すくねじま",
+      "knj": "宿祢島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1401562690735,
+        34.365154265530876
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "細島",
+      "annoCtg": 352,
+      "kana": "ほそしま",
+      "knj": "細島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.13734531402588,
+        34.3545615901765
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "小細島",
+      "annoCtg": 352,
+      "kana": "こほそしま",
+      "knj": "小細島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15041303634644,
+        34.326975384194995
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "車",
+      "arrng": 2,
+      "arrngAgl": 248,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15245151519775,
+        34.32982832836203
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "動",
+      "arrng": 2,
+      "arrngAgl": 237,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1497049331665,
+        34.32405145877617
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "道",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15309524536133,
+        34.32401601663099
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "尾道市",
+      "annoCtg": 110,
+      "kana": "おのみちし",
+      "knj": "尾道市",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15479040145874,
+        34.33300012134559
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "自",
+      "arrng": 2,
+      "arrngAgl": 240,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.09674739837646,
+        34.290179664079815
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "生口島",
+      "annoCtg": 352,
+      "kana": "いくちじま",
+      "knj": "生口島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08039665222168,
+        34.26886764342886
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "観音山",
+      "annoCtg": 312,
+      "kana": "かんのんやま",
+      "knj": "観音山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.0702042579651,
+        34.23852149687346
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "大長崎",
+      "annoCtg": 343,
+      "kana": "おおながさき",
+      "knj": "大長崎",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1078839302063,
+        34.24254817872682
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "トウビョウ鼻",
+      "annoCtg": 343,
+      "kana": "とうびょうばな",
+      "knj": "トウビョウ鼻",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.11485767364502,
+        34.261224496373245
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "小三床礁",
+      "annoCtg": 353,
+      "kana": "こみとこしょう",
+      "knj": "小三床礁",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.11702489852905,
+        34.25833375162411
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "三床礁",
+      "annoCtg": 353,
+      "kana": "みとこしょう",
+      "knj": "三床礁",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.13204526901245,
+        34.240880765554394
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "菰隠鼻",
+      "annoCtg": 343,
+      "kana": "こもがくしはな",
+      "knj": "菰隠鼻",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.14135789871216,
+        34.26358312861288
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "岩城島",
+      "annoCtg": 352,
+      "kana": "いわぎしま",
+      "knj": "岩城島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.14770936965942,
+        34.25813866711198
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "積善山",
+      "annoCtg": 312,
+      "kana": "せきぜんざん",
+      "knj": "積善山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15144300460815,
+        34.23979870316484
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "赤穂根島",
+      "annoCtg": 352,
+      "kana": "あかほねじま",
+      "knj": "赤穂根島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.0901598930359,
+        34.303669755272594
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "25000",
+      "ftCode": 100,
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "annoCtg": 662,
+      "knj": "耕三寺",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.07883024215698,
+        34.22439998054671
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "伯方島",
+      "annoCtg": 352,
+      "kana": "はかたじま",
+      "knj": "伯方島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08642625808716,
+        34.21446382650423
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "宝股山",
+      "annoCtg": 312,
+      "kana": "ほうこさん",
+      "knj": "宝股山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.0715560913086,
+        34.19528018649052
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "見近島",
+      "annoCtg": 352,
+      "kana": "みちかしま",
+      "knj": "見近島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08436632156372,
+        34.19160622548543
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "船折瀬戸",
+      "annoCtg": 345,
+      "kana": "ふなおりせと",
+      "knj": "船折瀬戸",
+      "arrng": 2,
+      "arrngAgl": 232,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08069705963135,
+        34.18393831303557
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "能島",
+      "annoCtg": 352,
+      "kana": "のしま",
+      "knj": "能島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.0809760093689,
+        34.180175101026975
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鯛崎島",
+      "annoCtg": 352,
+      "kana": "たいざきじま",
+      "knj": "鯛崎島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08687686920166,
+        34.187843355555515
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鵜島",
+      "annoCtg": 352,
+      "kana": "うしま",
+      "knj": "鵜島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.12260389328003,
+        34.223317706355616
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "御床島",
+      "annoCtg": 352,
+      "kana": "みとこじま",
+      "knj": "御床島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.12824726104736,
+        34.22033694489461
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "大角豆島",
+      "annoCtg": 352,
+      "knj": "大角豆島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.12631607055664,
+        34.19991234395533
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "矢里頭",
+      "annoCtg": 343,
+      "kana": "やりど",
+      "knj": "矢里頭",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1399631500244,
+        34.2227676928311
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "首頭小島",
+      "annoCtg": 352,
+      "kana": "くびとうこじま",
+      "knj": "首頭小島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15285921096802,
+        34.22117085902467
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "津波島",
+      "annoCtg": 352,
+      "kana": "つばじま",
+      "knj": "津波島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.13618659973145,
+        34.208501571603904
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "金ヶ崎",
+      "annoCtg": 343,
+      "kana": "かねがざき",
+      "knj": "金ヶ崎",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.11166048049927,
+        34.17912776216603
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "戸代鼻",
+      "annoCtg": 343,
+      "kana": "とだいばな",
+      "knj": "戸代鼻",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.11457872390747,
+        34.17912776216603
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "頸切島",
+      "annoCtg": 352,
+      "kana": "くびきれじま",
+      "knj": "頸切島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.12052249908447,
+        34.168334089185464
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "カマギ島",
+      "annoCtg": 352,
+      "kana": "かまぎしま",
+      "knj": "カマギ島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.13554286956787,
+        34.16045099535124
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "備後灘",
+      "annoCtg": 344,
+      "kana": "びんごなだ",
+      "knj": "備後灘",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08651208877563,
+        34.148003441111385
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "九十九島",
+      "annoCtg": 352,
+      "kana": "つくもじま",
+      "knj": "九十九島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1088924407959,
+        34.15871093403304
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "横島",
+      "annoCtg": 352,
+      "kana": "よこしま",
+      "knj": "横島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.13554286956787,
+        34.16045099535124
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "備後灘",
+      "annoCtg": 344,
+      "kana": "びんごなだ",
+      "knj": "備後灘",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.08734893798828,
+        34.0880661595622
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "燧灘",
+      "annoCtg": 344,
+      "kana": "ひうちなだ",
+      "knj": "燧灘",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15309524536133,
+        34.32401601663099
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "尾道市",
+      "annoCtg": 110,
+      "kana": "おのみちし",
+      "knj": "尾道市",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.17646265029907,
+        34.359858095215074
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "布刈瀬戸",
+      "annoCtg": 345,
+      "kana": "めかりせと",
+      "knj": "布刈瀬戸",
+      "arrng": 2,
+      "arrngAgl": 320,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.18150520324707,
+        34.35707702895175
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "因島大橋",
+      "annoCtg": 413,
+      "knj": "因島大橋",
+      "arrng": 1,
+      "arrngAgl": 26,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15871715545654,
+        34.33907757954326
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "瀬",
+      "arrng": 2,
+      "arrngAgl": 245,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15657138824463,
+        34.33572883051616
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "戸",
+      "arrng": 2,
+      "arrngAgl": 240,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1604552268982,
+        34.34258564940404
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "西",
+      "arrng": 2,
+      "arrngAgl": 255,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15479040145874,
+        34.33300012134559
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "西瀬戸自動車道",
+      "annoCtg": 411,
+      "kana": "にしせとじどうしゃどう",
+      "knj": "自",
+      "arrng": 2,
+      "arrngAgl": 240,
+      "dspPos": "CT",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.17768573760986,
+        34.308455469295495
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "因島",
+      "annoCtg": 352,
+      "kana": "いんのしま",
+      "knj": "因島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1908392906189,
+        34.31145083298715
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "奥山",
+      "annoCtg": 312,
+      "kana": "おくやま",
+      "knj": "奥山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.2077693939209,
+        34.370007318308666
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "高見山",
+      "annoCtg": 312,
+      "kana": "たかみやま",
+      "knj": "高見山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.22002172470093,
+        34.37719782121124
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "上江府島",
+      "annoCtg": 352,
+      "kana": "かみえふしま",
+      "knj": "上江府島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.21935653686523,
+        34.368183028524726
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "下江府島",
+      "annoCtg": 352,
+      "kana": "しもえふしま",
+      "knj": "下江府島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.2095503807068,
+        34.354402158414416
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "観音崎",
+      "annoCtg": 343,
+      "kana": "かんのんざき",
+      "knj": "観音崎",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.19841384887695,
+        34.33780188139336
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "梶ノ鼻",
+      "annoCtg": 343,
+      "kana": "かじのはな",
+      "knj": "梶ノ鼻",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.21173906326294,
+        34.313825779128024
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "白嶽ノ鼻",
+      "annoCtg": 343,
+      "kana": "しらたけのはな",
+      "knj": "白嶽ノ鼻",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.24278831481934,
+        34.37988967333787
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "加島",
+      "annoCtg": 352,
+      "kana": "かしま",
+      "knj": "加島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.17768573760986,
+        34.308455469295495
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "因島",
+      "annoCtg": 352,
+      "kana": "いんのしま",
+      "knj": "因島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1576657295227,
+        34.29326431749318
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "亀島",
+      "annoCtg": 352,
+      "kana": "かめしま",
+      "knj": "亀島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1679654121399,
+        34.29289203774569
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鶴島",
+      "annoCtg": 352,
+      "kana": "つるしま",
+      "knj": "鶴島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1607985496521,
+        34.28773313429515
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "平内島",
+      "annoCtg": 352,
+      "kana": "へなじま",
+      "knj": "平内島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1735873222351,
+        34.275641267347325
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "生名島",
+      "annoCtg": 352,
+      "kana": "いきなじま",
+      "knj": "生名島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1879425048828,
+        34.24579421813797
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "佐島",
+      "annoCtg": 352,
+      "kana": "さしま",
+      "knj": "佐島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.21120262145996,
+        34.29741246593238
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "地蔵鼻",
+      "annoCtg": 343,
+      "kana": "じぞうばな",
+      "knj": "地蔵鼻",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.22763919830322,
+        34.293796142842325
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "馬立ノ鼻",
+      "annoCtg": 343,
+      "kana": "うまたてのはな",
+      "knj": "馬立ノ鼻",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.23731660842896,
+        34.302854384210534
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "芸予諸島",
+      "annoCtg": 351,
+      "kana": "げいよしょとう",
+      "knj": "芸予諸島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.22845458984375,
+        34.28145692782191
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "三山",
+      "annoCtg": 312,
+      "kana": "みやま",
+      "knj": "三山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.20819854736328,
+        34.27060543144759
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "弓削島",
+      "annoCtg": 352,
+      "kana": "ゆげしま",
+      "knj": "弓削島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15285921096802,
+        34.22117085902467
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "津波島",
+      "annoCtg": 352,
+      "kana": "つばじま",
+      "knj": "津波島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.15891027450562,
+        34.225854819023894
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鵜ノ糞島",
+      "annoCtg": 352,
+      "kana": "うのくそじま",
+      "knj": "鵜ノ糞島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.16802978515625,
+        34.12919545443421
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "今治市",
+      "annoCtg": 110,
+      "kana": "いまばりし",
+      "knj": "今治市",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.16092729568481,
+        34.12193043729741
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "梶島",
+      "annoCtg": 352,
+      "kana": "かじしま",
+      "knj": "梶島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.16144227981567,
+        34.117791407585514
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "四阪島",
+      "annoCtg": 351,
+      "kana": "しさかじま",
+      "knj": "四阪島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.17277193069458,
+        34.11347452129999
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "家ノ島",
+      "annoCtg": 352,
+      "kana": "いえのしま",
+      "knj": "家ノ島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.1720209121704,
+        34.107842696473014
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鼠島",
+      "annoCtg": 352,
+      "kana": "ねずみじま",
+      "knj": "鼠島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.18828582763672,
+        34.11955007586357
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "明神島",
+      "annoCtg": 352,
+      "kana": "みょうじんしま",
+      "knj": "明神島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.18262100219727,
+        34.10089567055455
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "美濃島",
+      "annoCtg": 352,
+      "kana": "みのしま",
+      "knj": "美濃島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.24278831481934,
+        34.37988967333787
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "加島",
+      "annoCtg": 352,
+      "kana": "かしま",
+      "knj": "加島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.26377391815186,
+        34.37284108773042
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "百島",
+      "annoCtg": 352,
+      "kana": "ももしま",
+      "knj": "百島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.272807598114,
+        34.34664277951566
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "横島",
+      "annoCtg": 352,
+      "kana": "よこしま",
+      "knj": "横島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.25491189956665,
+        34.32968656945158
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "当木島",
+      "annoCtg": 352,
+      "kana": "あてぎしま",
+      "knj": "当木島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.28819274902344,
+        34.35114259813821
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "坊地ノ瀬戸",
+      "annoCtg": 345,
+      "kana": "ぼうじのせと",
+      "knj": "坊地ノ瀬戸",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.30244064331055,
+        34.360371785255225
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "田島",
+      "annoCtg": 352,
+      "kana": "たしま",
+      "knj": "田島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.3037281036377,
+        34.350788290471115
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "高山",
+      "annoCtg": 312,
+      "kana": "たかやま",
+      "knj": "高山",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.27769994735718,
+        34.300691840011226
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "百貫島",
+      "annoCtg": 352,
+      "kana": "ひゃっかんじま",
+      "knj": "百貫島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.25615644454956,
+        34.25182477866329
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "越智郡",
+      "annoCtg": 130,
+      "knj": "越智郡",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.2584524154663,
+        34.24444615139603
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "上島町",
+      "annoCtg": 110,
+      "kana": "かみじまちょう",
+      "knj": "上島町",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.25772285461426,
+        34.23401564214893
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "豊島",
+      "annoCtg": 352,
+      "kana": "とよしま",
+      "knj": "豊島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.25772285461426,
+        34.23401564214893
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "豊島",
+      "annoCtg": 352,
+      "kana": "とよしま",
+      "knj": "豊島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.2720136642456,
+        34.20182902432853
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "宮ノ越鼻",
+      "annoCtg": 343,
+      "kana": "みやのこしばな",
+      "knj": "宮ノ越鼻",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.2740306854248,
+        34.192617911876425
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "高井神島",
+      "annoCtg": 352,
+      "kana": "たかいかみじま",
+      "knj": "高井神島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.31598043441772,
+        34.17470749393085
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "魚島",
+      "annoCtg": 352,
+      "kana": "うおしま",
+      "knj": "魚島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.31962823867798,
+        34.164623445272696
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "瓢箪島",
+      "annoCtg": 352,
+      "kana": "ひょうたんじま",
+      "knj": "瓢箪島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.33711624145508,
+        34.372238919749364
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "矢ノ島",
+      "annoCtg": 352,
+      "kana": "やのしま",
+      "knj": "矢ノ島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.34381103515625,
+        34.36472916722603
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "阿伏兎ノ瀬戸",
+      "annoCtg": 345,
+      "kana": "あぶとのせと",
+      "knj": "阿伏兎ノ瀬戸",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.36689949035645,
+        34.36791735194133
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "狐崎",
+      "annoCtg": 343,
+      "kana": "きつねざき",
+      "knj": "狐崎",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.38035345077515,
+        34.3748246692863
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "玉津島",
+      "annoCtg": 352,
+      "kana": "たまつしま",
+      "knj": "玉津島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.37477445602417,
+        34.368112181518214
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "津軽島",
+      "annoCtg": 352,
+      "kana": "つがるしま",
+      "knj": "津軽島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.39037418365479,
+        34.37932297481743
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "皇后島",
+      "annoCtg": 352,
+      "kana": "こうごうしま",
+      "knj": "皇后島",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.39863538742065,
+        34.37687904351904
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鳥ノ口岬",
+      "annoCtg": 343,
+      "kana": "とりのぐちみさき",
+      "knj": "鳥ノ口岬",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.4066390991211,
+        34.37880940097082
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "つつじ島",
+      "annoCtg": 352,
+      "kana": "つつじしま",
+      "knj": "つつじ島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.36342334747314,
+        34.25650703347772
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "備後灘",
+      "annoCtg": 344,
+      "kana": "びんごなだ",
+      "knj": "備後灘",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1632.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.35975408554077,
+        34.175701630663795
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "大崎",
+      "annoCtg": 343,
+      "kana": "おおさき",
+      "knj": "大崎",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.3643674850464,
+        34.16808553440326
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "江ノ島",
+      "annoCtg": 352,
+      "kana": "えのしま",
+      "knj": "江ノ島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1633.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.38123321533203,
+        34.102992275554215
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "燧灘",
+      "annoCtg": 344,
+      "kana": "ひうちなだ",
+      "knj": "燧灘",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3565/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.42494249343872,
+        34.36552622477842
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "鴻ノ石",
+      "annoCtg": 352,
+      "kana": "こうのせき",
+      "knj": "鴻ノ石",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.425714969635,
+        34.352063791064595
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "加治屋島",
+      "annoCtg": 352,
+      "kana": "かじやじま",
+      "knj": "加治屋島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "RC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.435800075531,
+        34.34285140629264
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "走島",
+      "annoCtg": 352,
+      "kana": "はしりじま",
+      "knj": "走島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.46766471862793,
+        34.355553603215725
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "袴島",
+      "annoCtg": 352,
+      "kana": "はかまじま",
+      "knj": "袴島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.50489377975464,
+        34.34945962338297
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "大飛島",
+      "annoCtg": 352,
+      "kana": "おおびしま",
+      "knj": "大飛島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.4633731842041,
+        34.3169981769899
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "宇治島",
+      "annoCtg": 352,
+      "kana": "うじしま",
+      "knj": "宇治島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.50706100463867,
+        34.36547308784414
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "備後灘",
+      "annoCtg": 344,
+      "kana": "びんごなだ",
+      "knj": "備後灘",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1631.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.45504760742188,
+        34.15615404418273
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "円上島",
+      "annoCtg": 352,
+      "kana": "まるがみじま",
+      "knj": "円上島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "CB",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.45245122909546,
+        34.15206996231318
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "球状ノーライト",
+      "annoCtg": 532,
+      "kana": "きゅうじょうのーらいと",
+      "knj": "球状ノーライト",
+      "arrng": 2,
+      "arrngAgl": 270,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.44987630844116,
+        34.10874878823657
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "股島",
+      "annoCtg": 352,
+      "kana": "またじま",
+      "knj": "股島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.4539532661438,
+        34.10450250967985
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "小股島",
+      "annoCtg": 352,
+      "kana": "こまたじま",
+      "knj": "小股島",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1634.pbf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.4636950492859,
+        34.15180360228756
+      ]
+    },
+    "properties": {
+      "GM_Type": "PT",
+      "orgGILvl": "200000",
+      "ftCode": 100,
+      "annoChar": "オゴ岩",
+      "annoCtg": 352,
+      "kana": "おごいわ",
+      "knj": "オゴ岩",
+      "arrng": 1,
+      "arrngAgl": 0,
+      "dspPos": "LC",
+      "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3566/1634.pbf"
+    }
+  }
+]

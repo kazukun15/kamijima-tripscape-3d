@@ -1,0 +1,126 @@
+[
+  {
+    "id": "yuge",
+    "name": "弓削島",
+    "english": "YUGE",
+    "kana": "ゆげしま",
+    "coordinates": [
+      133.20819854736328,
+      34.27060543144759
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf",
+    "summary": "海辺の松林と、島の暮らしをたどる。",
+    "search_terms": [],
+    "official_url": "https://kamijima.info/yugejima/",
+    "zoom": 12.8
+  },
+  {
+    "id": "sashima",
+    "name": "佐島",
+    "english": "SASHIMA",
+    "kana": "さしま",
+    "coordinates": [
+      133.1879425048828,
+      34.24579421813797
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf",
+    "summary": "静かな集落と、サイクリングの島。",
+    "search_terms": [],
+    "official_url": "https://kamijima.info/sashima/",
+    "zoom": 13.2
+  },
+  {
+    "id": "ikina",
+    "name": "生名島",
+    "english": "IKINA",
+    "kana": "いきなじま",
+    "coordinates": [
+      133.1735873222351,
+      34.275641267347325
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3563/1632.pbf",
+    "summary": "巨石や公園から、島の歴史に触れる。",
+    "search_terms": [],
+    "official_url": "https://kamijima.info/ikinajima/",
+    "zoom": 13.2
+  },
+  {
+    "id": "iwagi",
+    "name": "岩城島",
+    "english": "IWAGI",
+    "kana": "いわぎしま",
+    "coordinates": [
+      133.14135789871216,
+      34.26358312861288
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1632.pbf",
+    "summary": "桜と柑橘、海を見渡す山の島。",
+    "search_terms": [],
+    "official_url": "https://kamijima.info/iwagijima/",
+    "zoom": 12.8
+  },
+  {
+    "id": "uoshima",
+    "name": "魚島",
+    "english": "UOSHIMA",
+    "kana": "うおしま",
+    "coordinates": [
+      133.31598043441772,
+      34.17470749393085
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf",
+    "summary": "船で訪ねる、漁と祈りの島。",
+    "search_terms": [],
+    "official_url": "https://kamijima.info/uoshima/",
+    "zoom": 13.2
+  },
+  {
+    "id": "takaikami",
+    "name": "高井神島",
+    "english": "TAKAIKAMI",
+    "kana": "たかいかみじま",
+    "coordinates": [
+      133.2740306854248,
+      34.192617911876425
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1633.pbf",
+    "summary": "民家などに漫画の壁画が描かれる島。壁画の個別地点は未確認です。",
+    "search_terms": [
+      "漫画",
+      "マンガ",
+      "マンガアート"
+    ],
+    "official_url": "https://kamijima.info/takaikamijima/",
+    "zoom": 13.2
+  },
+  {
+    "id": "toyo",
+    "name": "豊島",
+    "english": "TOYOSHIMA",
+    "kana": "とよしま",
+    "coordinates": [
+      133.25772285461426,
+      34.23401564214893
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3564/1632.pbf",
+    "summary": "公開日を確かめて、アートの島へ。",
+    "search_terms": [],
+    "official_url": "https://kamijima.info/toyoshima/",
+    "zoom": 13.2
+  },
+  {
+    "id": "tsuba",
+    "name": "津波島",
+    "english": "TSUBA",
+    "kana": "つばじま",
+    "coordinates": [
+      133.15285921096802,
+      34.22117085902467
+    ],
+    "source_url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3562/1633.pbf",
+    "summary": "予約と渡船で訪れる、無人島の自然。",
+    "search_terms": [],
+    "official_url": "https://www.iyokannet.jp/spot/3608",
+    "zoom": 13.2
+  }
+]

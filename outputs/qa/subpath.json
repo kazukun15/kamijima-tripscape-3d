@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-05T23:14:39.752Z",
+  "result": "PASS",
+  "mount": "/tripscape/",
+  "geojson_count": 18,
+  "asset_errors": 0,
+  "runtime_errors": 0,
+  "not_found_status": 404,
+  "recovery": true
+}
