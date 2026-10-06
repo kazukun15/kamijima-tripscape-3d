@@ -4,6 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import {Navigation,RotateCcw,Plus,Minus,Layers,Mountain} from 'lucide-react';
 import type {Island,Poi} from './model';
 import {publicPoi} from './engine';
+import {installMarkerLabels} from './markerLabels';
 
 export interface ViewRequest {kind:'overview'|'island'|'poi'|'location';id?:string;coordinates?:[number,number];nonce:number;}
 interface Props {pois:Poi[];visible:Poi[];islands:Island[];selected:string|null;view:ViewRequest;mobileSheet:'compact'|'detail'|'deep';onPoi:(id:string)=>void;onIsland:(name:string)=>void;terrain:boolean;onTerrain:(value:boolean)=>void;onStatus:(text:string)=>void;onLocate:()=>void;}
@@ -52,6 +53,7 @@ export default function MapView(props:Props){
       map.current=m;
     }catch{setFallback(true);props.onStatus('WebGLを利用できないため2D地図を表示');return;}
     m.addControl(new maplibregl.ScaleControl({maxWidth:110,unit:'metric'}),'bottom-left');
+    const labels=installMarkerLabels(host.current);m.on('render',labels.schedule);
     m.on('load',()=>{
       m.setTerrain({source:'terrain',exaggeration:1});
       setReady(true);latest.current.onStatus('3D地形 · 標高強調 1.0');
@@ -82,7 +84,7 @@ export default function MapView(props:Props){
       el.dataset.terrainElevation=elevation===null?'unavailable':String(elevation);
     });
     const observer=new ResizeObserver(()=>m.resize());observer.observe(host.current);
-    return ()=>{observer.disconnect();markers.current.forEach(v=>v.remove());markers.current.clear();islandMarkers.current.forEach(v=>v.remove());islandMarkers.current=[];m.remove();map.current=null;};
+    return ()=>{labels.destroy();observer.disconnect();markers.current.forEach(v=>v.remove());markers.current.clear();islandMarkers.current.forEach(v=>v.remove());islandMarkers.current=[];m.remove();map.current=null;};
   },[fallback]);
   useEffect(()=>{
     const m=map.current;if(!m||!ready)return;
@@ -143,17 +145,18 @@ function RasterMap(props:Props){
   const host=useRef<HTMLDivElement>(null),leaf=useRef<import('leaflet').Map|null>(null),group=useRef<import('leaflet').LayerGroup|null>(null),latest=useRef(props);
   const [loaded,setLoaded]=useState(false);latest.current=props;
   useEffect(()=>{
-    let cancelled=false,observer:ResizeObserver;
+    let cancelled=false,observer:ResizeObserver,labels:ReturnType<typeof installMarkerLabels>;
     Promise.all([import('leaflet'),import('leaflet/dist/leaflet.css')]).then(([L])=>{
       if(cancelled||!host.current)return;
       const m=L.map(host.current,{zoomControl:true,minZoom:8,maxZoom:17,maxBounds:[[34.10,133.05],[34.34,133.43]]}).setView([34.247,133.211],11);
       L.tileLayer(localTiles('basemap'),{tileSize:256,minNativeZoom:8,maxNativeZoom:14,bounds:[[34.10,133.05],[34.34,133.43]],attribution}).addTo(m);
       for(const i of latest.current.islands){const el=document.createElement('button');el.className='island-marker';el.textContent=i.name;el.setAttribute('aria-label',`地図から${i.name}を選択`);el.onclick=()=>latest.current.onIsland(i.name);L.marker([i.coordinates[1],i.coordinates[0]],{icon:L.divIcon({html:el,className:'island-leaflet'})}).addTo(m);}
       leaf.current=m;group.current=L.layerGroup().addTo(m);setLoaded(true);
+      labels=installMarkerLabels(host.current);m.on('move zoomend',labels.schedule);
       latest.current.onTerrain(false);latest.current.onStatus('2D地図 · WebGL不要');host.current.setAttribute('data-map-ready','true');
       observer=new ResizeObserver(()=>m.invalidateSize());observer.observe(host.current);
     }).catch(()=>latest.current.onStatus('地図を初期化できません。左の地点一覧から探索できます。'));
-    return()=>{cancelled=true;observer?.disconnect();leaf.current?.remove();leaf.current=null;};
+    return()=>{cancelled=true;labels?.destroy();observer?.disconnect();leaf.current?.remove();leaf.current=null;};
   },[]);
   useEffect(()=>{
     if(!loaded||!group.current)return;
