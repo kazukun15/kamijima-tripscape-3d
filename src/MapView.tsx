@@ -12,6 +12,15 @@ const localTiles=(folder:string)=>new URL(`${base}${folder}/{z}/{x}/{y}.png`,loc
 const bounds:[number,number,number,number]=[133.05,34.10,133.43,34.34];
 const attribution='<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>（DEM・淡色地図を加工）';
 const emptyGeo={type:'FeatureCollection' as const,features:[]};
+function createPoiMarker(p:Poi,selected:boolean,onPoi:(id:string)=>void){
+  const el=document.createElement('button');el.className=`poi-marker ${selected?'selected':''}`;
+  el.type='button';el.title=p.name;el.dataset.poiId=p.id;
+  el.setAttribute('aria-label',`地図で${p.name}を開く`);el.setAttribute('aria-pressed',String(selected));
+  const pin=document.createElement('span');pin.className='marker-pin';pin.setAttribute('aria-hidden','true');
+  pin.innerHTML='<svg viewBox="0 0 34 44" xmlns="http://www.w3.org/2000/svg"><path d="M17 42C14 37 2 26 2 17a15 15 0 0 1 30 0c0 9-12 20-15 25Z" fill="currentColor" stroke="white" stroke-width="2.5" stroke-linejoin="round"/><circle cx="17" cy="17" r="5" fill="white"/></svg>';
+  const label=document.createElement('span');label.className='marker-name';label.textContent=p.name;
+  el.append(pin,label);el.addEventListener('click',e=>{e.stopPropagation();onPoi(p.id);});return el;
+}
 export function createMapStyle():StyleSpecification {
   return {version:8,sources:{
     base:{type:'raster',tiles:[localTiles('basemap')],tileSize:256,minzoom:8,maxzoom:14,bounds,attribution},
@@ -79,12 +88,8 @@ export default function MapView(props:Props){
     const m=map.current;if(!m||!ready)return;
     markers.current.forEach(v=>v.remove());markers.current.clear();
     for(const p of props.visible.filter(publicPoi)){
-      const el=document.createElement('button');el.className=`poi-marker ${p.id===props.selected?'selected':''}`;
-      el.setAttribute('aria-label',`地図で${p.name}を開く`);el.setAttribute('data-poi-id',p.id);
-      const dot=document.createElement('span');dot.textContent=p.categories.includes('食')?'•':p.categories.includes('宿泊')?'⌂':p.categories.includes('アート')?'◇':'•';
-      el.append(dot);const label=document.createElement('span');label.className='marker-name';label.textContent=p.name;el.append(label);
-      el.addEventListener('click',e=>{e.stopPropagation();latest.current.onPoi(p.id);});
-      markers.current.set(p.id,new maplibregl.Marker({element:el,anchor:'center'}).setLngLat([p.coordinates.lng!,p.coordinates.lat!]).addTo(m));
+      const el=createPoiMarker(p,p.id===props.selected,id=>latest.current.onPoi(id));
+      markers.current.set(p.id,new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat([p.coordinates.lng!,p.coordinates.lat!]).addTo(m));
     }
   },[ready,props.visible,props.selected]);
   useEffect(()=>{
@@ -155,8 +160,8 @@ function RasterMap(props:Props){
     import('leaflet').then(L=>{
       group.current?.clearLayers();
       for(const p of props.visible.filter(publicPoi)){
-        const el=document.createElement('button');el.className=`poi-marker ${p.id===props.selected?'selected':''}`;el.textContent='•';el.setAttribute('aria-label',`地図で${p.name}を開く`);el.onclick=()=>latest.current.onPoi(p.id);
-        L.marker([p.coordinates.lat!,p.coordinates.lng!],{icon:L.divIcon({html:el,className:'poi-leaflet',iconSize:[28,28],iconAnchor:[14,14]})}).addTo(group.current!);
+        const el=createPoiMarker(p,p.id===props.selected,id=>latest.current.onPoi(id));
+        L.marker([p.coordinates.lat!,p.coordinates.lng!],{icon:L.divIcon({html:el,className:'poi-leaflet',iconSize:[44,48],iconAnchor:[22,48]}),zIndexOffset:p.id===props.selected?1000:0}).addTo(group.current!);
       }
     });
   },[loaded,props.visible,props.selected]);

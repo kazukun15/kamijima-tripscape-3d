@@ -7,3 +7,10 @@
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .island-suggestions h2{font-size:10px;color:#6c8e80;padding:12px 20px 4px;font-weight:500}.island-suggestions .result-copy>small:last-child{white-space:normal;line-height:1.8;margin-top:7px}.island-suggestions a{display:flex;align-items:center;gap:6px;font-size:10px;padding:3px 20px 13px;color:#5e857c}.island-marker{z-index:2}.poi-marker{z-index:1}.poi-marker.selected{z-index:3}
 .access-card>.coordinate-note{padding:9px 10px;border-left:2px solid #a8beb0;background:#fafcf6;color:#6a8171;line-height:1.8}
+.poi-marker,.poi-marker.selected{width:44px;height:48px;border:0;border-radius:0;background:none;box-shadow:none;padding:0;color:#226f69;overflow:visible}
+.poi-marker.selected{color:#d56c47}
+.marker-pin{position:absolute;bottom:0;left:5px;width:34px;height:44px;pointer-events:none;filter:drop-shadow(0 3px 3px #194b4a66)}
+.marker-pin svg{display:block;width:100%;height:100%}
+.poi-marker.selected .marker-pin{filter:drop-shadow(0 0 4px #fff) drop-shadow(0 3px 4px #994c3266)}
+.poi-marker .marker-name{left:43px;top:5px;font-size:11px;padding:6px 9px;border:1px solid #d7e5df}
+@media(max-width:760px){.poi-marker .marker-name{font-size:10px}}
