@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-13T11:50:00.151Z",
+  "url": "https://kazukun15.github.io/kamijima-tripscape-3d/",
+  "checks": [
+    {
+      "width": 320,
+      "height": 568,
+      "names": 18,
+      "overlaps": 0,
+      "overflow": false,
+      "runtime_errors": 0,
+      "asset_errors": 0
+    },
+    {
+      "width": 393,
+      "height": 851,
+      "names": 18,
+      "overlaps": 0,
+      "overflow": false,
+      "runtime_errors": 0,
+      "asset_errors": 0
+    },
+    {
+      "width": 851,
+      "height": 393,
+      "names": 18,
+      "overlaps": 0,
+      "overflow": false,
+      "runtime_errors": 0,
+      "asset_errors": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "names": 18,
+      "overlaps": 0,
+      "overflow": false,
+      "runtime_errors": 0,
+      "asset_errors": 0
+    },
+    {
+      "renderer": "2d",
+      "zoom": true,
+      "not_found_status": 404,
+      "recovery": true
+    }
+  ],
+  "result": "PASS"
+}

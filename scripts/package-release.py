@@ -12,6 +12,10 @@ for folder in folders: paths.extend(p for p in (ROOT/folder).rglob('*') if p.is_
 paths.extend(ROOT/'research'/p for p in research)
 paths.extend(p for p in (ROOT/'outputs/qa').rglob('*') if p.is_file())
 paths.append(ROOT/'outputs/QA_REPORT.md')
+publication=ROOT/'outputs/PUBLICATION_REPORT.json'
+if publication.exists():
+    assert json.loads(publication.read_text(encoding='utf8'))['result']=='PASS'
+    paths.append(publication)
 assets=[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted((ROOT/'dist').rglob('*')) if p.is_file()]
 manifest={'version':'0.1.0','verified_pois':18,'pending_candidates':133,'islands':8,'dist_files':len(assets),'dist_bytes':sum(p['bytes'] for p in assets),'assets':assets,'excluded':['node_modules','work','research/raw','copied full source-page extracts','credentials','remote attachments']}
 manifest_path=ROOT/'outputs/RELEASE_MANIFEST.json'
