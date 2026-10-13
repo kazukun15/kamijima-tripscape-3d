@@ -10,7 +10,7 @@ async function layout(page:Page){return page.evaluate(()=>{
 for(const renderer of ['3d','2d'])test(`place names have space on initial view, after zoom and reset (${renderer})`,async({page})=>{
   await page.goto(renderer==='2d'?'/?renderer=2d':'/');await expect(page.locator('[data-map-ready="true"]')).toBeVisible();
   await expect.poll(()=>layout(page)).toEqual({count:18,overlaps:0});
-  if(renderer==='2d')await page.locator('.leaflet-control-zoom-in').click();else await page.getByRole('button',{name:'拡大',exact:true}).click();
+  await page.getByRole('button',{name:'拡大',exact:true}).click();
   // Both renderers animate camera changes. Check the settled screen geometry, not only DOM presence.
   await page.waitForTimeout(800);await expect.poll(async()=>{const r=await layout(page);return r.count>0&&r.overlaps===0;}).toBe(true);
   await page.getByRole('button',{name:'上島町の地図を全域表示',exact:true}).click();

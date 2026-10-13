@@ -3,6 +3,7 @@ const gap=7;
 const overlaps=(a:Rect,b:Rect)=>a.left<b.right+gap&&a.right>b.left-gap&&a.top<b.bottom+gap&&a.bottom>b.top-gap;
 export function installMarkerLabels(host:HTMLElement){
   let frame=0,lastLayout='';
+  const previous=new Map<string,{left:number;top:number}>();
   const parent=host.querySelector<HTMLElement>('.leaflet-marker-pane')||host;
   const overlay=document.createElementNS('http://www.w3.org/2000/svg','svg');overlay.classList.add('marker-leaders');overlay.setAttribute('aria-hidden','true');parent.append(overlay);
   const layout=()=>{
@@ -11,29 +12,53 @@ export function installMarkerLabels(host:HTMLElement){
     const lines:string[]=[];
     const inside=(r:Rect)=>r.left>=bounds.left+gap&&r.right<=bounds.right-gap&&r.top>=bounds.top+gap&&r.bottom<=bounds.bottom-gap;
     const obstacles:Rect[]=[];
-    for(const el of document.querySelectorAll<HTMLElement>('.explorer,.detail-panel,.map-toolbar,.mobile-search,.map-actions,.pitch-control,.journey-strip,.welcome-card,.mobile-browse,.map-breadcrumb,.map-status,.map-instruction,.leaflet-control,.maplibregl-ctrl,.island-marker')){
+    for(const el of (host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.journey-strip,.welcome-card,.mobile-browse,.mobile-explore-toggle,.map-breadcrumb,.map-status,.map-instruction,.leaflet-control,.maplibregl-ctrl,.island-marker')){
       const r=el.getBoundingClientRect();if(r.width&&r.height&&getComputedStyle(el).visibility!=='hidden')obstacles.push(r);
     }
-    const markers=Array.from(host.querySelectorAll<HTMLButtonElement>('.poi-marker')).map(el=>({el,rect:el.getBoundingClientRect(),label:el.querySelector<HTMLElement>('.marker-name')!}));
+    const markers=Array.from(host.querySelectorAll<HTMLButtonElement>('.poi-marker')).map(el=>{
+      const label=el.querySelector<HTMLElement>('.marker-name')!,size=label.getBoundingClientRect();
+      return {el,rect:el.getBoundingClientRect(),label,width:size.width,height:size.height};
+    });
     const coordinates=(r:Rect)=>[r.left,r.top,r.right,r.bottom].map(v=>Math.round(v*10));
-    const signature=JSON.stringify([coordinates(bounds),obstacles.map(coordinates),markers.map(({el,rect,label})=>[el.dataset.poiId,el.className,coordinates(rect),label.offsetWidth,label.offsetHeight])]);
+    const signature=JSON.stringify([coordinates(bounds),obstacles.map(coordinates),markers.map(({el,rect,width,height})=>[el.dataset.poiId,el.className,coordinates(rect),width,height])]);
     if(signature===lastLayout)return;lastLayout=signature;
     const visible=markers.filter(({rect})=>rect.right>bounds.left&&rect.left<bounds.right&&rect.bottom>bounds.top&&rect.top<bounds.bottom);
-    for(const {el,rect,label} of markers){label.style.visibility='hidden';el.dataset.labelPlaced='false';if(visible.some(m=>m.el===el))obstacles.push({left:rect.left+5,right:rect.right-5,top:rect.top+4,bottom:rect.bottom});}
-    visible.sort((a,b)=>Number(b.el.classList.contains('selected'))-Number(a.el.classList.contains('selected'))||a.rect.top-b.rect.top||a.rect.left-b.rect.left);
-    for(const {el,rect,label} of visible){
-      const width=label.offsetWidth,height=label.offsetHeight,cx=rect.left+22,cy=rect.top+21;
+    const visibleSet=new Set(visible.map(m=>m.el));
+    for(const {el,rect,label} of markers){label.style.visibility='hidden';el.dataset.labelPlaced='false';if(visibleSet.has(el))obstacles.push({left:rect.left+5,right:rect.right-5,top:rect.top+4,bottom:rect.bottom});}
+    // A stable order and each label's previous offset prevent all names from
+    // jumping to different slots while the user pans or turns the map.
+    visible.sort((a,b)=>Number(b.el.classList.contains('selected'))-Number(a.el.classList.contains('selected'))||b.width*b.height-a.width*a.height);
+    for(const {el,rect,label,width,height} of visible){
+      const id=el.dataset.poiId!,cx=rect.left+22,cy=rect.top+21;
+      const valid=(r:Rect)=>inside(r)&&!obstacles.some(o=>overlaps(r,o));
+      const old=previous.get(id);
+      let spot:Rect|undefined=old?{left:rect.left+old.left,top:rect.top+old.top,right:rect.left+old.left+width,bottom:rect.top+old.top+height}:undefined;
+      if(spot&&!valid(spot))spot=undefined;
       const candidates:Rect[]=[];
       const add=(left:number,top:number)=>candidates.push({left,top,right:left+width,bottom:top+height});
       add(rect.right+gap,cy-height/2);add(rect.left-gap-width,cy-height/2);add(cx-width/2,rect.top-gap-height);add(cx-width/2,rect.bottom+gap);
-      // Search the remaining map area by distance. Names stay intact and never cover another name or pin.
-      for(let y=bounds.top+gap;y+height<=bounds.bottom-gap;y+=height+gap+1){
-        for(let x=bounds.left+gap;x+width<=bounds.right-gap;x+=16)add(x,y);
+      if(!spot){
+        let best=Infinity;
+        const consider=(r:Rect)=>{const distance=((r.left+r.right)/2-cx)**2+((r.top+r.bottom)/2-cy)**2;if(distance<best&&valid(r)){spot=r;best=distance;}};
+        candidates.forEach(consider);
+        // Grid rows alone miss narrow openings on small screens. Align with
+        // the exact edges of the controls, pins and names already placed.
+        const xs=new Set([bounds.left+gap,bounds.right-gap-width,cx-width/2]);
+        const ys=new Set([bounds.top+gap,bounds.bottom-gap-height,cy-height/2]);
+        for(const obstacle of obstacles){xs.add(obstacle.right+gap);xs.add(obstacle.left-width-gap);ys.add(obstacle.bottom+gap);ys.add(obstacle.top-height-gap);}
+        for(const y of ys){
+          if(y<bounds.top+gap||y+height>bounds.bottom-gap)continue;
+          for(const x of xs){if(x>=bounds.left+gap&&x+width<=bounds.right-gap)consider({left:x,top:y,right:x+width,bottom:y+height});}
+        }
+        // Search for the nearest free slot without allocating and sorting the
+        // full viewport grid on every animation frame.
+        for(let y=bounds.top+gap;y+height<=bounds.bottom-gap;y+=height+gap+1){
+          for(let x=bounds.left+gap;x+width<=bounds.right-gap;x+=16)consider({left:x,top:y,right:x+width,bottom:y+height});
+        }
       }
-      candidates.sort((a,b)=>Math.hypot((a.left+a.right)/2-cx,(a.top+a.bottom)/2-cy)-Math.hypot((b.left+b.right)/2-cx,(b.top+b.bottom)/2-cy));
-      const spot=candidates.find(r=>inside(r)&&!obstacles.some(o=>overlaps(r,o)));
       if(!spot)continue;
       label.style.left=`${spot.left-rect.left}px`;label.style.top=`${spot.top-rect.top}px`;label.style.visibility='visible';el.dataset.labelPlaced='true';obstacles.push(spot);
+      previous.set(id,{left:spot.left-rect.left,top:spot.top-rect.top});
       const tx=Math.max(spot.left,Math.min(cx,spot.right)),ty=Math.max(spot.top,Math.min(cy,spot.bottom));
       lines.push(`<line x1="${cx-bounds.left}" y1="${cy-bounds.top}" x2="${tx-bounds.left}" y2="${ty-bounds.top}"/>`);
     }
@@ -41,6 +66,7 @@ export function installMarkerLabels(host:HTMLElement){
   };
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(layout);};
   const observer=new MutationObserver(records=>{if(records.some(r=>!(r.target instanceof Element&&r.target.closest('.marker-leaders')))){lastLayout='';schedule();}});observer.observe(host.closest('main')||host,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
-  const resize=new ResizeObserver(schedule);resize.observe(host);window.addEventListener('resize',schedule);schedule();
-  return {schedule,destroy(){cancelAnimationFrame(frame);observer.disconnect();resize.disconnect();window.removeEventListener('resize',schedule);overlay.remove();}};
+  const resize=new ResizeObserver(schedule);resize.observe(host);window.addEventListener('resize',schedule);
+  document.fonts?.addEventListener('loadingdone',schedule);schedule();
+  return {schedule,destroy(){cancelAnimationFrame(frame);observer.disconnect();resize.disconnect();window.removeEventListener('resize',schedule);document.fonts?.removeEventListener('loadingdone',schedule);overlay.remove();previous.clear();}};
 }

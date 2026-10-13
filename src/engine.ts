@@ -1,5 +1,14 @@
 import distance from '@turf/distance';
-import type {Context,Poi,Section,Island} from './model';
+import type {Context,Poi,Section,Island,MapState,Topic,Season,Mode} from './model';
+export function readMapState(hash:string,pois:Poi[],islands:Island[],topics:Topic[],categories:string[],season:Season):MapState{
+  const params=new URLSearchParams(hash.replace(/^#/,''));
+  const poi=pois.some(p=>p.id===params.get('poi'))?params.get('poi'):null;
+  return {poi,island:islands.some(i=>i.name===params.get('island'))?params.get('island')!:'all',q:params.get('q')||'',category:categories.includes(params.get('category')||'')?params.get('category')!:'all',terrain:params.get('terrain')!=='0',deep:!!poi&&params.get('deep')==='1',topic:topics.some(t=>t.id===params.get('topic'))?params.get('topic'):null,season:(['春','夏','秋','冬'].includes(params.get('season')||'')?params.get('season'):season) as Season,mode:(['walking','cycling','ferry'].includes(params.get('mode')||'')?params.get('mode'):'walking') as Mode};
+}
+export function mapStateHash(state:MapState){
+  const params=new URLSearchParams();if(state.poi)params.set('poi',state.poi);if(state.island!=='all')params.set('island',state.island);if(state.q)params.set('q',state.q);if(state.category!=='all')params.set('category',state.category);if(!state.terrain)params.set('terrain','0');if(state.poi&&state.deep)params.set('deep','1');if(state.topic)params.set('topic',state.topic);params.set('season',state.season);if(state.mode!=='walking')params.set('mode',state.mode);
+  return '#'+params;
+}
 export const publicPoi=(p:Poi)=>['official_verified','multi_source_verified','coordinate_verified'].includes(p.verification_status)&&Number.isFinite(p.coordinates.lat)&&Number.isFinite(p.coordinates.lng)&&p.coordinates.lat!==null&&p.coordinates.lng!==null&&p.source_urls.length>0&&p.coordinate_source_urls.length>0;
 export function normalize(text:string){return text.normalize('NFKC').toLowerCase().replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60)).replace(/\s+/g,' ').trim();}
 export function matchesIsland(i:Pick<Island,'name'|'kana'|'english'|'summary'|'search_terms'>,q:string){const text=normalize([i.name,i.kana,i.english,i.summary,...(i.search_terms||[])].join(' '));return normalize(q).split(' ').filter(Boolean).every(t=>text.includes(t));}

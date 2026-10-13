@@ -16,3 +16,4 @@ export interface Poi {
 export interface Island {id:string;name:string;kana:string;english:string;coordinates:[number,number];source_url:string;summary:string;official_url:string;zoom:number;search_terms?:string[];}
 export interface Topic {id:string;name:string;kind:string;summary:string;source_urls:string[];related_topics:string[];}
 export interface Context {island:string;season:Season;mode:Mode;hour:number;history:string[];categories:string[];}
+export interface MapState {poi:string|null;island:string;q:string;category:string;terrain:boolean;deep:boolean;topic:string|null;season:Season;mode:Mode;}
