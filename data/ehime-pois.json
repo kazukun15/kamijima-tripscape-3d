@@ -1,0 +1,609 @@
+[
+  {
+    "id": "382019-001",
+    "name": "子規記念博物館",
+    "name_kana": "シキキネンハクブツカン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.84989,
+      "lng": 132.786365
+    },
+    "address": "愛媛県松山市道後公園1－30",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.84989,
+    "lng": 132.786365
+  },
+  {
+    "id": "382019-002",
+    "name": "坂の上の雲ミュージアム",
+    "name_kana": "サカノウエノクモミュージアム",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.841714,
+      "lng": 132.769251
+    },
+    "address": "愛媛県松山市一番町三丁目20",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.841714,
+    "lng": 132.769251
+  },
+  {
+    "id": "382019-003",
+    "name": "埋蔵文化財センター（松山市考古館）",
+    "name_kana": "マイゾウブンカザイセンター(マツヤマシコウコカン)",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.839845,
+      "lng": 132.735303
+    },
+    "address": "愛媛県松山市南斎院町乙67－6",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.839845,
+    "lng": 132.735303
+  },
+  {
+    "id": "382019-004",
+    "name": "二之丸史跡庭園",
+    "name_kana": "ニノマルシセキテイエン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.84315,
+      "lng": 132.76439
+    },
+    "address": "愛媛県松山市丸之内5",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.84315,
+    "lng": 132.76439
+  },
+  {
+    "id": "382019-005",
+    "name": "一草庵",
+    "name_kana": "イッソウアン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.8539483,
+      "lng": 132.772058
+    },
+    "address": "愛媛県松山市御幸一丁目435－1",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.8539483,
+    "lng": 132.772058
+  },
+  {
+    "id": "382019-006",
+    "name": "庚申庵",
+    "name_kana": "コウシンアン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.8436362,
+      "lng": 132.754706
+    },
+    "address": "愛媛県松山市味酒町二丁目6－7",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.8436362,
+    "lng": 132.754706
+  },
+  {
+    "id": "382019-007",
+    "name": "釣島灯台旧官舎・旧倉庫",
+    "name_kana": "ツルシマトウダイキュウカンシャ・キュウソウコ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.8929416,
+      "lng": 132.6364404
+    },
+    "address": "愛媛県松山市泊町1433－2",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.8929416,
+    "lng": 132.6364404
+  },
+  {
+    "id": "382019-008",
+    "name": "葉佐池古墳公園",
+    "name_kana": "ハザイケコフンコウエン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.8143718,
+      "lng": 132.8448466
+    },
+    "address": "愛媛県松山市北梅本町甲2455",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.8143718,
+    "lng": 132.8448466
+  },
+  {
+    "id": "382019-009",
+    "name": "道の駅　風早の郷　風和里",
+    "name_kana": "ミチノエキカザハヤノサトフワリ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.996403,
+      "lng": 132.772392
+    },
+    "address": "愛媛県松山市大浦119",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.996403,
+    "lng": 132.772392
+  },
+  {
+    "id": "382019-010",
+    "name": "ほしふるテラス姫ヶ浜",
+    "name_kana": "ホシフルテラスヒメガハマ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.956686,
+      "lng": 132.628149
+    },
+    "address": "愛媛県松山市長師68－1",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.956686,
+    "lng": 132.628149
+  },
+  {
+    "id": "382019-011",
+    "name": "北条鹿島公園博物展示館",
+    "name_kana": "ホウジョウカシマコウエンハクブツテンジカン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.9740686,
+      "lng": 132.7636357
+    },
+    "address": "愛媛県松山市北条辻󠄀1596－3",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.9740686,
+    "lng": 132.7636357
+  },
+  {
+    "id": "382019-012",
+    "name": "北条鹿島公園渡船待合所",
+    "name_kana": "ホウジョウカシマコウエントセンマチアイショ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.974833,
+      "lng": 132.769787
+    },
+    "address": "愛媛県松山市北条辻󠄀1605",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.974833,
+    "lng": 132.769787
+  },
+  {
+    "id": "382019-013",
+    "name": "松山城",
+    "name_kana": "マツヤマジョウ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.844227,
+      "lng": 132.766733
+    },
+    "address": "愛媛県松山市丸之内1ほか",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.844227,
+    "lng": 132.766733
+  },
+  {
+    "id": "382019-014",
+    "name": "松山城山索道（ロープウェイ・リフト）",
+    "name_kana": "マツヤマシロヤマサクドウ（ロープウェイ・リフト）",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.84491,
+      "lng": 132.77218
+    },
+    "address": "愛媛県松山市大街道三丁目2-46ほか",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.84491,
+    "lng": 132.77218
+  },
+  {
+    "id": "382019-015",
+    "name": "道後温泉本館",
+    "name_kana": "ドウゴオンセンホンカン",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.852107,
+      "lng": 132.786409
+    },
+    "address": "愛媛県松山市道後湯之町5－6",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.852107,
+    "lng": 132.786409
+  },
+  {
+    "id": "382019-016",
+    "name": "椿の湯",
+    "name_kana": "ツバキノユ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.852435,
+      "lng": 132.785072
+    },
+    "address": "愛媛県松山市道後湯之町19－22",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.852435,
+    "lng": 132.785072
+  },
+  {
+    "id": "382019-017",
+    "name": "道後温泉別館 飛鳥乃湯泉",
+    "name_kana": "ドウゴオンセンベッカンアスカノユ",
+    "municipality": "松山市",
+    "coordinates": {
+      "lat": 33.852435,
+      "lng": 132.785072
+    },
+    "address": "愛媛県松山市道後湯之町19－22",
+    "source_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+    "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2025-04-01",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.852435,
+    "lng": 132.785072
+  },
+  {
+    "id": "383864-001",
+    "name": "久万高原天体観測館",
+    "name_kana": "クマコウゲンテンタイカンソクカン",
+    "municipality": "久万高原町",
+    "coordinates": {
+      "lat": 33.676501,
+      "lng": 132.939545
+    },
+    "address": "愛媛県上浮穴郡久万高原町下畑野川乙488番",
+    "source_url": "https://www.pref.ehime.jp/opendata-catalog/dataset/3143.html",
+    "source_data_url": "https://data.bodik.jp/dataset/4aecdd19-bd08-43da-8a5c-d390fc80f717/resource/0671771d-0220-4d72-a78c-de3b55557c0d/download/383864_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2024-04-10",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.676501,
+    "lng": 132.939545
+  },
+  {
+    "id": "383864-002",
+    "name": "面河山岳博物館",
+    "name_kana": "オモゴサンガクハクブツカン",
+    "municipality": "久万高原町",
+    "coordinates": {
+      "lat": 33.715121,
+      "lng": 133.093273
+    },
+    "address": "愛媛県上浮穴郡久万高原町若山650番地1",
+    "source_url": "https://www.pref.ehime.jp/opendata-catalog/dataset/3143.html",
+    "source_data_url": "https://data.bodik.jp/dataset/4aecdd19-bd08-43da-8a5c-d390fc80f717/resource/0671771d-0220-4d72-a78c-de3b55557c0d/download/383864_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2024-04-10",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.715121,
+    "lng": 133.093273
+  },
+  {
+    "id": "383864-003",
+    "name": "町立久万美術館",
+    "name_kana": "チョウリツクマビジュツカン",
+    "municipality": "久万高原町",
+    "coordinates": {
+      "lat": 33.662152,
+      "lng": 132.906838
+    },
+    "address": "愛媛県上浮穴郡久万高原菅生2番耕地1442-7",
+    "source_url": "https://www.pref.ehime.jp/opendata-catalog/dataset/3143.html",
+    "source_data_url": "https://data.bodik.jp/dataset/4aecdd19-bd08-43da-8a5c-d390fc80f717/resource/0671771d-0220-4d72-a78c-de3b55557c0d/download/383864_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2024-04-10",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.662152,
+    "lng": 132.906838
+  },
+  {
+    "id": "383864-004",
+    "name": "上黒岩遺跡考古館",
+    "name_kana": "カミクロイワイセキコウコカン",
+    "municipality": "久万高原町",
+    "coordinates": {
+      "lat": 33.617956,
+      "lng": 132.96052
+    },
+    "address": "愛媛県上浮穴郡久万高原上黒岩1092番地",
+    "source_url": "https://www.pref.ehime.jp/opendata-catalog/dataset/3143.html",
+    "source_data_url": "https://data.bodik.jp/dataset/4aecdd19-bd08-43da-8a5c-d390fc80f717/resource/0671771d-0220-4d72-a78c-de3b55557c0d/download/383864_tourism.csv",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_updated_at": "2024-04-10",
+    "checked_at": "2026-11-15",
+    "location_scope": "自治体公開データの記載地点。入口や施設内の位置は未確認です。",
+    "lat": 33.617956,
+    "lng": 132.96052
+  },
+  {
+    "id": "iyokannet-663",
+    "name": "宇和島城",
+    "municipality": "宇和島市",
+    "lat": 33.219161171710624,
+    "lng": 132.5650316476822,
+    "source_url": "https://www.iyokannet.jp/spot/663",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-2495",
+    "name": "大山祇神社",
+    "municipality": "今治市",
+    "lat": 34.247900529196,
+    "lng": 133.00579637289047,
+    "source_url": "https://www.iyokannet.jp/spot/2495",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-95",
+    "name": "別子銅山記念館",
+    "municipality": "新居浜市",
+    "lat": 33.9231632,
+    "lng": 133.309681,
+    "source_url": "https://www.iyokannet.jp/spot/95",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-4379",
+    "name": "【西条市】石鎚神社 成就社",
+    "municipality": "西条市",
+    "lat": 33.7902263,
+    "lng": 133.1285816,
+    "source_url": "https://www.iyokannet.jp/spot/4379",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-505",
+    "name": "大洲城（城山公園）",
+    "municipality": "大洲市",
+    "lat": 33.50954176309686,
+    "lng": 132.54112914204597,
+    "source_url": "https://www.iyokannet.jp/spot/505",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-351",
+    "name": "五色姫海浜公園",
+    "municipality": "伊予市",
+    "lat": 33.75592257708678,
+    "lng": 132.69632577896118,
+    "source_url": "https://www.iyokannet.jp/spot/351",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-2203",
+    "name": "三島公園",
+    "municipality": "四国中央市",
+    "lat": 33.97140980840466,
+    "lng": 133.55958938598633,
+    "source_url": "https://www.iyokannet.jp/spot/2203",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-567",
+    "name": "開明学校",
+    "municipality": "西予市",
+    "lat": 33.3642532,
+    "lng": 132.5136089,
+    "source_url": "https://www.iyokannet.jp/spot/567",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-401",
+    "name": "坊っちゃん劇場",
+    "municipality": "東温市",
+    "lat": 33.7903741,
+    "lng": 132.880726,
+    "source_url": "https://www.iyokannet.jp/spot/401",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-455",
+    "name": "松前公園",
+    "municipality": "松前町",
+    "lat": 33.78846578711133,
+    "lng": 132.71350264549255,
+    "source_url": "https://www.iyokannet.jp/spot/455",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-4382",
+    "name": "愛媛県立とべ動物園",
+    "municipality": "砥部町",
+    "lat": 33.76287996101986,
+    "lng": 132.79224157333374,
+    "source_url": "https://www.iyokannet.jp/spot/4382",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-4525",
+    "name": "内子町ビジターセンター",
+    "municipality": "内子町",
+    "lat": 33.5517660475145,
+    "lng": 132.65169817954302,
+    "source_url": "https://www.iyokannet.jp/spot/4525",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-634",
+    "name": "佐田岬灯台",
+    "municipality": "伊方町",
+    "lat": 33.34337733922461,
+    "lng": 132.01558649539948,
+    "source_url": "https://www.iyokannet.jp/spot/634",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-699",
+    "name": "道の駅　虹の森公園まつの「四万十川学習センターおさかな館」",
+    "municipality": "松野町",
+    "lat": 33.2294974,
+    "lng": 132.7096431,
+    "source_url": "https://www.iyokannet.jp/spot/699",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-717",
+    "name": "道の駅　広見森の三角ぼうし",
+    "municipality": "鬼北町",
+    "lat": 33.2540299,
+    "lng": 132.6871617,
+    "source_url": "https://www.iyokannet.jp/spot/717",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-725",
+    "name": "高茂岬",
+    "municipality": "愛南町",
+    "lat": 32.9073883484654,
+    "lng": 132.4726939201355,
+    "source_url": "https://www.iyokannet.jp/spot/725",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  },
+  {
+    "id": "iyokannet-4517",
+    "name": "道の駅　みなとオアシス　八幡浜みなっと「みなと交流館」",
+    "municipality": "八幡浜市",
+    "lat": 33.45847283198407,
+    "lng": 132.41855084896088,
+    "source_url": "https://www.iyokannet.jp/spot/4517",
+    "license": "いよ観ネット掲載地点（CC BY対象外）",
+    "checked_at": "2026-11-15",
+    "location_scope": "いよ観ネットに掲載された代表地点です。入口の位置を示すとは限りません。"
+  }
+]

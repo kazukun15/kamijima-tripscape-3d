@@ -1,17 +1,21 @@
 import {test,expect,type Page} from '@playwright/test';
+import {readFileSync} from 'node:fs';
+const countyData=JSON.parse(readFileSync('data/ehime-pois.json','utf8')) as unknown[];
+const totalPlaces=18+countyData.length;
 async function ready(page:Page,url='/'){await page.goto(url);await expect(page.locator('[data-map-ready="true"]')).toBeVisible();}
-async function browse(page:Page){if(test.info().project.name==='mobile')await page.getByRole('button',{name:'検索とフィルターを開く'}).click();}
+async function browse(page:Page){if(await page.locator('.explorer').isVisible())return;if(await page.locator('.landscape-dock').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'探す',exact:true}).click();else await page.getByRole('button',{name:'検索とフィルターを開く',exact:true}).click();}
+async function mapSettings(page:Page){if(await page.locator('.landscape-dock').isVisible()&&!await page.locator('.map-toolbar').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'地図設定',exact:true}).click();}
 async function select(page:Page,name:string){await browse(page);await page.locator('.results').getByRole('button').filter({hasText:name}).first().click();await expect(page.getByRole('region',{name:'観光スポットの詳細'}).getByRole('heading',{name,exact:true})).toBeVisible();}
 test('real 3D terrain, eight islands, camera, and explicit 2D',async({page})=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   await ready(page);const host=page.locator('.map-host');
   await expect(page.locator('[data-renderer="maplibre"]')).toBeVisible();
   await expect(host).toHaveAttribute('data-terrain-active','true');
-  await expect.poll(async()=>Number(await host.getAttribute('data-terrain-elevation'))).toBeGreaterThan(20);
-  await expect(page.getByRole('button',{name:/^地図から.*を選択$/})).toHaveCount(8);
-  for(const marker of await page.getByRole('button',{name:/^地図から.*を選択$/}).all())await expect(marker).toBeInViewport();
-  await expect(page.locator('.poi-marker')).toHaveCount(18);
-  await page.screenshot({path:`outputs/qa/${test.info().project.name}-overview.png`});
+  await expect.poll(async()=>{const b=(await host.getAttribute('data-map-bounds'))?.split(',').map(Number);return !!b&&b[0]<=131.95&&b[1]<=32.85&&b[2]>=133.95&&b[3]>=34.35;}).toBe(true);
+  await expect(page.getByRole('button',{name:'上島町の観光地点 18件を拡大'})).toBeVisible();
+  await browse(page);await expect(page.locator('.results .result-item')).toHaveCount(totalPlaces);await page.getByRole('button',{name:'検索パネルを閉じる'}).click();
+  await page.screenshot({path:`work/ehime-qa/${test.info().project.name}-overview.png`});
+  await select(page,'積善山');await expect.poll(async()=>Number(await host.getAttribute('data-terrain-elevation'))).toBeGreaterThan(20);await mapSettings(page);
   await page.getByRole('slider',{name:'地図の傾斜'}).fill('75');
   await expect(host).toHaveAttribute('data-map-pitch','75');
   await page.getByRole('button',{name:'北を上に戻す'}).click();await expect(host).toHaveAttribute('data-map-bearing','0');
@@ -22,26 +26,27 @@ test('real 3D terrain, eight islands, camera, and explicit 2D',async({page})=>{
 test('island, category, Japanese search and empty result recovery',async({page})=>{
   await ready(page);await browse(page);await page.locator('.island-grid').getByRole('button',{name:/^魚島/}).click();
   await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('亀居八幡神社');
-  await browse(page);await page.locator('.island-grid').getByRole('button',{name:'すべての島',exact:true}).click();await browse(page);
+  await browse(page);await page.locator('.island-grid').getByRole('button',{name:'すべての地域',exact:true}).click();await browse(page);
   await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('レモン');await expect(page.locator('.results')).toContainText('岩城観光センター');
   await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('この場所は存在しませんxyz');await expect(page.getByText('条件に合う場所はありません')).toBeVisible();await expect(page.locator('.poi-marker')).toHaveCount(0);
-  await page.getByRole('button',{name:'条件をリセット',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(18);
+  await page.getByRole('button',{name:'条件をリセット',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(totalPlaces);
   await browse(page);await page.locator('.category-grid').getByRole('button',{name:'アート',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('14枚のガラス');
   await page.getByRole('combobox',{name:'すべての観光カテゴリ'}).selectOption('キャンプ');await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('津波島');
 });
-test('all eight islands can be selected directly on the map',async({page})=>{
+test('all eight islands can be selected through the explorer and on the map',async({page})=>{
   test.setTimeout(120000);await ready(page);
   const counts:Record<string,number>={'弓削島':8,'佐島':1,'生名島':2,'岩城島':3,'魚島':1,'高井神島':1,'豊島':1,'津波島':1};
   for(const [name,count] of Object.entries(counts)){
-    await page.getByRole('button',{name:'上島町の地図を全域表示',exact:true}).click();
+    await browse(page);await page.locator('.island-grid').getByRole('button',{name:new RegExp('^'+name)}).click();
+    await expect.poll(()=>new URLSearchParams(new URL(page.url()).hash.slice(1)).get('island')).toBe(name);
     await page.getByRole('button',{name:`地図から${name}を選択`,exact:true}).click();
-    await expect(page.locator('.map-breadcrumb>b')).toHaveText(name);await expect(page.locator('.results .result-item')).toHaveCount(count);
+    await browse(page);await expect(page.locator('.results .result-item')).toHaveCount(count);
   }
 });
 test('manga search finds the sourced island, keeps unverified murals off the map',async({page})=>{
   await ready(page);await browse(page);await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('漫画');
   const results=page.getByRole('region',{name:'検索に関連する島'});await expect(results).toContainText('高井神島');await expect(results).toContainText('壁画の個別地点は未確認');await expect(results.getByRole('link')).toHaveAttribute('href','https://kamijima.info/takaikamijima/');await expect(page.locator('.poi-marker')).toHaveCount(0);
-  await results.getByRole('button').click();await expect(page.locator('.map-breadcrumb>b')).toHaveText('高井神島');await expect(page.locator('.poi-marker')).toHaveCount(1);
+  await results.getByRole('button').click();await expect.poll(()=>new URLSearchParams(new URL(page.url()).hash.slice(1)).get('island')).toBe('高井神島');await expect(page.locator('.poi-marker:not(.county-marker)')).toHaveCount(1);
 });
 test('details, Deep Dive, sourced themes, access and bookmarks persist',async({page})=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await ready(page);await select(page,'岩城郷土館');
@@ -51,7 +56,7 @@ test('details, Deep Dive, sourced themes, access and bookmarks persist',async({p
   await expect(panel.locator('.deep-section a').first()).toHaveAttribute('href',/^https:\/\/kamijima.info\//);
   await expect(panel.locator('.sources')).toContainText('2026-10-05');await expect(panel.locator('.sources')).toContainText('位置の出典');
   await expect(panel.getByRole('link',{name:'公式の航路・アクセス'})).toHaveAttribute('href','https://kamijima.info/accessmap/');
-  await page.screenshot({path:`outputs/qa/${test.info().project.name}-deep.png`});
+  await page.screenshot({path:`work/ehime-qa/${test.info().project.name}-deep.png`});
   await page.reload();await expect(panel.getByRole('button',{name:'岩城郷土館をしおりから削除',exact:true})).toBeVisible();await expect(panel.locator('.deep-section')).toHaveCount(3);
   await panel.locator('.graph-branches').getByRole('button',{name:'文学',exact:true}).click();await browse(page);await expect(page.locator('.topic-banner')).toContainText('文学');await expect(page.locator('.results')).toContainText('岩城郷土館');
   expect(errors).toEqual([]);
@@ -68,14 +73,14 @@ test('shared travel context and theme restore without inventing ferry routes',as
 });
 test('WebGL unavailable automatically loads usable raster map',async({page})=>{
   await page.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(this:HTMLCanvasElement,type:string,...args:unknown[]){if(type.startsWith('webgl'))return null;return original.apply(this,[type,...args] as never);} as typeof original;});
-  await ready(page);await expect(page.locator('[data-renderer="leaflet"]')).toBeVisible();await expect(page.locator('.poi-marker')).toHaveCount(18);await expect(page.getByRole('button',{name:'2D 地図',exact:true})).toBeDisabled();await select(page,'三秀園');await expect(page.locator('.detail-heading')).toContainText('三秀園');
-  await page.screenshot({path:`outputs/qa/${test.info().project.name}-fallback.png`});
+  await ready(page);await expect(page.locator('[data-renderer="leaflet"]')).toBeVisible();await expect(page.getByRole('button',{name:'上島町の観光地点 18件を拡大'})).toBeVisible();await mapSettings(page);await expect(page.getByRole('button',{name:'2D 地図',exact:true})).toBeDisabled();await select(page,'三秀園');await expect(page.locator('.detail-heading')).toContainText('三秀園');
+  await page.screenshot({path:`work/ehime-qa/${test.info().project.name}-fallback.png`});
 });
 test('DEM failure retains the map and switches to 2D',async({page})=>{
-  await page.route('**/terrain/**',route=>route.abort());await ready(page);await expect(page.locator('.map-host')).toHaveAttribute('data-terrain-active','false');await expect(page.getByRole('button',{name:'2D 地図',exact:true})).toBeDisabled();await expect(page.locator('.map-status')).toContainText('標高を読み込めないため2D表示');await expect(page.locator('.poi-marker')).toHaveCount(18);
+  await page.route('**/terrain/**',route=>route.abort());await page.route('**/xyz/dem_png/**',route=>route.abort());await ready(page);await expect(page.locator('.map-host')).toHaveAttribute('data-terrain-active','false');await mapSettings(page);await expect(page.getByRole('button',{name:'2D 地図',exact:true})).toBeDisabled();await expect(page.locator('.map-status')).toContainText('標高を読み込めないため2D表示');await expect(page.getByRole('button',{name:'上島町の観光地点 18件を拡大'})).toBeVisible();
 });
 test('permission denied and successful current position have useful outcomes',async({page,context})=>{
-  await page.addInitScript(()=>{navigator.geolocation.getCurrentPosition=(_ok,error)=>error?.({code:1,message:'denied',PERMISSION_DENIED:1,POSITION_UNAVAILABLE:2,TIMEOUT:3});});await ready(page);await page.getByRole('button',{name:'現在地を表示',exact:true}).click();await expect(page.getByText('現在地を取得できませんでした。位置情報の許可や端末の設定を確認してください。')).toBeVisible();
+  await page.addInitScript(()=>{navigator.geolocation.getCurrentPosition=(_ok,error)=>error?.({code:1,message:'denied',PERMISSION_DENIED:1,POSITION_UNAVAILABLE:2,TIMEOUT:3});});await ready(page);await mapSettings(page);await page.getByRole('button',{name:'現在地を表示',exact:true}).click();await expect(page.getByText('現在地を取得できませんでした。位置情報の許可や端末の設定を確認してください。')).toBeVisible();
   await context.grantPermissions(['geolocation']);await context.setGeolocation({latitude:34.258,longitude:133.147});
   // Override denial only on this page to exercise the success path deterministically.
   await page.evaluate(()=>{navigator.geolocation.getCurrentPosition=ok=>ok({coords:{latitude:34.258,longitude:133.147,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:Date.now()} as GeolocationPosition);});

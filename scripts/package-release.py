@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 assert '実行中' not in (ROOT/'outputs/QA_REPORT.md').read_text(encoding='utf8'), 'Finish QA before packaging'
 folders=['src','data','public','dist','requirements','scripts','tests','.github']
 files=['README.md','THIRD_PARTY_NOTICES.md','package.json','package-lock.json','tsconfig.json','vite.config.ts','vitest.config.ts','playwright.config.ts','index.html','.gitignore']
-research=['RESEARCH_REPORT.md','pending.json','fetch-log.json','terrain-verification.json','ehime-points.json','gsi-labels.json','gsi-symbols-14.json']
+research=['RESEARCH_REPORT.md','pending.json','fetch-log.json','terrain-verification.json','ehime-points.json','gsi-labels.json','gsi-symbols-14.json','EHIME_POI_SOURCES.json','EHIME_TERRAIN_VERIFICATION.json']
 paths=[ROOT/p for p in files]
 for folder in folders: paths.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
 paths.extend(ROOT/'research'/p for p in research)
@@ -17,7 +17,9 @@ if publication.exists():
     assert json.loads(publication.read_text(encoding='utf8'))['result']=='PASS'
     paths.append(publication)
 assets=[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted((ROOT/'dist').rglob('*')) if p.is_file()]
-manifest={'version':'0.1.0','verified_pois':18,'pending_candidates':133,'islands':8,'dist_files':len(assets),'dist_bytes':sum(p['bytes'] for p in assets),'assets':assets,'excluded':['node_modules','work','research/raw','copied full source-page extracts','credentials','remote attachments']}
+stats=json.loads((ROOT/'data/stats.json').read_text(encoding='utf8'))
+county=json.loads((ROOT/'data/ehime-pois.json').read_text(encoding='utf8'))
+manifest={'version':json.loads((ROOT/'package.json').read_text(encoding='utf8'))['version'],'verified_pois':stats['verified']+len(county),'kamijima_pois':stats['verified'],'additional_prefecture_pois':len(county),'municipalities':len({p['municipality'] for p in county}|{'上島町'}),'pending_candidates':stats['pending'],'islands':8,'dist_files':len(assets),'dist_bytes':sum(p['bytes'] for p in assets),'assets':assets,'excluded':['node_modules','work','research/raw','copied full source-page extracts','credentials','remote attachments']}
 manifest_path=ROOT/'outputs/RELEASE_MANIFEST.json'
 manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8');paths.append(manifest_path)
 archive=ROOT/'outputs/KAMIJIMA_TRIPSCAPE_3D.zip'

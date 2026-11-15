@@ -1,6 +1,7 @@
 export type Verification='official_verified'|'multi_source_verified'|'coordinate_verified'|'approximate_area_only'|'pending'|'rejected';
 export type Mode='walking'|'cycling'|'ferry';
 export type Season='春'|'夏'|'秋'|'冬';
+export interface CountyPoi {id:string;name:string;municipality:string;lat:number;lng:number;source_url:string;license:string;checked_at:string;[key:string]:unknown;}
 export interface Section {title:string;text:string;source_urls:string[];}
 export interface Poi {
   id:string;name:string;name_kana:string;island:string;categories:string[];

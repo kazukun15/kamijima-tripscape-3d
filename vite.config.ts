@@ -1,8 +1,11 @@
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
-import {readFileSync,writeFileSync} from 'node:fs';
+import {readFileSync,writeFileSync,realpathSync} from 'node:fs';
 const basePath=process.env.BASE_PATH ? process.env.BASE_PATH.replace(/\/+$/,'')+'/' : './';
+const projectRoot=realpathSync(process.cwd());
+if(projectRoot!==process.cwd())process.chdir(projectRoot);
 export default defineConfig({
+  root:projectRoot,
   plugins:[react(),{name:'pages-404-home',closeBundle(){
     if(process.env.BASE_PATH){
       const file=new URL('./dist/404.html',import.meta.url);

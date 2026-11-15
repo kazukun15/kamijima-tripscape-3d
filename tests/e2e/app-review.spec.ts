@@ -1,7 +1,11 @@
 import {test,expect,type Page} from '@playwright/test';
+import {readFileSync} from 'node:fs';
+const countyData=JSON.parse(readFileSync('data/ehime-pois.json','utf8')) as unknown[];
+const totalPlaces=18+countyData.length;
 
 async function ready(page:Page,url='/'){await page.goto(url);await expect(page.locator('[data-map-ready="true"]')).toBeVisible();}
-async function browse(page:Page){if(test.info().project.name==='mobile')await page.getByRole('button',{name:'検索とフィルターを開く',exact:true}).click();}
+async function browse(page:Page){if(await page.locator('.explorer').isVisible())return;if(await page.locator('.landscape-dock').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'探す',exact:true}).click();else await page.getByRole('button',{name:'検索とフィルターを開く',exact:true}).click();}
+async function mapSettings(page:Page){if(await page.locator('.landscape-dock').isVisible()&&!await page.locator('.map-toolbar').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'地図設定',exact:true}).click();}
 
 test('Back and Forward restore island, place and Deep Dive without losing filter context',async({page})=>{
   await ready(page);await browse(page);await page.locator('.island-grid').getByRole('button',{name:/^岩城島/}).click();
@@ -22,7 +26,7 @@ test('skip search preserves the shared map and focuses the usable search field',
 test('search changes close obsolete detail and expose individual filter recovery',async({page})=>{
   await ready(page,'/#poi=sekizen');await browse(page);await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('条件に合わないxyz');
   await expect(page.locator('.detail-panel')).toHaveCount(0);await expect(page.locator('.poi-marker')).toHaveCount(0);await expect(page.locator('.filter-chips')).toContainText('条件に合わないxyz');
-  await page.getByRole('button',{name:'検索語の絞り込みを解除',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(18);
+  await page.getByRole('button',{name:'検索語の絞り込みを解除',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(totalPlaces);
 });
 
 test('bookmarks are a visible saved list and selecting an island returns to all its places',async({page})=>{
@@ -33,7 +37,7 @@ test('bookmarks are a visible saved list and selecting an island returns to all 
 
 test('an empty bookmark list explains how to save and recovers to the map',async({page})=>{
   await ready(page);await page.getByRole('button',{name:'旅のしおり 0件',exact:true}).click();await expect(page.getByRole('heading',{name:'旅のしおりは、まだ空です',exact:true})).toBeVisible();
-  await page.getByRole('button',{name:'観光スポットを探す',exact:true}).click();await expect(page.locator('.poi-marker')).toHaveCount(18);
+  await page.getByRole('button',{name:'観光スポットを探す',exact:true}).click();await expect(page.getByRole('button',{name:'上島町の観光地点 18件を拡大'})).toBeVisible();
 });
 
 test('duplicated or damaged saved data cannot inflate the bookmark count',async({page})=>{

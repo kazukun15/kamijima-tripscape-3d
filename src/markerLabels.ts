@@ -12,7 +12,7 @@ export function installMarkerLabels(host:HTMLElement){
     const lines:string[]=[];
     const inside=(r:Rect)=>r.left>=bounds.left+gap&&r.right<=bounds.right-gap&&r.top>=bounds.top+gap&&r.bottom<=bounds.bottom-gap;
     const obstacles:Rect[]=[];
-    for(const el of (host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.journey-strip,.welcome-card,.mobile-browse,.mobile-explore-toggle,.map-breadcrumb,.map-status,.map-instruction,.leaflet-control,.maplibregl-ctrl,.island-marker')){
+    for(const el of (host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.journey-strip,.welcome-card,.mobile-browse,.mobile-explore-toggle,.map-breadcrumb,.map-status,.map-instruction,.landscape-dock,.dock-attribution,.leaflet-control,.maplibregl-ctrl,.island-marker,.county-cluster')){
       const r=el.getBoundingClientRect();if(r.width&&r.height&&getComputedStyle(el).visibility!=='hidden')obstacles.push(r);
     }
     const markers=Array.from(host.querySelectorAll<HTMLButtonElement>('.poi-marker')).map(el=>{
@@ -27,7 +27,7 @@ export function installMarkerLabels(host:HTMLElement){
     for(const {el,rect,label} of markers){label.style.visibility='hidden';el.dataset.labelPlaced='false';if(visibleSet.has(el))obstacles.push({left:rect.left+5,right:rect.right-5,top:rect.top+4,bottom:rect.bottom});}
     // A stable order and each label's previous offset prevent all names from
     // jumping to different slots while the user pans or turns the map.
-    visible.sort((a,b)=>Number(b.el.classList.contains('selected'))-Number(a.el.classList.contains('selected'))||b.width*b.height-a.width*a.height);
+    visible.sort((a,b)=>Number(b.el.classList.contains('selected'))-Number(a.el.classList.contains('selected'))||Number(a.el.classList.contains('county-marker'))-Number(b.el.classList.contains('county-marker'))||b.width*b.height-a.width*a.height);
     for(const {el,rect,label,width,height} of visible){
       const id=el.dataset.poiId!,cx=rect.left+22,cy=rect.top+21;
       const valid=(r:Rect)=>inside(r)&&!obstacles.some(o=>overlaps(r,o));

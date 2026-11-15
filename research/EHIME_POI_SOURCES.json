@@ -1,0 +1,182 @@
+{
+  "checked_at": "2026-11-15",
+  "source_catalog": "https://www.pref.ehime.jp/opendata-catalog/dataset/2354.html",
+  "sources": [
+    {
+      "city": "松山市",
+      "input": 17,
+      "accepted": 17,
+      "excluded": [],
+      "encoding": "utf-8-sig",
+      "source": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.html",
+      "source_data_url": "https://www.city.matsuyama.ehime.jp/shisei/opendata/metadata/kankoushisetsu.files/382019_tourism.csv",
+      "source_updated_at": "2025-04-01"
+    },
+    {
+      "city": "久万高原町",
+      "input": 4,
+      "accepted": 4,
+      "excluded": [],
+      "encoding": "cp932",
+      "source": "https://www.pref.ehime.jp/opendata-catalog/dataset/3143.html",
+      "source_data_url": "https://data.bodik.jp/dataset/4aecdd19-bd08-43da-8a5c-d390fc80f717/resource/0671771d-0220-4d72-a78c-de3b55557c0d/download/383864_tourism.csv",
+      "source_updated_at": "2024-04-10",
+      "city_field": "上浮穴郡久万高原町"
+    }
+  ],
+  "note": "県カタログCSV（2026-01-07更新）で観光施設一覧に該当した2データセット。内子町の旧データリンクは404で未取得。他自治体の観光施設は網羅していない。座標は自治体公開値を採用し、地理的包絡と自治体名、有限値を検証。施設入口を表すとは限らない。",
+  "iyokannet": {
+    "origin": "https://www.iyokannet.jp/site",
+    "terms": "サイト本文・画像は転載せず、本人ページの見出し・住所の自治体・本人IDの埋込地点座標を照合して地名と数値座標、参照URLのみ採録。CC BY は適用しない。",
+    "accepted": 17,
+    "points": [
+      {
+        "id": "663",
+        "name": "宇和島城",
+        "city": "宇和島市",
+        "lat": 33.219161171710624,
+        "lng": 132.5650316476822,
+        "url": "https://www.iyokannet.jp/spot/663"
+      },
+      {
+        "id": "2495",
+        "name": "大山祇神社",
+        "city": "今治市",
+        "lat": 34.247900529196,
+        "lng": 133.00579637289047,
+        "url": "https://www.iyokannet.jp/spot/2495"
+      },
+      {
+        "id": "95",
+        "name": "別子銅山記念館",
+        "city": "新居浜市",
+        "lat": 33.9231632,
+        "lng": 133.309681,
+        "url": "https://www.iyokannet.jp/spot/95"
+      },
+      {
+        "id": "4379",
+        "name": "【西条市】石鎚神社 成就社",
+        "city": "西条市",
+        "lat": 33.7902263,
+        "lng": 133.1285816,
+        "url": "https://www.iyokannet.jp/spot/4379"
+      },
+      {
+        "id": "505",
+        "name": "大洲城（城山公園）",
+        "city": "大洲市",
+        "lat": 33.50954176309686,
+        "lng": 132.54112914204597,
+        "url": "https://www.iyokannet.jp/spot/505"
+      },
+      {
+        "id": "351",
+        "name": "五色姫海浜公園",
+        "city": "伊予市",
+        "lat": 33.75592257708678,
+        "lng": 132.69632577896118,
+        "url": "https://www.iyokannet.jp/spot/351"
+      },
+      {
+        "id": "2203",
+        "name": "三島公園",
+        "city": "四国中央市",
+        "lat": 33.97140980840466,
+        "lng": 133.55958938598633,
+        "url": "https://www.iyokannet.jp/spot/2203"
+      },
+      {
+        "id": "567",
+        "name": "開明学校",
+        "city": "西予市",
+        "lat": 33.3642532,
+        "lng": 132.5136089,
+        "url": "https://www.iyokannet.jp/spot/567"
+      },
+      {
+        "id": "401",
+        "name": "坊っちゃん劇場",
+        "city": "東温市",
+        "lat": 33.7903741,
+        "lng": 132.880726,
+        "url": "https://www.iyokannet.jp/spot/401"
+      },
+      {
+        "id": "455",
+        "name": "松前公園",
+        "city": "松前町",
+        "lat": 33.78846578711133,
+        "lng": 132.71350264549255,
+        "url": "https://www.iyokannet.jp/spot/455"
+      },
+      {
+        "id": "4382",
+        "name": "愛媛県立とべ動物園",
+        "city": "砥部町",
+        "lat": 33.76287996101986,
+        "lng": 132.79224157333374,
+        "url": "https://www.iyokannet.jp/spot/4382"
+      },
+      {
+        "id": "4525",
+        "name": "内子町ビジターセンター",
+        "city": "内子町",
+        "lat": 33.5517660475145,
+        "lng": 132.65169817954302,
+        "url": "https://www.iyokannet.jp/spot/4525"
+      },
+      {
+        "id": "634",
+        "name": "佐田岬灯台",
+        "city": "伊方町",
+        "lat": 33.34337733922461,
+        "lng": 132.01558649539948,
+        "url": "https://www.iyokannet.jp/spot/634"
+      },
+      {
+        "id": "699",
+        "name": "道の駅　虹の森公園まつの「四万十川学習センターおさかな館」",
+        "city": "松野町",
+        "lat": 33.2294974,
+        "lng": 132.7096431,
+        "url": "https://www.iyokannet.jp/spot/699"
+      },
+      {
+        "id": "717",
+        "name": "道の駅　広見森の三角ぼうし",
+        "city": "鬼北町",
+        "lat": 33.2540299,
+        "lng": 132.6871617,
+        "url": "https://www.iyokannet.jp/spot/717"
+      },
+      {
+        "id": "725",
+        "name": "高茂岬",
+        "city": "愛南町",
+        "lat": 32.9073883484654,
+        "lng": 132.4726939201355,
+        "url": "https://www.iyokannet.jp/spot/725"
+      },
+      {
+        "id": "4517",
+        "name": "道の駅　みなとオアシス　八幡浜みなっと「みなと交流館」",
+        "city": "八幡浜市",
+        "lat": 33.45847283198407,
+        "lng": 132.41855084896088,
+        "url": "https://www.iyokannet.jp/spot/4517"
+      }
+    ],
+    "excluded": [],
+    "scope_note": "松野町内の地点として、公式掲載住所に松野町が明記された施設を採用。滑床渓谷は2市町にまたがり、単独市町を断定できないため代表地点から除外。"
+  },
+  "published_prefectural_pois": 38,
+  "published_prefectural_municipalities": 19,
+  "covered_municipalities_with_existing_kamijima": 20,
+  "coverage_notice": "観光施設の全数を網羅するものではありません。営業・公開状況は各施設の公式情報を確認してください。",
+  "license_terms": {
+    "matsuyama": "https://www.city.matsuyama.ehime.jp/shisei/opendata/top.files/kiyakuR4.pdf",
+    "kumakogen": "https://odcs.bodik.jp/383864/tos/",
+    "iyokannet": "https://www.iyokannet.jp/site"
+  }
+}

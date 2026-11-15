@@ -72,6 +72,7 @@ main:has(.detail-panel) .map-status,main:has(.detail-panel) .map-instruction{dis
 .poi-marker .marker-name{font-size:11px;pointer-events:auto;cursor:pointer;color:#244f49;box-shadow:0 2px 7px #24544b24}
 .poi-marker.selected .marker-name{border-color:#ce795b;color:#8c4329;font-weight:600;background:#fff9f2}
 .mobile-map-settings{display:none}
+.coverage-note{flex-shrink:0;margin:0 0 6px;padding:6px 8px;border-radius:6px;background:#edf4ef;color:#486c60;font-size:10px;line-height:1.5}
 @media(min-width:761px){main:has(.detail-panel) .map-actions{right:410px}main:has(.detail-panel) .pitch-control{right:474px}}
 @media(min-width:761px) and (max-width:1100px){
  .explorer{width:240px;padding-inline:16px}.map-toolbar,.map-breadcrumb{left:277px}.map-instruction,.map-status{left:280px}
@@ -130,4 +131,40 @@ main:has(.detail-panel) .map-status,main:has(.detail-panel) .map-instruction{dis
  .map-breadcrumb{left:68px;top:75px}.map-breadcrumb>span{display:none}
  main:has(.detail-panel) .mobile-map-settings,main:has(.detail-panel) .map-stage .map-toolbar,main:has(.detail-panel) .map-stage .pitch-control{display:none}
  main:has(.detail-panel) .map-breadcrumb{left:14px;top:14px}
+}
+
+/* Landscape: keep the map edge-to-edge and gather actions in one floating dock. */
+.landscape-dock{display:none}
+@media (orientation:landscape){
+ .app-shell{height:100dvh;min-height:0}
+ .app-shell>.topbar{display:none}
+ .app-shell>main{height:100dvh;min-height:0}
+ .app-shell .mobile-search,.app-shell .mobile-explore-toggle,.app-shell .journey-strip,.app-shell .welcome-card,.app-shell .map-breadcrumb,.app-shell .map-instruction{display:none}
+ .app-shell .explorer{display:none}
+ .app-shell .explorer.mobile-open{display:flex;position:absolute;inset:12px auto 70px 12px;width:min(360px,calc(100vw - 24px));max-height:none;padding:16px 18px 0;z-index:12;border-radius:16px;box-shadow:0 12px 45px #163c3f40}
+ .app-shell .explorer .mobile-close{display:grid}
+ .app-shell .detail-panel,.app-shell .detail-panel.sheet-deep,.app-shell .detail-panel.sheet-compact{position:absolute;inset:12px 12px 70px auto;width:min(370px,48vw);height:auto;max-height:none;min-height:0;border-radius:16px;z-index:7}
+ .app-shell .detail-panel .sheet-handle{display:none}
+ .app-shell .detail-panel .detail-scroll{overflow:auto}
+ .app-shell .detail-panel.sheet-compact .detail-heading .lead,.app-shell .detail-panel.sheet-compact .detail-heading .place-meta,.app-shell .detail-panel.sheet-compact .detail-footer{display:revert}
+ .app-shell .map-status{display:flex;position:absolute;left:12px;right:auto;top:10px;bottom:auto;max-width:calc(100% - 24px);font-size:10px;z-index:3}
+ .app-shell:has(.detail-panel) .map-status{display:none}
+ .app-shell .maplibregl-ctrl-bottom-left{left:8px;bottom:8px}
+ .app-shell .landscape-dock{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:center;gap:3px;position:absolute;left:12px;bottom:max(10px,env(safe-area-inset-bottom));z-index:10;width:min(380px,calc(100vw - 24px));padding:5px;background:#f9fcf9f5;border:1px solid #d6e7de;border-radius:16px;box-shadow:0 8px 32px #123b4050;backdrop-filter:blur(16px)}
+ .landscape-dock::-webkit-scrollbar{display:none}
+ .landscape-dock button{display:flex;min-width:0;min-height:44px;align-items:center;justify-content:center;gap:4px;flex-direction:column;padding:4px 2px;border-radius:10px;color:#285c5c;font-size:10px;line-height:1.1;white-space:nowrap}
+ .landscape-dock .dock-attribution{position:absolute;left:0;bottom:calc(100% + 4px);padding:3px 5px;border:1px solid #d6e7de;border-radius:6px;background:#fffefa;color:#315b57;font:9px/1.3 Arial,sans-serif;white-space:nowrap}
+ .landscape-dock button:hover,.landscape-dock button[aria-expanded="true"],.landscape-dock button[aria-pressed="true"]{background:#dceee6;color:#155d58}
+ .app-shell:not(.landscape-settings-open) .map-stage .map-toolbar,.app-shell:not(.landscape-settings-open) .map-stage .pitch-control,.app-shell:not(.landscape-settings-open) .map-stage .map-actions,.app-shell .mobile-map-settings{display:none}
+ .app-shell.landscape-settings-open .map-stage::after{content:"";position:absolute;left:12px;bottom:62px;width:min(340px,calc(100vw - 24px));height:176px;background:#f9fcf9f5;border:1px solid #d6e7de;border-radius:16px;box-shadow:0 8px 32px #123b4033;pointer-events:none;z-index:1}
+ .app-shell.landscape-settings-open .map-stage .map-toolbar{display:flex;position:absolute;left:18px;right:auto;top:auto;bottom:182px;max-width:calc(100vw - 36px);z-index:2;flex-wrap:nowrap}
+ .app-shell.landscape-settings-open .map-stage .pitch-control{display:flex;position:absolute;left:18px;right:auto;top:auto;bottom:128px;z-index:2}
+ .app-shell.landscape-settings-open .map-stage .map-actions{display:flex;position:absolute;left:18px;right:auto;top:auto;bottom:68px;flex-direction:row;z-index:2}
+ .app-shell.landscape-settings-open .map-stage .map-actions .toolbar-rule{width:1px;height:26px;align-self:center;margin:0 3px}
+ .app-shell.landscape-settings-open .map-stage .map-actions button{width:44px;height:44px}
+}
+@media (orientation:landscape) and (max-height:360px){
+ .app-shell .explorer.mobile-open{top:8px;bottom:66px;padding-top:10px}
+ .app-shell .detail-panel,.app-shell .detail-panel.sheet-deep,.app-shell .detail-panel.sheet-compact{top:8px;bottom:66px}
+ .app-shell .map-status{top:6px}
 }

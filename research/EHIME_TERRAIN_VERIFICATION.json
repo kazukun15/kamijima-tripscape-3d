@@ -1,0 +1,238 @@
+{
+  "checked_at_utc": "2026-11-15T11:14:29.739872+00:00",
+  "official_dem_spec_url": "https://maps.gsi.go.jp/development/demtile.html",
+  "official_tile_list_url": "https://maps.gsi.go.jp/development/ichiran.html",
+  "method": "GSI DEM10 PNG signed 24-bit centimetres, converted to Mapbox Terrain RGB at 0.1 m; MapLibre queryTerrainElevation at camera zoom 14 used source zoom 13 with 512 px terrain covering tiles and bilinear interpolation, terrain exaggeration 1.0.",
+  "no_data_policy": "GSI RGB 128,0,0 and missing 404 sea tiles are represented by a 0 m plane for display only; they are not measured elevations. Other retrieval failures disable 3D and show an error.",
+  "comparison_note": "The z14 PNG/text values are one pixel of DEM10; the API selects its best available 1 m laser source. Different source resolution and bilinear interpolation explain differences. Matsuyama PNG/text differ by 0.05 m.",
+  "points": [
+    {
+      "name": "松山市",
+      "lat": 33.84989,
+      "lng": 132.786365,
+      "z13_tile_url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/13/7117/3276.png",
+      "z13_upper_left_pixel": [
+        160,
+        143
+      ],
+      "z13_fraction_xy": [
+        0.6414791110437363,
+        0.9908539880998433
+      ],
+      "z13_converted_neighbour_heights_m": [
+        46.30000000000109,
+        47.30000000000109,
+        46.400000000001455,
+        48.0
+      ],
+      "bilinear_weights_top_left_top_right_bottom_left_bottom_right": [
+        0.0032790363168487594,
+        0.005866975583307977,
+        0.3552418526394149,
+        0.6356121354604284
+      ],
+      "independent_bilinear_m": 47.421931791130504,
+      "maplibre_query_m": 47.42193179075925,
+      "absolute_error_m": 3.7125147400729475e-10,
+      "gsi_z14_png_pixel_m": 46.85,
+      "gsi_z14_text_pixel_m": 46.8,
+      "gsi_highest_resolution_api_m": 39.9,
+      "gsi_highest_resolution_api_source": "1 m laser",
+      "gsi_api_url": "https://cyberjapandata2.gsi.go.jp/general/dem/scripts/getelevation.php?lon=132.786365&lat=33.84989&outtype=JSON",
+      "z13_four_gsi_pixels": [
+        {
+          "x": 160,
+          "y": 143,
+          "gsi_rgb": [
+            0,
+            18,
+            20
+          ],
+          "gsi_dem10_height_m": 46.28
+        },
+        {
+          "x": 161,
+          "y": 143,
+          "gsi_rgb": [
+            0,
+            18,
+            124
+          ],
+          "gsi_dem10_height_m": 47.32
+        },
+        {
+          "x": 160,
+          "y": 144,
+          "gsi_rgb": [
+            0,
+            18,
+            33
+          ],
+          "gsi_dem10_height_m": 46.410000000000004
+        },
+        {
+          "x": 161,
+          "y": 144,
+          "gsi_rgb": [
+            0,
+            18,
+            187
+          ],
+          "gsi_dem10_height_m": 47.95
+        }
+      ]
+    },
+    {
+      "name": "宇和島市",
+      "lat": 33.219161171710624,
+      "lng": 132.5650316476822,
+      "z13_tile_url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/13/7112/3293.png",
+      "z13_upper_left_pixel": [
+        151,
+        199
+      ],
+      "z13_fraction_xy": [
+        0.28125,
+        0.984375
+      ],
+      "z13_converted_neighbour_heights_m": [
+        69.30000000000109,
+        71.5,
+        59.70000000000073,
+        64.0
+      ],
+      "bilinear_weights_top_left_top_right_bottom_left_bottom_right": [
+        0.01123046875,
+        0.00439453125,
+        0.70751953125,
+        0.27685546875
+      ],
+      "independent_bilinear_m": 61.050146484375524,
+      "maplibre_query_m": 61.050146484376036,
+      "absolute_error_m": 5.115907697472721e-13,
+      "gsi_z14_png_pixel_m": 65.8,
+      "gsi_z14_text_pixel_m": 65.8,
+      "gsi_highest_resolution_api_m": 58.7,
+      "gsi_highest_resolution_api_source": "1 m laser",
+      "gsi_api_url": "https://cyberjapandata2.gsi.go.jp/general/dem/scripts/getelevation.php?lon=132.5650316476822&lat=33.219161171710624&outtype=JSON",
+      "z13_four_gsi_pixels": [
+        {
+          "x": 151,
+          "y": 199,
+          "gsi_rgb": [
+            0,
+            27,
+            14
+          ],
+          "gsi_dem10_height_m": 69.26
+        },
+        {
+          "x": 152,
+          "y": 199,
+          "gsi_rgb": [
+            0,
+            27,
+            240
+          ],
+          "gsi_dem10_height_m": 71.52
+        },
+        {
+          "x": 151,
+          "y": 200,
+          "gsi_rgb": [
+            0,
+            23,
+            83
+          ],
+          "gsi_dem10_height_m": 59.71
+        },
+        {
+          "x": 152,
+          "y": 200,
+          "gsi_rgb": [
+            0,
+            25,
+            2
+          ],
+          "gsi_dem10_height_m": 64.02
+        }
+      ]
+    },
+    {
+      "name": "石鎚神社 成就社",
+      "lat": 33.7902263,
+      "lng": 133.1285816,
+      "z13_tile_url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/13/7125/3278.png",
+      "z13_upper_left_pixel": [
+        106,
+        50
+      ],
+      "z13_fraction_xy": [
+        0.197665564250201,
+        0.3473721363116056
+      ],
+      "z13_converted_neighbour_heights_m": [
+        1405.300000000001,
+        1400.7000000000007,
+        1405.6000000000004,
+        1402.0
+      ],
+      "bilinear_weights_top_left_top_right_bottom_left_bottom_right": [
+        0.5236258087670247,
+        0.12900205492136974,
+        0.2787086269827743,
+        0.06866350932883125
+      ],
+      "independent_bilinear_m": 1404.563613554672,
+      "maplibre_query_m": 1404.563613554671,
+      "absolute_error_m": 9.094947017729282e-13,
+      "gsi_z14_png_pixel_m": 1407.0,
+      "gsi_z14_text_pixel_m": 1407.0,
+      "gsi_highest_resolution_api_m": 1401,
+      "gsi_highest_resolution_api_source": "1 m laser",
+      "gsi_api_url": "https://cyberjapandata2.gsi.go.jp/general/dem/scripts/getelevation.php?lon=133.1285816&lat=33.7902263&outtype=JSON",
+      "z13_four_gsi_pixels": [
+        {
+          "x": 106,
+          "y": 50,
+          "gsi_rgb": [
+            2,
+            36,
+            243
+          ],
+          "gsi_dem10_height_m": 1405.31
+        },
+        {
+          "x": 107,
+          "y": 50,
+          "gsi_rgb": [
+            2,
+            35,
+            33
+          ],
+          "gsi_dem10_height_m": 1400.65
+        },
+        {
+          "x": 106,
+          "y": 51,
+          "gsi_rgb": [
+            2,
+            37,
+            11
+          ],
+          "gsi_dem10_height_m": 1405.55
+        },
+        {
+          "x": 107,
+          "y": 51,
+          "gsi_rgb": [
+            2,
+            35,
+            163
+          ],
+          "gsi_dem10_height_m": 1401.95
+        }
+      ]
+    }
+  ]
+}
