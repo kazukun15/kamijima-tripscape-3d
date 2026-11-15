@@ -274,3 +274,10 @@ dialog{padding:32px;border-radius:16px}dialog h2{margin:16px 0}dialog p{margin-b
 }
 
 .detail-heading h2:focus{outline:2px solid #679c8e;outline-offset:4px;border-radius:4px}
+
+.location-map-link{display:grid;grid-template-columns:16px minmax(0,1fr) 16px;align-items:center;gap:8px;min-height:48px;margin-top:16px;padding:8px;border:1px solid #c5ddd3;border-radius:8px;background:#eef6f1;color:#205f59;font-size:13px;line-height:1.5;text-decoration:none}
+.location-map-link span{min-width:0;overflow-wrap:anywhere}
+.location-map-link small{display:block;color:#416c63;font-size:11px;line-height:1.5}
+.location-map-link:hover{background:#dfefe6}
+.location-map-link:focus-visible{outline:2px solid #287d70;outline-offset:2px}
+@media (orientation:landscape) and (max-height:480px){.location-map-link{margin-top:8px}}

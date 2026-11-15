@@ -20,6 +20,14 @@ const iconFor=(p:Poi)=>p.categories.includes('食')?Utensils:p.categories.includ
 const ModeIcon={walking:Footprints,cycling:Bike,ferry:Ship};
 const modeNames={walking:'徒歩',cycling:'自転車',ferry:'船'};
 
+function LocationMapLink({lat,lng,address}:{lat:number|null;lng:number|null;address?:string|null}){
+  if(lat===null||lng===null||!Number.isFinite(lat)||!Number.isFinite(lng))return null;
+  const displayedAddress=address?.trim();
+  const label=displayedAddress?`${displayedAddress}をGoogle マップで開く（新しいタブ）`:'Google マップで場所を開く（新しいタブ）';
+  const href=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${lat},${lng}`)}`;
+  return <a className="location-map-link" href={href} target="_blank" rel="noopener noreferrer" aria-label={label}><MapPin size={16} aria-hidden="true"/><span>{displayedAddress||'Google マップで場所を開く'}{displayedAddress&&<small>Google マップで開く</small>}</span><ArrowUpRight size={16} aria-hidden="true"/></a>;
+}
+
 export default function App(){
   const initial=useRef(initialState()).current;
   const initialCounty=useRef(readCountyId()).current;
@@ -113,7 +121,7 @@ export default function App(){
         <button className="sheet-handle" onClick={()=>setSheet(sheet==='compact'?'detail':'compact')} aria-label="詳細パネルの高さを切り替え" aria-expanded={sheet!=='compact'}><span/></button>
         <div className="detail-top"><span className="eyebrow">{p.island}</span><div><button className="icon-button" aria-label={`${p.name}をしおり${saved.includes(p.id)?'から削除':'に保存'}`} aria-pressed={saved.includes(p.id)} onClick={()=>toggleSave(p.id)}>{saved.includes(p.id)?<Check size={19}/>:<Bookmark size={19}/>}</button><button className="icon-button" onClick={dismissDetail} aria-label="地点詳細を閉じる"><X size={20}/></button></div></div>
         <div className="detail-scroll" key={p.id}>
-          <div className="detail-heading"><span className="place-number">{String(pois.indexOf(p)+1).padStart(2,'0')} <span>/ {String(stats.verified).padStart(2,'0')}</span></span><h2 ref={detailHeading} tabIndex={-1}>{p.name}</h2><div className="place-meta"><MapPin size={13}/>{p.island}<span/> {p.categories[0].split(' / ')[0]}</div></div>
+          <div className="detail-heading"><span className="place-number">{String(pois.indexOf(p)+1).padStart(2,'0')} <span>/ {String(stats.verified).padStart(2,'0')}</span></span><h2 ref={detailHeading} tabIndex={-1}>{p.name}</h2><div className="place-meta"><MapPin size={13}/>{p.island}<span/> {p.categories[0].split(' / ')[0]}</div><LocationMapLink lat={p.coordinates.lat} lng={p.coordinates.lng}/></div>
           <div className="detail-tabs"><button className={!deep?'active':''} aria-pressed={!deep} onClick={()=>{setDeep(false);setSheet('detail');}}>場所のこと</button><button className={deep?'active':''} aria-pressed={deep} onClick={()=>{setDeep(true);setSheet('deep');}}><BookOpen size={14}/> 深掘り</button></div>
           {!deep?<><p className="description">{p.description}</p><div className="tag-row">{p.related_topics.slice(0,4).map(t=><button key={t} onClick={()=>chooseTopic(t)}>{t}<ArrowUpRight size={10}/></button>)}</div></>:<>
             <div className="deep-heading"><h3>この場所について</h3><p>公式資料をもとに紹介します。</p></div>
@@ -132,7 +140,7 @@ export default function App(){
       {cp&&<section className={`detail-panel glass sheet-${sheet}`} aria-label="観光スポットの詳細">
         <button className="sheet-handle" onClick={()=>setSheet(sheet==='compact'?'detail':'compact')} aria-label="詳細パネルの高さを切り替え" aria-expanded={sheet!=='compact'}><span/></button>
         <div className="detail-top"><span className="eyebrow">{cp.municipality}</span><div><button className="icon-button" aria-label={`${cp.name}をしおり${saved.includes(cp.id)?'から削除':'に保存'}`} aria-pressed={saved.includes(cp.id)} onClick={()=>toggleSave(cp.id)}>{saved.includes(cp.id)?<Check size={19}/>:<Bookmark size={19}/>}</button><button className="icon-button" onClick={dismissDetail} aria-label="地点詳細を閉じる"><X size={20}/></button></div></div>
-        <div className="detail-scroll" key={cp.id}><div className="detail-heading"><h2 ref={detailHeading} tabIndex={-1}>{cp.name}</h2><div className="place-meta"><MapPin size={13}/>{cp.municipality} <span/> {cp.source_name||(cp.source_data_url?'自治体公開データ':'県観光情報')}</div>{cp.address&&<p className="lead">{cp.address}</p>}</div>
+        <div className="detail-scroll" key={cp.id}><div className="detail-heading"><h2 ref={detailHeading} tabIndex={-1}>{cp.name}</h2><div className="place-meta"><MapPin size={13}/>{cp.municipality} <span/> {cp.source_name||(cp.source_data_url?'自治体公開データ':'県観光情報')}</div><LocationMapLink lat={cp.lat} lng={cp.lng} address={cp.address}/></div>
           {cp.summary&&<p className="description">{cp.summary}</p>}<p className="description">{cp.location_scope}</p>
           <section className="access-card"><div className="section-label"><MapPin size={15}/> 場所を確認</div><p>営業時間や休業日は公式情報をご確認ください。</p><div className="access-links"><a href={`https://www.google.com/maps/dir/?api=1&destination=${cp.lat},${cp.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer">徒歩ルートを外部地図で確認 <ArrowUpRight size={13}/></a><a href={cp.source_url} target="_blank" rel="noopener noreferrer">掲載元のページ <ArrowUpRight size={13}/></a></div></section>
           <details className="sources" open><summary><CheckCircle2 size={14}/>出典・確認情報 <ChevronDown size={14}/></summary><div><dl><dt>確認日</dt><dd>{cp.checked_at}</dd><dt>資料更新日</dt><dd>{cp.source_updated_at||'記載なし'}</dd><dt>利用条件</dt><dd>{cp.license_url?<><span>{cp.municipality}の観光施設一覧を加工（</span><a href={cp.license_url} target="_blank" rel="noopener noreferrer">{cp.license}</a><span>）</span></>:cp.license}</dd><dt>地点について</dt><dd>{cp.location_scope}</dd></dl><div className="source-links">{cp.source_data_url&&<a href={cp.source_data_url} target="_blank" rel="noopener noreferrer">自治体の公開データ（CSV） <ArrowUpRight size={12}/></a>}<a href={cp.source_url} target="_blank" rel="noopener noreferrer">データの公開元 <ArrowUpRight size={12}/></a></div></div></details>
