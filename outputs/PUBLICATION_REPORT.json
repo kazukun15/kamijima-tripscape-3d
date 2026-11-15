@@ -1,6 +1,6 @@
 {
   "url": "https://kazukun15.github.io/kamijima-tripscape-3d/",
-  "checked_at": "2026-11-15T12:20:59.107Z",
+  "checked_at": "2026-11-15T14:06:58.915Z",
   "result": "PASS",
   "checks": [
     {
@@ -14,20 +14,21 @@
         34.921843955062144
       ],
       "attribution": {
-        "x": 13,
-        "y": 304.3125,
-        "width": 148.53125,
-        "height": 19.6875,
+        "x": 9,
+        "y": 294.3125,
+        "width": 154.53125,
+        "height": 21.6875,
         "font_size": "9px",
         "text": "地理院タイル / U.S. NIMA VMAP0"
       },
       "terrain": true,
       "attribution_popup_opened": true,
+      "compact_filter": "PASS",
       "detail_attribution": {
-        "x": 13,
-        "y": 304.3125,
-        "width": 148.53125,
-        "height": 19.6875,
+        "x": 9,
+        "y": 294.3125,
+        "width": 154.53125,
+        "height": 21.6875,
         "font_size": "9px",
         "text": "地理院タイル / U.S. NIMA VMAP0"
       },
@@ -40,14 +41,14 @@
         35.38009299209217
       ],
       "attribution_2d": {
-        "x": 13,
-        "y": 304.3125,
-        "width": 148.53125,
-        "height": 19.6875,
+        "x": 9,
+        "y": 294.3125,
+        "width": 154.53125,
+        "height": 21.6875,
         "font_size": "9px",
         "text": "地理院タイル / U.S. NIMA VMAP0"
       },
-      "gsi_basemap_responses": 83,
+      "gsi_basemap_responses": 90,
       "runtime_errors": [],
       "asset_errors": []
     },
@@ -62,44 +63,45 @@
         35.2699118619897
       ],
       "attribution": {
-        "x": 13,
-        "y": 151.3125,
-        "width": 148.53125,
-        "height": 19.6875,
+        "x": 9,
+        "y": 141.3125,
+        "width": 154.53125,
+        "height": 21.6875,
         "font_size": "9px",
         "text": "地理院タイル / U.S. NIMA VMAP0"
       },
       "terrain": true,
       "attribution_popup_opened": true,
+      "compact_filter": "PASS",
       "detail_attribution": {
-        "x": 13,
-        "y": 151.3125,
-        "width": 148.53125,
-        "height": 19.6875,
+        "x": 9,
+        "y": 141.3125,
+        "width": 154.53125,
+        "height": 21.6875,
         "font_size": "9px",
         "text": "地理院タイル / U.S. NIMA VMAP0"
       },
       "share_url": "https://kazukun15.github.io/kamijima-tripscape-3d/#q=%E6%84%9B%E5%8D%97%E7%94%BA&season=%E7%A7%8B&county=iyokannet-725",
       "regional_spot": "ひょこたん池公園",
       "bounds_2d": [
-        125.46386718750001,
-        29.07537517955837,
-        139.52636718750003,
-        37.85750715625203
+        131.04492187500003,
+        32.491230287947594,
+        134.56054687500003,
+        34.687427949314845
       ],
       "attribution_2d": {
-        "x": 13,
-        "y": 151.3125,
-        "width": 148.53125,
-        "height": 19.6875,
+        "x": 9,
+        "y": 141.3125,
+        "width": 154.53125,
+        "height": 21.6875,
         "font_size": "9px",
         "text": "地理院タイル / U.S. NIMA VMAP0"
       },
-      "gsi_basemap_responses": 53,
+      "gsi_basemap_responses": 44,
       "runtime_errors": [],
       "asset_errors": []
     }
   ],
-  "deployed_commit": "11d33fd775b161027bd33397884d51b7b9524e4d",
-  "github_actions": "https://github.com/kazukun15/kamijima-tripscape-3d/actions/runs/43713205648"
+  "deployed_commit": "491e3f9f704c61fd284b5890b0bedddcfa1f63ed",
+  "github_actions": "https://github.com/kazukun15/kamijima-tripscape-3d/actions/runs/43722431651"
 }
