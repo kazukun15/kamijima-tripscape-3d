@@ -5,10 +5,11 @@ const totalPlaces=18+countyData.length;
 
 async function ready(page:Page,url='/'){await page.goto(url);await expect(page.locator('[data-map-ready="true"]')).toBeVisible();}
 async function browse(page:Page){if(await page.locator('.explorer').isVisible())return;if(await page.locator('.landscape-dock').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'探す',exact:true}).click();else await page.getByRole('button',{name:'検索とフィルターを開く',exact:true}).click();}
+async function openCompactFilters(page:Page){const toggle=page.getByRole('button',{name:'絞り込み',exact:true});if(await toggle.isVisible()&&await toggle.getAttribute('aria-expanded')==='false')await toggle.click();}
 async function mapSettings(page:Page){if(await page.locator('.landscape-dock').isVisible()&&!await page.locator('.map-toolbar').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'地図設定',exact:true}).click();}
 
 test('Back and Forward restore island, place and Deep Dive without losing filter context',async({page})=>{
-  await ready(page);await browse(page);await page.locator('.island-grid').getByRole('button',{name:/^岩城島/}).click();
+  await ready(page);await browse(page);await openCompactFilters(page);await page.locator('.island-grid').getByRole('button',{name:/^岩城島/}).click();
   await browse(page);await page.locator('.results').getByRole('button').filter({hasText:'岩城郷土館'}).click();
   await expect(page.locator('.detail-heading h2')).toHaveText('岩城郷土館');await expect(page.locator('.map-breadcrumb>b')).toHaveText('岩城島');
   await page.locator('.detail-tabs').getByRole('button',{name:/深掘り/}).click();await expect(page.locator('.deep-heading')).toBeVisible();
@@ -32,7 +33,7 @@ test('search changes close obsolete detail and expose individual filter recovery
 test('bookmarks are a visible saved list and selecting an island returns to all its places',async({page})=>{
   await ready(page,'/#poi=iwagi-museum');await page.getByRole('button',{name:'岩城郷土館をしおりに保存',exact:true}).click();
   await page.getByRole('button',{name:'旅のしおり 1件',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.explorer')).toBeVisible();
-  await page.locator('.island-grid').getByRole('button',{name:/^弓削島/}).click();await browse(page);await expect(page.locator('.results .result-item')).toHaveCount(8);await expect(page.getByRole('button',{name:'旅のしおり 1件',exact:true})).toHaveAttribute('aria-pressed','false');
+  await openCompactFilters(page);await page.locator('.island-grid').getByRole('button',{name:/^弓削島/}).click();await browse(page);await expect(page.locator('.results .result-item')).toHaveCount(8);await expect(page.getByRole('button',{name:'旅のしおり 1件',exact:true})).toHaveAttribute('aria-pressed','false');
 });
 
 test('an empty bookmark list explains how to save and recovers to the map',async({page})=>{

@@ -24,7 +24,7 @@ export function recommend(selected:Poi,pois:Poi[],context:Context){
     if(p.island===selected.island){score+=5;reasons.push('同じ島');}
     if(context.island!=='all'&&p.island===context.island)score+=2;
     const themes=p.related_topics.filter(t=>selected.related_topics.includes(t));
-    if(themes.length){score+=themes.length*3;reasons.push('つながるテーマ');}
+    if(themes.length){score+=themes.length*3;reasons.push('共通のテーマ');}
     score+=p.tags.filter(t=>selected.tags.includes(t)).length;
     const km=kmBetween(selected,p);score+=Math.max(0,2-km/3);
     if(p.island===selected.island&&km<2)reasons.push('近くの場所');
@@ -34,7 +34,7 @@ export function recommend(selected:Poi,pois:Poi[],context:Context){
     if(p.categories.some(c=>context.categories.includes(c)))score+=1;
     if(context.history.includes(p.id))score-=4;
     if(selected.related_pois.includes(p.id))score+=3;
-    return {poi:p,score,reasons:reasons.length?reasons:['別の島を発見'],km};
+    return {poi:p,score,reasons:reasons.length?reasons:['ほかの島のスポット'],km};
   }).sort((a,b)=>b.score-a.score||a.poi.id.localeCompare(b.poi.id)).slice(0,3);
 }
 export function orderedSections(sections:Section[],context:Context){

@@ -4,6 +4,7 @@ const countyData=JSON.parse(readFileSync('data/ehime-pois.json','utf8')) as unkn
 const totalPlaces=18+countyData.length;
 async function ready(page:Page,url='/'){await page.goto(url);await expect(page.locator('[data-map-ready="true"]')).toBeVisible();}
 async function browse(page:Page){if(await page.locator('.explorer').isVisible())return;if(await page.locator('.landscape-dock').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'探す',exact:true}).click();else await page.getByRole('button',{name:'検索とフィルターを開く',exact:true}).click();}
+async function openCompactFilters(page:Page){const toggle=page.getByRole('button',{name:'絞り込み',exact:true});if(await toggle.isVisible()&&await toggle.getAttribute('aria-expanded')==='false')await toggle.click();}
 async function mapSettings(page:Page){if(await page.locator('.landscape-dock').isVisible()&&!await page.locator('.map-toolbar').isVisible())await page.locator('.landscape-dock').getByRole('button',{name:'地図設定',exact:true}).click();}
 async function select(page:Page,name:string){await browse(page);await page.locator('.results').getByRole('button').filter({hasText:name}).first().click();await expect(page.getByRole('region',{name:'観光スポットの詳細'}).getByRole('heading',{name,exact:true})).toBeVisible();}
 test('real 3D terrain, eight islands, camera, and explicit 2D',async({page})=>{
@@ -24,20 +25,20 @@ test('real 3D terrain, eight islands, camera, and explicit 2D',async({page})=>{
   expect(errors).toEqual([]);
 });
 test('island, category, Japanese search and empty result recovery',async({page})=>{
-  await ready(page);await browse(page);await page.locator('.island-grid').getByRole('button',{name:/^魚島/}).click();
+  await ready(page);await browse(page);await openCompactFilters(page);await page.locator('.island-grid').getByRole('button',{name:/^魚島/}).click();
   await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('亀居八幡神社');
-  await browse(page);await page.locator('.island-grid').getByRole('button',{name:'すべての地域',exact:true}).click();await browse(page);
+  await browse(page);await openCompactFilters(page);await page.locator('.island-grid').getByRole('button',{name:'すべての地域',exact:true}).click();await browse(page);
   await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('レモン');await expect(page.locator('.results')).toContainText('岩城観光センター');
   await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('この場所は存在しませんxyz');await expect(page.getByText('条件に合う場所はありません')).toBeVisible();await expect(page.locator('.poi-marker')).toHaveCount(0);
   await page.getByRole('button',{name:'条件をリセット',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(totalPlaces);
-  await browse(page);await page.locator('.category-grid').getByRole('button',{name:'アート',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('14枚のガラス');
-  await page.getByRole('combobox',{name:'すべての観光カテゴリ'}).selectOption('キャンプ');await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('津波島');
+  await browse(page);await openCompactFilters(page);await page.locator('.category-grid').getByRole('button',{name:'アート',exact:true}).click();await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('14枚のガラス');
+  await openCompactFilters(page);await page.getByRole('combobox',{name:'すべての観光カテゴリ'}).selectOption('キャンプ');await expect(page.locator('.results .result-item')).toHaveCount(1);await expect(page.locator('.results')).toContainText('津波島');
 });
 test('all eight islands can be selected through the explorer and on the map',async({page})=>{
   test.setTimeout(120000);await ready(page);
   const counts:Record<string,number>={'弓削島':8,'佐島':1,'生名島':2,'岩城島':3,'魚島':1,'高井神島':1,'豊島':1,'津波島':1};
   for(const [name,count] of Object.entries(counts)){
-    await browse(page);await page.locator('.island-grid').getByRole('button',{name:new RegExp('^'+name)}).click();
+    await browse(page);await openCompactFilters(page);await page.locator('.island-grid').getByRole('button',{name:new RegExp('^'+name)}).click();
     await expect.poll(()=>new URLSearchParams(new URL(page.url()).hash.slice(1)).get('island')).toBe(name);
     await page.getByRole('button',{name:`地図から${name}を選択`,exact:true}).click();
     await browse(page);await expect(page.locator('.results .result-item')).toHaveCount(count);

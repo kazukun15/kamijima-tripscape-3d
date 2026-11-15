@@ -28,10 +28,14 @@ export function installMarkerLabels(host:HTMLElement){
     // A stable order and each label's previous offset prevent all names from
     // jumping to different slots while the user pans or turns the map.
     visible.sort((a,b)=>Number(b.el.classList.contains('selected'))-Number(a.el.classList.contains('selected'))||Number(a.el.classList.contains('county-marker'))-Number(b.el.classList.contains('county-marker'))||b.width*b.height-a.width*a.height);
-    for(const {el,rect,label,width,height} of visible){
+    type Item=typeof visible[number];type Placement={item:Item;spot:Rect};
+    const place=(ordered:Item[],reuse:boolean)=>{
+      const taken=obstacles.slice(),result:Placement[]=[];
+      for(const item of ordered){
+      const {el,rect,width,height}=item;
       const id=el.dataset.poiId!,cx=rect.left+22,cy=rect.top+21;
-      const valid=(r:Rect)=>inside(r)&&!obstacles.some(o=>overlaps(r,o));
-      const old=previous.get(id);
+      const valid=(r:Rect)=>inside(r)&&!taken.some(o=>overlaps(r,o));
+      const old=reuse?previous.get(id):undefined;
       let spot:Rect|undefined=old?{left:rect.left+old.left,top:rect.top+old.top,right:rect.left+old.left+width,bottom:rect.top+old.top+height}:undefined;
       if(spot&&!valid(spot))spot=undefined;
       const candidates:Rect[]=[];
@@ -45,7 +49,7 @@ export function installMarkerLabels(host:HTMLElement){
         // the exact edges of the controls, pins and names already placed.
         const xs=new Set([bounds.left+gap,bounds.right-gap-width,cx-width/2]);
         const ys=new Set([bounds.top+gap,bounds.bottom-gap-height,cy-height/2]);
-        for(const obstacle of obstacles){xs.add(obstacle.right+gap);xs.add(obstacle.left-width-gap);ys.add(obstacle.bottom+gap);ys.add(obstacle.top-height-gap);}
+        for(const obstacle of taken){xs.add(obstacle.right+gap);xs.add(obstacle.left-width-gap);ys.add(obstacle.bottom+gap);ys.add(obstacle.top-height-gap);}
         for(const y of ys){
           if(y<bounds.top+gap||y+height>bounds.bottom-gap)continue;
           for(const x of xs){if(x>=bounds.left+gap&&x+width<=bounds.right-gap)consider({left:x,top:y,right:x+width,bottom:y+height});}
@@ -57,6 +61,25 @@ export function installMarkerLabels(host:HTMLElement){
         }
       }
       if(!spot)continue;
+      result.push({item,spot});taken.push(spot);
+      }
+      return result;
+    };
+    const priority=(item:Item)=>item.el.classList.contains('selected')?0:item.el.classList.contains('county-marker')?2:1;
+    const oldTarget=visible.filter(item=>!item.el.classList.contains('county-marker')).length;
+    const score=(placements:Placement[])=>placements.filter(({item})=>!item.el.classList.contains('county-marker')).length;
+    let placements=place(visible,true);
+    // Retaining previous offsets prevents jitter, but can fragment small screens.
+    // Repack from scratch only if it would show more original place names.
+    if(score(placements)<oldTarget){
+      for(const by of [(a:Item,b:Item)=>b.width*b.height-a.width*a.height,(a:Item,b:Item)=>b.height-a.height||b.width-a.width,(a:Item,b:Item)=>b.width-a.width||b.height-a.height]){
+        const candidate=place([...visible].sort((a,b)=>priority(a)-priority(b)||by(a,b)),false);
+        if(score(candidate)>score(placements)||score(candidate)===score(placements)&&candidate.length>placements.length)placements=candidate;
+        if(score(placements)===oldTarget)break;
+      }
+    }
+    for(const {item,spot} of placements){
+      const {el,rect,label}=item,id=el.dataset.poiId!,cx=rect.left+22,cy=rect.top+21;
       label.style.left=`${spot.left-rect.left}px`;label.style.top=`${spot.top-rect.top}px`;label.style.visibility='visible';el.dataset.labelPlaced='true';obstacles.push(spot);
       previous.set(id,{left:spot.left-rect.left,top:spot.top-rect.top});
       const tx=Math.max(spot.left,Math.min(cx,spot.right)),ty=Math.max(spot.top,Math.min(cy,spot.bottom));

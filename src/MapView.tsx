@@ -161,7 +161,7 @@ export default function MapView(props:Props){
         terrainFailed=true;setDemFailed(true);m.setTerrain(null);m.setPitch(0);
         if(m.getLayer('shade'))m.setLayoutProperty('shade','visibility','none');
         latest.current.onTerrain(false);latest.current.onStatus('標高を読み込めないため2D表示');
-      }else if(source==='base')latest.current.onStatus('県内の背景地図を読み込めません。通信を確認してください（上島町のみ一部同梱）。');
+      }else if(source==='base')latest.current.onStatus('背景地図を読み込めません。通信状況をご確認ください。オフラインでは上島町周辺の一部のみ表示できます。');
       else if(source==='photo')latest.current.onStatus('航空写真を読み込めません。淡色地図に切り替えられます。');
     });
     m.getCanvas().addEventListener('webglcontextlost',()=>{setFallback(true);latest.current.onTerrain(false);latest.current.onStatus('描画が中断したため2D地図に切り替えました');});
@@ -222,7 +222,7 @@ export default function MapView(props:Props){
     const m=map.current;if(!m||!ready)return;
     m.setTerrain(props.terrain&&!demFailed?{source:'terrain',exaggeration:1}:null);
     m.easeTo({pitch:props.terrain&&!demFailed?48:0,duration:300});
-    props.onStatus(props.terrain&&!demFailed?'3D地形 · 標高強調 1.0':demFailed?'標高を読み込めないため2D表示':'2D地図');
+    props.onStatus(props.terrain&&!demFailed?'3D地形を表示中':demFailed?'標高を読み込めないため2D表示':'2D地図');
   },[props.terrain,ready,demFailed]);
   useEffect(()=>{
     const m=map.current;if(!m||!ready)return;
@@ -301,16 +301,16 @@ function RasterMap(props:Props&{onReady:(map:import('leaflet').Map|null)=>void;e
     Promise.all([import('leaflet'),import('leaflet/dist/leaflet.css')]).then(([L])=>{
       if(cancelled||!host.current)return;
       const m=L.map(host.current,{zoomControl:false,minZoom:5,maxZoom:18,maxBounds:[[30,128],[37,137]]}).setView([33.6,132.8],7);
-      L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{tileSize:256,minNativeZoom:5,maxNativeZoom:18,attribution}).on('tileerror',()=>latest.current.onStatus('県内の背景地図を読み込めません。通信を確認してください（上島町のみ一部同梱）。')).addTo(m);
+      L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{tileSize:256,minNativeZoom:5,maxNativeZoom:18,attribution}).on('tileerror',()=>latest.current.onStatus('背景地図を読み込めません。通信状況をご確認ください。オフラインでは上島町周辺の一部のみ表示できます。')).addTo(m);
       L.tileLayer(localTiles('basemap'),{tileSize:256,minNativeZoom:8,maxNativeZoom:14,bounds:[[34.10,133.05],[34.34,133.43]]}).addTo(m);
       for(const i of latest.current.islands){const el=document.createElement('button');el.className='island-marker';el.textContent=i.name;el.style.display=m.getZoom()<9.5?'none':'';islandElements.current.push(el);el.setAttribute('aria-label',`地図から${i.name}を選択`);el.onclick=()=>latest.current.onIsland(i.name);L.marker([i.coordinates[1],i.coordinates[0]],{keyboard:false,icon:L.divIcon({html:el,className:'island-leaflet'})}).addTo(m);}
       leaf.current=m;group.current=L.layerGroup().addTo(m);countyGroup.current=L.layerGroup().addTo(m);setLoaded(true);
       labels=installMarkerLabels(host.current);m.on('move zoomend',labels.schedule);
       const updateCamera=()=>{const clustered=m.getZoom()<9.5;setClusterKamijima(clustered);if(m.getZoom()<8.8)latest.current.onExpandKamijima(false);islandElements.current.forEach(el=>{el.style.display=clustered?'none':'';});if(host.current){const b=m.getBounds();host.current.dataset.mapBounds=[b.getWest(),b.getSouth(),b.getEast(),b.getNorth()].join(',');host.current.dataset.mapZoom=String(m.getZoom());host.current.dataset.mapPitch='0';host.current.dataset.mapBearing='0';host.current.dataset.terrainActive='false';}};
       m.on('moveend zoomend',updateCamera);updateCamera();latest.current.onReady(m);
-      latest.current.onTerrain(false);latest.current.onStatus('2D地図 · WebGL不要');host.current.setAttribute('data-map-ready','true');
+      latest.current.onTerrain(false);latest.current.onStatus('2D地図を表示中');host.current.setAttribute('data-map-ready','true');
       observer=new ResizeObserver(()=>{m.invalidateSize();setViewportRevision(v=>v+1);});observer.observe(host.current);
-    }).catch(()=>latest.current.onStatus('地図を初期化できません。左の地点一覧から探索できます。'));
+    }).catch(()=>latest.current.onStatus('地図を読み込めません。地点一覧から探してください。'));
     return()=>{cancelled=true;labels?.destroy();observer?.disconnect();leaf.current?.remove();leaf.current=null;group.current=null;countyGroup.current=null;islandElements.current=[];markers.current.clear();latest.current.onReady(null);};
   },[]);
   useEffect(()=>{
