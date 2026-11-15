@@ -13,6 +13,7 @@ for(const p of county){
   assert.ok(Number.isFinite(p.lat)&&p.lat>=32.65&&p.lat<=34.5&&Number.isFinite(p.lng)&&p.lng>=131.95&&p.lng<=133.9,`Invalid coordinates: ${p.id}`);
   if(p.coordinates)assert.deepEqual(p.coordinates,{lat:p.lat,lng:p.lng});
   assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(p.checked_at)&&p.license);
+  if(p.collection==='regional-spots-2026-11-15')assert.ok(p.summary&&p.coordinate_evidence,`Missing regional spot evidence: ${p.id}`);
   for(const url of [p.source_url,p.source_data_url,p.license_url].filter(Boolean))assert.equal(new URL(url).protocol,'https:');
 }
 const valid=new Ajv2020({strict:false}).compile(schema);

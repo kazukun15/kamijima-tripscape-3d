@@ -39,9 +39,24 @@ test('a prefecture location opens from search, keeps source and can be shared',a
 });
 test('a municipality name finds its sourced destination',async({page})=>{
   await ready(page);await explore(page);await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill('愛南町');
-  const result=page.locator('.results .county-result');await expect(result).toHaveCount(1);await expect(result).toContainText('高茂岬');
+  const result=page.locator('.results .county-result').filter({hasText:'高茂岬'});await expect(result).toHaveCount(1);
   await result.click();await expect(page.getByRole('heading',{name:'高茂岬',exact:true})).toBeVisible();
   await expect(page.getByRole('link',{name:'掲載元のページ'})).toHaveAttribute('href','https://www.iyokannet.jp/spot/725');
+});
+for(const spot of [
+  {name:'嘉母神社',city:'西条市',id:'iyokannet-2924',url:'https://www.iyokannet.jp/spot/2924'},
+  {name:'ひょこたん池公園',city:'松前町',id:'iyoblog-185-1',url:'https://www.iyokannet.jp/blog/185'},
+  {name:'鳴滝神社',city:'八幡浜市',id:'iyokannet-4021',url:'https://www.iyokannet.jp/spot/4021'},
+])test(`regional spot ${spot.name} can be searched and shared`,async({page})=>{
+  await ready(page);await explore(page);
+  await page.getByRole('textbox',{name:'観光スポットを検索',exact:true}).fill(spot.name);
+  await page.locator('.results .county-result').filter({hasText:spot.name}).click();
+  const detail=page.getByRole('region',{name:'観光スポットの詳細'});
+  await expect(detail.getByRole('heading',{name:spot.name,exact:true})).toBeVisible();
+  await expect(detail).toContainText(spot.city);await expect(detail.locator('.description').first()).not.toBeEmpty();
+  await expect(detail.getByRole('link',{name:'掲載元のページ'})).toHaveAttribute('href',spot.url);
+  await expect.poll(()=>new URL(page.url()).hash).toContain('county='+spot.id);
+  await page.reload();await expect(page.getByRole('heading',{name:spot.name,exact:true})).toBeVisible();
 });
 test('2D fallback retains access to existing Kamijima place and its source',async({page})=>{
   await ready(page,'/?renderer=2d#poi=sekizen');

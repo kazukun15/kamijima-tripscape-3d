@@ -1,0 +1,414 @@
+{
+  "checked_at": "2026-11-15",
+  "description": "県公式観光サイトが公開する地域の小規模な見どころを追加。知名度は評価していません。",
+  "selection": "スポットまたは現地記事ごとに、対象の名称・所在地の市町・同じ地図マーカーIDと座標を照合。記事の地図マーカーは代表地点であり、入口を示すとは限りません。位置未確認の候補は採用しません。",
+  "license_note": "出典記事の本文・画像は転載せず、名称と座標、出典URLを記録し短い説明を独自に作成。CC BYの適用対象としません。",
+  "count": 45,
+  "points": [
+    {
+      "id": "iyokannet-2924",
+      "name": "嘉母神社",
+      "municipality": "西条市",
+      "lat": 33.91338434607816,
+      "lng": 133.15119221806526,
+      "source_url": "https://www.iyokannet.jp/spot/2924",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-7626",
+      "name": "観音水（アクアトピア源泉）",
+      "municipality": "西条市",
+      "lat": 33.9100662,
+      "lng": 133.1813187,
+      "source_url": "https://www.iyokannet.jp/spot/7626",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-7617",
+      "name": "世田山遊歩道（世田薬師）",
+      "municipality": "西条市",
+      "lat": 33.9757729,
+      "lng": 133.0498275,
+      "source_url": "https://www.iyokannet.jp/spot/7617",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-3747",
+      "name": "市民の森・フラワーパーク",
+      "municipality": "今治市",
+      "lat": 34.05313943090054,
+      "lng": 132.9747176170349,
+      "source_url": "https://www.iyokannet.jp/spot/3747",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-3530",
+      "name": "瓦のふるさと公園（かわら館）",
+      "municipality": "今治市",
+      "lat": 34.03192975118902,
+      "lng": 132.8412213921547,
+      "source_url": "https://www.iyokannet.jp/spot/3530",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-2544",
+      "name": "熊野神社",
+      "municipality": "四国中央市",
+      "lat": 33.945667,
+      "lng": 133.6394557,
+      "source_url": "https://www.iyokannet.jp/spot/2544",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-84",
+      "name": "延命寺",
+      "municipality": "四国中央市",
+      "lat": 33.956511695530025,
+      "lng": 133.42036932706833,
+      "source_url": "https://www.iyokannet.jp/spot/84",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-3764",
+      "name": "三皇神社",
+      "municipality": "四国中央市",
+      "lat": 33.99263683359553,
+      "lng": 133.57042014598846,
+      "source_url": "https://www.iyokannet.jp/spot/3764",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-2534",
+      "name": "椿堂 常福寺",
+      "municipality": "四国中央市",
+      "lat": 33.9897785,
+      "lng": 133.6350911,
+      "source_url": "https://www.iyokannet.jp/spot/2534",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-116",
+      "name": "黒島海浜公園",
+      "municipality": "新居浜市",
+      "lat": 33.98902523291582,
+      "lng": 133.34312438964844,
+      "source_url": "https://www.iyokannet.jp/spot/116",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-117",
+      "name": "森林公園ゆらぎの森",
+      "municipality": "新居浜市",
+      "lat": 33.8541916,
+      "lng": 133.4409069,
+      "source_url": "https://www.iyokannet.jp/spot/117",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-3727",
+      "name": "山根公園",
+      "municipality": "新居浜市",
+      "lat": 33.92344712223115,
+      "lng": 133.31065893173218,
+      "source_url": "https://www.iyokannet.jp/spot/3727",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-2233",
+      "name": "下柏の大柏",
+      "municipality": "四国中央市",
+      "lat": 33.98445197898177,
+      "lng": 133.55853066452255,
+      "source_url": "https://www.iyokannet.jp/spot/2233",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-83",
+      "name": "奥之院仙龍寺",
+      "municipality": "四国中央市",
+      "lat": 33.9506862,
+      "lng": 133.6062448,
+      "source_url": "https://www.iyokannet.jp/spot/83",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-130",
+      "name": "西条市考古歴史館",
+      "municipality": "西条市",
+      "lat": 33.899498724624756,
+      "lng": 133.19745007910743,
+      "source_url": "https://www.iyokannet.jp/spot/130",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-3330",
+      "name": "歌仙公園",
+      "municipality": "今治市",
+      "lat": 34.020670441905146,
+      "lng": 132.86676406860352,
+      "source_url": "https://www.iyokannet.jp/spot/3330",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-3542",
+      "name": "正月鼻古墳公園",
+      "municipality": "今治市",
+      "lat": 34.19574163887663,
+      "lng": 132.8733730316162,
+      "source_url": "https://www.iyokannet.jp/spot/3542",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-200",
+      "name": "ナガタニ展望台",
+      "municipality": "今治市",
+      "lat": 34.17988442141773,
+      "lng": 132.87899762392044,
+      "source_url": "https://www.iyokannet.jp/spot/200",
+      "coordinate_evidence": "同じ掲載ページ内の地点ID・名称・緯度・経度を照合。地図上は掲載元の代表点。"
+    },
+    {
+      "id": "iyokannet-1499",
+      "name": "砥部衝上断層",
+      "municipality": "砥部町",
+      "lat": 33.732665877266946,
+      "lng": 132.79564931988716,
+      "source_url": "https://www.iyokannet.jp/spot/1499",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 1499 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-3753",
+      "name": "仙波渓谷",
+      "municipality": "砥部町",
+      "lat": 33.64751973144631,
+      "lng": 132.80030965805054,
+      "source_url": "https://www.iyokannet.jp/spot/3753",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 3753 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-4075",
+      "name": "権現の滝",
+      "municipality": "久万高原町",
+      "lat": 33.510055017554464,
+      "lng": 133.02254676818848,
+      "source_url": "https://www.iyokannet.jp/spot/4075",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 4075 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-1236",
+      "name": "香積寺（隻手薬師）",
+      "municipality": "東温市",
+      "lat": 33.79229765209679,
+      "lng": 132.86401614546776,
+      "source_url": "https://www.iyokannet.jp/spot/1236",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 1236 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-3244",
+      "name": "ふたみ潮風ふれあい公園",
+      "municipality": "伊予市",
+      "lat": 33.681318245359655,
+      "lng": 132.63493537902832,
+      "source_url": "https://www.iyokannet.jp/spot/3244",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 3244 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-2496",
+      "name": "杖ノ淵公園",
+      "municipality": "松山市",
+      "lat": 33.7907527,
+      "lng": 132.8141708,
+      "source_url": "https://www.iyokannet.jp/spot/2496",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 2496 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-3499",
+      "name": "義農神社",
+      "municipality": "松前町",
+      "lat": 33.78854157900616,
+      "lng": 132.70450919866562,
+      "source_url": "https://www.iyokannet.jp/spot/3499",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 3499 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyoblog-45-2",
+      "name": "金毘羅寺",
+      "municipality": "東温市",
+      "lat": 33.78463510000004,
+      "lng": 132.96083182698368,
+      "source_url": "https://www.iyokannet.jp/blog/45",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 45-2 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyoblog-185-1",
+      "name": "ひょこたん池公園",
+      "municipality": "松前町",
+      "lat": 33.8010682,
+      "lng": 132.7525975,
+      "source_url": "https://www.iyokannet.jp/blog/185",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 185-1 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyoblog-185-2",
+      "name": "福徳泉公園",
+      "municipality": "松前町",
+      "lat": 33.7870183,
+      "lng": 132.7413765,
+      "source_url": "https://www.iyokannet.jp/blog/185",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 185-2 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyoblog-185-3",
+      "name": "有明公園",
+      "municipality": "松前町",
+      "lat": 33.797301778313226,
+      "lng": 132.7365072011887,
+      "source_url": "https://www.iyokannet.jp/blog/185",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 185-3 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyoblog-119-3",
+      "name": "波妻の鼻わくわくランド(北条公園)",
+      "municipality": "松山市",
+      "lat": 33.99867648637814,
+      "lng": 132.76787169186252,
+      "source_url": "https://www.iyokannet.jp/blog/119",
+      "coordinate_evidence": "掲載ページの地図マーカー ID 119-3 に記載された緯度・経度。"
+    },
+    {
+      "id": "iyokannet-4021",
+      "name": "鳴滝神社",
+      "municipality": "八幡浜市",
+      "lat": 33.46958244189172,
+      "lng": 132.45447635650635,
+      "source_url": "https://www.iyokannet.jp/spot/4021",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-3713",
+      "name": "惣川からくり広場　男水",
+      "municipality": "西予市",
+      "lat": 33.49298515831282,
+      "lng": 132.82063007354736,
+      "source_url": "https://www.iyokannet.jp/spot/3713",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-1608",
+      "name": "弓削神社",
+      "municipality": "内子町",
+      "lat": 33.633898348039565,
+      "lng": 132.64922618865967,
+      "source_url": "https://www.iyokannet.jp/spot/1608",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-3724",
+      "name": "平家神社",
+      "municipality": "八幡浜市",
+      "lat": 33.52025238341788,
+      "lng": 132.3987078666687,
+      "source_url": "https://www.iyokannet.jp/spot/3724",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-3265",
+      "name": "若宮神社",
+      "municipality": "西予市",
+      "lat": 33.32081958745239,
+      "lng": 132.43528246879578,
+      "source_url": "https://www.iyokannet.jp/spot/3265",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-669",
+      "name": "大楽寺",
+      "municipality": "宇和島市",
+      "lat": 33.289542591677304,
+      "lng": 132.50318057835102,
+      "source_url": "https://www.iyokannet.jp/spot/669",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-1646",
+      "name": "蔵王神社のイチイガシ",
+      "municipality": "松野町",
+      "lat": 33.227164745155896,
+      "lng": 132.72576570510864,
+      "source_url": "https://www.iyokannet.jp/spot/1646",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-553",
+      "name": "観音水",
+      "municipality": "西予市",
+      "lat": 33.343722,
+      "lng": 132.581055,
+      "source_url": "https://www.iyokannet.jp/spot/553",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-560",
+      "name": "須崎海岸",
+      "municipality": "西予市",
+      "lat": 33.36663656219998,
+      "lng": 132.39038363099098,
+      "source_url": "https://www.iyokannet.jp/spot/560",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-1528",
+      "name": "天嶬の鼻",
+      "municipality": "愛南町",
+      "lat": 32.929692345262175,
+      "lng": 132.56877332925797,
+      "source_url": "https://www.iyokannet.jp/spot/1528",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-3665",
+      "name": "小田深山渓谷",
+      "municipality": "内子町",
+      "lat": 33.530734738003595,
+      "lng": 132.8943157196045,
+      "source_url": "https://www.iyokannet.jp/spot/3665",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-4414",
+      "name": "節安渓谷",
+      "municipality": "鬼北町",
+      "lat": 33.347749,
+      "lng": 132.8764747,
+      "source_url": "https://www.iyokannet.jp/spot/4414",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-707",
+      "name": "善光寺",
+      "municipality": "鬼北町",
+      "lat": 33.30726778669628,
+      "lng": 132.7451527118683,
+      "source_url": "https://www.iyokannet.jp/spot/707",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-3751",
+      "name": "秋滝龍王神社",
+      "municipality": "大洲市",
+      "lat": 33.4939872556254,
+      "lng": 132.76930332183838,
+      "source_url": "https://www.iyokannet.jp/spot/3751",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    },
+    {
+      "id": "iyokannet-4410",
+      "name": "大洲領総鎮守八幡宮",
+      "municipality": "大洲市",
+      "lat": 33.515085644637274,
+      "lng": 132.53721445798874,
+      "source_url": "https://www.iyokannet.jp/spot/4410",
+      "coordinate_evidence": "出典ページの同一IDマーカーと地図の中心座標が一致。"
+    }
+  ]
+}
