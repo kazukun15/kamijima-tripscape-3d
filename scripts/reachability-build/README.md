@@ -4,13 +4,15 @@
 
 ## 手順
 
-1. `python3 scripts/reachability-build/test_fixture.py` で合成レスポンスの検証を実行します。
+1. Python 3.12環境で `python3 -m pip install --only-binary=:all: -r scripts/reachability-build/requirements.txt` を実行し、固定版のNumPy 2.3.1とShapely 2.1.2を用意します。`python3 scripts/reachability-build/test_fixture.py` で合成レスポンスの検証を実行します。
 2. 独立したLinuxランナーに `osmium-tool`、Docker、Python 3、curl、sudoを準備し、`bash scripts/reachability-build/run.sh` を実行します。既存の一時ファイルがある場合は上書きせず停止します。ローカルDockerは未使用です。
 3. Geofabrik Japanの日付付きPBF（約2.4GB）を優先して取得し、接続できない場合はOpenStreetMap Franceの日本全域PBFに切り替えます。元PBFのSHA-256とレプリケーション時刻を記録します。`osmium extract --strategy smart --option types=multipolygon,boundary --bbox 131.4,32.4,134.6,35` で切り出し、境界relationの参照不足に備えます。smartでも日本の行政界全域が完全とは限らず、メモリ・ディスク増大のおそれがあります。
 4. 公式 `ghcr.io/valhalla/valhalla-scripted:3.9.1` をdigest固定して一時起動し、ローカル `127.0.0.1:8002` でのみ公開します。OSMグラフと行政DBを生成し、設定を停止中に `service_limits.allow_hard_exclusions=true` とした後に再起動します。高度・時刻・公共交通・ライブ交通は読み込みません。
 5. `verify-status.py` でバージョン・グラフ・行政DBを検証。`canary.py` は松山・上島・東予・南予で実ルートを作り、`trace_attributes` の全道路エッジが `drive_on_right=false` と確認します。さらに各モードで、実際に渡船を使う正例を確認し、`exclude_ferries` の負例が不通か渡船なしであることを要求します。徒歩の正例に限り、実際に観測した警告401を許容します。負例と到達圏の警告は許容しません。さらに3手段の到達圏そのものについて、航路ありでは対岸5点を含み、航路除外では含まないことを検査します。
 6. 成功後、101地点×3手段を逐次計算します。1回の要求で10・20・30・60分の4輪郭をまとめます。全地点が3手段を持つ入力では303要求・最大1,212輪郭です。出発地点は `search_cutoff:100`、`minimum_reachability:1`、`search_filter.exclude_ferry:true`、コストは `exclude_ferries:true` とし、実際に返った全スナップ候補が100m以内でなければ `no_road` とします。
 7. `generated/{ID}.json`、`build-summary.json`、`source-meta.json` を成果物にします。未知のエラー、警告、未閉鎖リング、欠けた時間帯は生成全体を失敗扱いにします。切出し境界15km以内の輪郭はその時間帯のみ除外し、他の時間帯を残します。境界検査は完全性を証明するものではありません。
+
+Valhallaの各時間の輪郭は格子補間により交差することがあるため、有効な輪郭を短い時間から累積unionし、長時間側が短時間側を含むようにします。各合成の前後で図形の妥当性・包含と境界15kmを検査し、不正な形状は自動修復せず失敗扱いにします。計算はShapelyのGEOSを使い、入力座標を1e-7度の格子にそろえ、前の輪郭を2e-7度だけ広げて浮動小数の境界誤差を吸収します。4時間帯を連続処理する場合、この精度調整による移動は愛媛付近で対角約0.12m以下です。これは短時間側の領域を長時間側に追加する本来のunionによる変化とは別です。使用したNumPy・Shapely・GEOSのバージョン、格子とバッファの値は `source-meta.json` に記録します。
 
 生成した道路網は、入力情報とハッシュを付けてGitHub Actionsのキャッシュに保存できます。復元時も整合性を確認し、状態・左側通行・渡船の検証は毎回やり直します。
 

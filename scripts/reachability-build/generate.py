@@ -11,6 +11,9 @@ import math
 from pathlib import Path
 import re
 import sys
+from shapely import normalize, set_precision, union_all
+from shapely.errors import GEOSException
+from shapely.geometry import mapping, shape
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -22,6 +25,10 @@ TIMES = (10, 20, 30, 60)
 MAX_SNAP_M = 100.0
 BBOX = (131.4, 32.4, 134.6, 35.0)
 MIN_BORDER_KM = 15.0
+# Fixed grid and guard are far smaller than the input isochrone grid.  The
+# guard makes polygon containment robust to GEOS boundary rounding.
+UNION_GRID_DEGREES = 1e-7
+UNION_GUARD_DEGREES = 2e-7
 
 
 class BuildFailure(Exception):
@@ -92,6 +99,42 @@ def near_boundary(polygons):
     return False
 
 
+def union_contours(polygons, previous=None):
+    """Keep every available shorter interval within the later interval.
+
+    Valhalla's independently generated contours can cross after grid
+    interpolation.  Union in ascending time order, preserving holes and
+    disjoint polygons.  Reject invalid input rather than silently repairing it.
+    """
+    try:
+        original_parts = [shape({'type': 'Polygon', 'coordinates': poly}) for poly in polygons]
+        if any(part.is_empty or not part.is_valid or part.geom_type != 'Polygon' for part in original_parts):
+            raise BuildFailure('Invalid input polygon topology')
+        parts = [set_precision(part, UNION_GRID_DEGREES) for part in original_parts]
+        if any(part.is_empty or not part.is_valid for part in parts):
+            raise BuildFailure('Polygon collapsed on the fixed precision grid')
+        if previous is not None:
+            guard = previous.buffer(UNION_GUARD_DEGREES, quad_segs=1)
+            parts.append(set_precision(guard, UNION_GRID_DEGREES))
+        merged = normalize(union_all(parts, grid_size=UNION_GRID_DEGREES))
+        if merged.is_empty or not merged.is_valid or merged.geom_type not in ('Polygon', 'MultiPolygon'):
+            raise BuildFailure('Invalid cumulative contour topology')
+        if previous is not None and not merged.covers(previous):
+            raise BuildFailure('Cumulative contour does not contain shorter interval')
+        # Boundary comparisons can differ by floating-point rounding. Verify
+        # that no current polygon interior is lost beyond the tiny guard.
+        for part in parts[:len(original_parts)]:
+            interior = part.buffer(-UNION_GUARD_DEGREES, quad_segs=1)
+            if not interior.is_empty and not merged.covers(interior):
+                raise BuildFailure('Cumulative contour lost current interval interior')
+        # Convert Shapely's tuples to ordinary GeoJSON lists for existing checks.
+        geometry = json.loads(json.dumps(mapping(merged)))
+        checked = rings(geometry)
+        return merged, geometry, checked
+    except GEOSException as exc:
+        raise BuildFailure('Cannot union contour geometry') from exc
+
+
 def parse_isochrone(doc, origin):
     if doc.get('type') != 'FeatureCollection' or not isinstance(doc.get('features'), list):
         raise BuildFailure('Invalid isochrone FeatureCollection')
@@ -121,15 +164,20 @@ def parse_isochrone(doc, origin):
         by_time[contour].extend(rings(feature.get('geometry')))
     if any(not polygons for polygons in by_time.values()):
         raise BuildFailure('A requested contour is missing')
-    contours, limited = {}, []
+    contours, limited, previous = {}, [], None
     for minutes, polys in by_time.items():
         # Discard the entire interval if any of its polygons approach the
         # graph boundary. Other intervals remain independently usable.
         if near_boundary(polys):
             limited.append(str(minutes))
             continue
-        shape = {'type': 'Polygon', 'coordinates': polys[0]} if len(polys) == 1 else {'type': 'MultiPolygon', 'coordinates': polys}
-        contours[str(minutes)] = {'type': 'Feature', 'properties': {'contour': minutes, 'metric': 'time'}, 'geometry': shape}
+        merged, geometry, merged_polys = union_contours(polys, previous)
+        # Retain the same graph-edge guard even after geometric processing.
+        if near_boundary(merged_polys):
+            limited.append(str(minutes))
+            continue
+        contours[str(minutes)] = {'type': 'Feature', 'properties': {'contour': minutes, 'metric': 'time'}, 'geometry': geometry}
+        previous = merged
     return round(max(distances), 1), contours, limited
 
 

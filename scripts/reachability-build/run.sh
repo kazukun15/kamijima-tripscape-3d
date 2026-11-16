@@ -150,7 +150,10 @@ python3 "$TASK_DIR/canary.py"
 python3 "$TASK_DIR/generate.py" --source-date "$SOURCE_DATE" --out "$OUTPUT"
 SOURCE_DATE="$SOURCE_DATE" SOURCE_SHA="$SOURCE_SHA" PBF_URL="$PBF_URL" IMAGE="$IMAGE" python3 - "$OUTPUT/source-meta.json" "$CUSTOM" <<'PY'
 import hashlib, json, os, pathlib, sys
+import numpy, shapely
 custom=pathlib.Path(sys.argv[2])
+sys.path.insert(0,str(custom.parent))
+import generate
 def sha(path):
     h=hashlib.sha256()
     with path.open('rb') as f:
@@ -162,7 +165,12 @@ doc = {'source_url':os.environ['PBF_URL'],'source_date':os.environ['SOURCE_DATE'
        'speed_config_sha256':sha(custom/'default_speeds.json'),'runtime_config_sha256':sha(custom/'valhalla.json'),
        'bbox':[131.4,32.4,134.6,35.0],'extract_strategy':'smart: multipolygon,boundary',
        'max_snap_m':100,'build_admins':True,'build_elevation':False,'build_time_zones':False,
-       'ferry_exclusion':'experimental hard exclusion; separate canaries passed'}
+       'ferry_exclusion':'experimental hard exclusion; separate canaries passed',
+       'contour_processing':{'algorithm':'cumulative-union-with-precision-guard',
+                             'grid_degrees':generate.UNION_GRID_DEGREES,
+                             'guard_degrees':generate.UNION_GUARD_DEGREES,
+                             'numpy_version':numpy.__version__,'shapely_version':shapely.__version__,
+                             'geos_version':shapely.geos_version_string}}
 pathlib.Path(sys.argv[1]).write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 PY
 echo "Generated task artifacts: $OUTPUT"

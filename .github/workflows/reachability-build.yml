@@ -13,6 +13,11 @@ jobs:
     timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install fixed geometry dependencies
+        run: python3 -m pip install --disable-pip-version-check --only-binary=:all: -r scripts/reachability-build/requirements.txt
       - name: Test data validation
         run: python3 scripts/reachability-build/test_fixture.py
       - name: Install OSM tools
@@ -63,7 +68,7 @@ jobs:
           cp scripts/reachability-build/custom_files/{valhalla_tiles.tar,admins.sqlite,default_speeds.json,valhalla.json} "$source_dir/"
           cp scripts/reachability-build/graph-cache/manifest.json "$source_dir/"
           cp scripts/reachability-build/generated/source-meta.json "$source_dir/"
-          cp scripts/reachability-build/{run.sh,generate.py,canary.py,configure.py,verify-status.py,test_fixture.py,README.md} "$source_dir/scripts/"
+          cp scripts/reachability-build/{run.sh,generate.py,canary.py,configure.py,verify-status.py,test_fixture.py,requirements.txt,README.md} "$source_dir/scripts/"
           cp scripts/reachability-build/SOURCE_README.md "$source_dir/README.md"
           cp scripts/reachability-build/{LICENSE-OSMSpeeds.txt,LICENSE-Valhalla.txt} "$source_dir/"
           archive="$RUNNER_TEMP/reachability-source.tar.gz"

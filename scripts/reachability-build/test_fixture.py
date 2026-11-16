@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import patch
 from urllib.error import HTTPError
 from urllib.parse import unquote
+from shapely.geometry import Point, shape
 import canary
 import generate
 
@@ -71,9 +72,40 @@ class IsoFixtures(unittest.TestCase):
     def test_multiple_features_preserved(self):
         doc = sample();doc['features'].append(copy.deepcopy(doc['features'][0]))
         _, contours, limited = generate.parse_isochrone(doc, ORIGIN)
-        self.assertEqual(contours['10']['geometry']['type'], 'MultiPolygon')
-        self.assertEqual(len(contours['10']['geometry']['coordinates']), 2)
+        # Overlapping components are dissolved rather than emitted as an
+        # invalid overlapping MultiPolygon.
+        self.assertEqual(contours['10']['geometry']['type'], 'Polygon')
+        self.assertTrue(shape(contours['10']['geometry']).is_valid)
         self.assertEqual(limited, [])
+
+    def test_shorter_contours_are_included_in_later_contours(self):
+        doc=sample()
+        # The first interval protrudes past the second; a longer interval must
+        # include the short interval even if the source contours cross.
+        doc['features'][0]['geometry']['coordinates']=[[[132.69,33.79],[132.73,33.79],[132.73,33.82],[132.69,33.82],[132.69,33.79]]]
+        _, contours, _=generate.parse_isochrone(doc, ORIGIN)
+        shapes=[shape(contours[str(t)]['geometry']) for t in generate.TIMES]
+        for shorter,longer in zip(shapes,shapes[1:]):
+            self.assertTrue(longer.covers(shorter))
+            self.assertTrue(longer.is_valid)
+        self.assertEqual(contours,generate.parse_isochrone(copy.deepcopy(doc),ORIGIN)[1])
+
+    def test_holes_and_disjoint_components_preserved(self):
+        outer=[[132.68,33.78],[132.72,33.78],[132.72,33.82],[132.68,33.82],[132.68,33.78]]
+        hole=[[132.685,33.785],[132.69,33.785],[132.69,33.79],[132.685,33.79],[132.685,33.785]]
+        other=[[132.74,33.8],[132.75,33.8],[132.75,33.81],[132.74,33.81],[132.74,33.8]]
+        doc=sample()
+        for feature in doc['features'][:4]:feature['geometry']={'type':'MultiPolygon','coordinates':[[outer,hole],[other]]}
+        _, contours, _=generate.parse_isochrone(doc,ORIGIN)
+        result=shape(contours['60']['geometry'])
+        self.assertEqual(result.geom_type,'MultiPolygon')
+        self.assertFalse(result.covers(Point(132.687,33.787)))
+        self.assertTrue(result.covers(Point(132.745,33.805)))
+
+    def test_invalid_self_crossing_polygon_rejected(self):
+        doc=sample()
+        doc['features'][0]['geometry']['coordinates']=[[[132.69,33.79],[132.72,33.82],[132.69,33.82],[132.71,33.79],[132.69,33.79]]]
+        with self.assertRaises(generate.BuildFailure):generate.parse_isochrone(doc,ORIGIN)
 
     def test_any_distant_candidate_means_no_road(self):
         doc=sample();doc['features'][-1]['geometry']['coordinates'].append([132.71,33.8])
