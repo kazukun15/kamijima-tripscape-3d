@@ -8,6 +8,7 @@ import stats from '../data/stats.json';
 import type {Context,Island,MapState,Mode,Poi,Season,Topic,CountyPoi} from './model';
 import {directionsUrl,mapStateHash,normalize,matchesSearch,matchesIsland,orderedSections,publicPoi,readMapState,recommend,requiresFerry} from './engine';
 import type {ViewRequest} from './MapView';
+import {requestReachability,type ReachabilityMode,type ReachabilityResult} from './reachability';
 const MapView=lazy(()=>import('./MapView'));
 type PrefecturePoi=CountyPoi & {name_kana?:string;address?:string|null;source_data_url?:string;license_url?:string;source_updated_at?:string|null;location_scope:string;summary?:string;source_name?:string};
 const pois=(poiData as Poi[]).filter(publicPoi),countyPois=countyData as PrefecturePoi[],islands=islandData as Island[],topics=topicData as Topic[];
@@ -19,6 +20,23 @@ function readSaved():string[]{try{const value:unknown=JSON.parse(localStorage.ge
 const iconFor=(p:Poi)=>p.categories.includes('食')?Utensils:p.categories.includes('海 / 海岸 / 海水浴場')?Waves:p.categories.includes('歴史 / 文化財')?Landmark:p.categories.includes('絶景 / 展望')?Mountain:MapPin;
 const ModeIcon={walking:Footprints,cycling:Bike,ferry:Ship};
 const modeNames={walking:'徒歩',cycling:'自転車',ferry:'船'};
+const reachModeNames:Record<ReachabilityMode,string>={walking:'徒歩',driving:'車',cycling:'自転車'};
+
+function ReachabilityControls({name,mode,minutes,state,result,error,onMode,onMinutes,onCalculate,onClear}:{name:string;mode:ReachabilityMode;minutes:number;state:'idle'|'loading'|'success'|'error';result:ReachabilityResult|null;error:string;onMode:(mode:ReachabilityMode)=>void;onMinutes:(minutes:number)=>void;onCalculate:()=>void;onClear:()=>void}){
+  return <details className="reachability-panel">
+    <summary>到達圏を調べる <ChevronDown size={16} aria-hidden="true"/></summary>
+    <div className="reachability-content">
+      <p>{name}からの到達圏を表示します。</p>
+      <label>移動手段<select aria-label="到達圏の移動手段" value={mode} onChange={e=>onMode(e.target.value as ReachabilityMode)}><option value="walking">徒歩</option><option value="driving">車</option><option value="cycling">自転車</option></select></label>
+      <label>所要時間<select aria-label="到達圏の所要時間" value={minutes} onChange={e=>onMinutes(Number(e.target.value))}>{[10,20,30,60].map(n=><option key={n} value={n}>{n}分</option>)}</select></label>
+      <button className="reachability-calculate" onClick={onCalculate} disabled={state==='loading'}>{state==='loading'?'読み込み中…':'到達圏を表示'}</button>
+      {state==='loading'&&<button className="reachability-clear" onClick={onClear}>読み込みを中止</button>}
+      {state==='success'&&result&&<><div className="reachability-legend"><span aria-hidden="true"/>{reachModeNames[mode]} {minutes}分の目安</div>{result.snappedDistanceMeters!==null&&<p>道路上の計算開始地点は、スポットから約{Math.round(result.snappedDistanceMeters)}mです。</p>}<p>道路データ: {result.sourceDate} · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · <a href="https://github.com/kazukun15/kamijima-tripscape-3d/releases/tag/reachability-data-20261116" target="_blank" rel="noopener noreferrer">計算に使った道路データ</a></p><button className="reachability-clear" onClick={onClear}>到達圏を消す</button></>}
+      <div className="reachability-status" role="status" aria-live="polite">{state==='loading'?'到達圏を読み込んでいます。':state==='error'?error:state==='success'?'到達圏を地図に表示しました。':''}</div>
+      <p>事前に計算した道路網の目安です。出発点は近くの道路に置き換えるため、実際の入口や道路接続と異なる場合があります。船の航路は除外し、渋滞や通行止めは反映していません。色の範囲には実際に通れない場所も含まれる場合があります。</p>
+    </div>
+  </details>;
+}
 
 function LocationMapLink({lat,lng,address}:{lat:number|null;lng:number|null;address?:string|null}){
   if(lat===null||lng===null||!Number.isFinite(lat)||!Number.isFinite(lng))return null;
@@ -38,8 +56,15 @@ export default function App(){
   const [topic,setTopic]=useState<string|null>(initial.topic),[filtersOpen,setFiltersOpen]=useState(false),[sheet,setSheet]=useState<'compact'|'detail'|'deep'>(initial.deep?'deep':'detail'),[about,setAbout]=useState(false),[status,setStatus]=useState('地図を読み込み中'),[toast,setToast]=useState('');
   const [origin,setOrigin]=useState<{lat:number;lng:number}|undefined>(),[originType,setOriginType]=useState<'port'|'current'>('port');
   const [mapMenuOpen,setMapMenuOpen]=useState(false),[compactFiltersOpen,setCompactFiltersOpen]=useState(false);
+  const [reachMode,setReachMode]=useState<ReachabilityMode>('walking'),[reachMinutes,setReachMinutes]=useState(30);
+  const [reachState,setReachState]=useState<'idle'|'loading'|'success'|'error'>('idle'),[reachError,setReachError]=useState('');
+  const [reachResult,setReachResult]=useState<{key:string;mode:ReachabilityMode;minutes:number;data:ReachabilityResult}|null>(null);
+  const reachController=useRef<AbortController|null>(null),reachSequence=useRef(0),reachCurrentKey=useRef('');
   const dialog=useRef<HTMLDialogElement>(null),searchInput=useRef<HTMLInputElement>(null),detailHeading=useRef<HTMLHeadingElement>(null),filterTrigger=useRef<HTMLElement|null>(null),detailTrigger=useRef<HTMLElement|null>(null),previousUrl=useRef<{state:MapState;savedOnly:boolean;county:string|null}|null>(null),restoringHistory=useRef(false),flushUrl=useRef<(()=>void)|null>(null);
   const p=pois.find(p=>p.id===selected),cp=countyPois.find(p=>p.id===selectedCounty);
+  const reachKey=p?`poi:${p.id}`:cp?`county:${cp.id}`:'';
+  reachCurrentKey.current=reachKey;
+  const activeReach=reachResult&&reachResult.key===reachKey&&reachResult.mode===reachMode&&reachResult.minutes===reachMinutes?reachResult.data:null;
   const context:Context={island,season,mode,hour:new Date().getHours(),history,categories:category==='all'?[]:[category]};
   const visible=useMemo(()=>pois.filter(p=>(island==='all'||p.island===island)&&(category==='all'||p.categories.includes(category))&&(!savedOnly||saved.includes(p.id))&&(!topic||p.related_topics.includes(topic))&&matchesSearch(p,q)),[island,category,q,savedOnly,saved,topic]);
   const visibleCounty=useMemo(()=>island==='all'&&category==='all'&&!topic?countyPois.filter(p=>(!savedOnly||saved.includes(p.id))&&normalize(q).split(' ').filter(Boolean).every(term=>normalize([p.name,p.name_kana,p.municipality,p.address||'',p.summary||''].join(' ')).includes(term))):[],[island,category,q,savedOnly,saved,topic]);
@@ -49,6 +74,23 @@ export default function App(){
   const islandSuggestions=q.trim()&&!savedOnly&&!topic&&category==='all'?islands.filter(i=>matchesIsland(i,q)):[];
   const suggestions=p?recommend(p,pois,context):[];
   const speak=useCallback((text:string)=>setToast(text),[]);
+  const clearReachability=useCallback(()=>{reachSequence.current++;reachController.current?.abort();reachController.current=null;setReachResult(null);setReachError('');setReachState('idle');},[]);
+  useEffect(()=>{clearReachability();},[reachKey,clearReachability]);
+  useEffect(()=>()=>{reachSequence.current++;reachController.current?.abort();},[]);
+  async function calculateReachability(){
+    const coordinates=p?{lat:p.coordinates.lat,lng:p.coordinates.lng}:cp?{lat:cp.lat,lng:cp.lng}:null;
+    if(!coordinates||coordinates.lat===null||coordinates.lng===null||!Number.isFinite(coordinates.lat)||!Number.isFinite(coordinates.lng))return;
+    reachController.current?.abort();const controller=new AbortController(),sequence=++reachSequence.current,key=reachKey;
+    reachController.current=controller;setReachResult(null);setReachError('');setReachState('loading');
+    try{
+      const data=await requestReachability({id:(p||cp)!.id,lat:coordinates.lat,lng:coordinates.lng,mode:reachMode,minutes:reachMinutes,signal:controller.signal});
+      if(controller.signal.aborted||sequence!==reachSequence.current||reachCurrentKey.current!==key)return;
+      setReachResult({key,mode:reachMode,minutes:reachMinutes,data});setReachState('success');
+    }catch(error){
+      if(controller.signal.aborted||sequence!==reachSequence.current||reachCurrentKey.current!==key)return;
+      setReachResult(null);setReachError(error instanceof Error&&error.name==='ReachabilityError'?error.message:'到達圏を計算できませんでした。通信状況を確認して、もう一度お試しください。');setReachState('error');
+    }finally{if(reachController.current===controller)reachController.current=null;}
+  }
   useEffect(()=>{if(!toast)return;const t=setTimeout(()=>setToast(''),4500);return()=>clearTimeout(t);},[toast]);
   useEffect(()=>{try{localStorage.setItem('tripscape-saved',JSON.stringify(saved));}catch{speak('保存できません。この画面を開いている間は利用できます。');}},[saved,speak]);
   useEffect(()=>{
@@ -89,6 +131,7 @@ export default function App(){
   const TopicIcon=mode==='ferry'?Ship:mode==='cycling'?Bike:Footprints;
   const activeTopic=topics.find(t=>t.id===topic);
   const filtered=island!=='all'||!!q||category!=='all'||!!topic||savedOnly;
+  const reachControls=(name:string)=><ReachabilityControls name={name} mode={reachMode} minutes={reachMinutes} state={reachState} result={activeReach} error={reachError} onMode={value=>{clearReachability();setReachMode(value);}} onMinutes={value=>{clearReachability();setReachMinutes(value);}} onCalculate={calculateReachability} onClear={clearReachability}/>;
   return <div className={`app-shell ${mapMenuOpen?'landscape-settings-open':''}`}>
     <a className="skip-link" href="#search-input" onClick={event=>{event.preventDefault();if(window.matchMedia('(max-width:760px), (orientation:landscape)').matches)openFilters();else searchInput.current?.focus();}}>検索へ移動</a>
     <header className="topbar">
@@ -97,7 +140,7 @@ export default function App(){
       <nav aria-label="地図の便利な機能"><button className={savedOnly?'active':''} onClick={toggleBookmarks} aria-pressed={savedOnly} aria-label={`旅のしおり ${saved.length}件`}><Bookmark size={16}/>旅のしおり<span className="count-badge">{saved.length}</span></button><button onClick={share} aria-label="地図のURLをコピー"><Share2 size={17}/><span className="desktop-label">共有</span></button><button onClick={()=>setAbout(true)} aria-label="この地図について"><Info size={18}/></button></nav>
     </header>
     <main>
-      <Suspense fallback={<div className="map-loading"><Compass size={32}/><p>愛媛県の地図を読み込んでいます</p></div>}><MapView pois={pois} visible={visible} countyPois={visibleCounty} selectedCountyPoi={selectedCounty} onCountyPoi={selectCounty} islands={islands} selected={selected} view={view} mobileSheet={sheet} onPoi={select} onIsland={chooseIsland} terrain={terrain} onTerrain={setTerrain} onStatus={setStatus} onLocate={locate}/></Suspense>
+      <Suspense fallback={<div className="map-loading"><Compass size={32}/><p>愛媛県の地図を読み込んでいます</p></div>}><MapView pois={pois} visible={visible} countyPois={visibleCounty} selectedCountyPoi={selectedCounty} onCountyPoi={selectCounty} islands={islands} selected={selected} view={view} mobileSheet={sheet} onPoi={select} onIsland={chooseIsland} terrain={terrain} onTerrain={setTerrain} onStatus={setStatus} onLocate={locate} reachability={activeReach?.geojson??null}/></Suspense>
       <aside id="explorer-panel" className={`explorer ${filtersOpen?'mobile-open':''} ${compactFiltersOpen?'compact-filter-open':''}`} aria-label="地点の検索と絞り込み">
         <div className="explorer-heading"><button className="mobile-close icon-button" onClick={()=>{setFiltersOpen(false);filterTrigger.current?.focus({preventScroll:true});}} aria-label="検索パネルを閉じる"><X size={18}/></button><h1>観光スポット</h1></div>
         <div className="search-field"><Search size={17}/><input ref={searchInput} id="search-input" aria-label="観光スポットを検索" placeholder="名称・市町・島を検索" value={q} onChange={e=>updateSearch(e.target.value)}/>{q&&<button onClick={()=>{updateSearch('');searchInput.current?.focus();}} aria-label="検索をクリア"><X size={14}/></button>}</div>
@@ -122,6 +165,7 @@ export default function App(){
         <div className="detail-top"><span className="eyebrow">{p.island}</span><div><button className="icon-button" aria-label={`${p.name}をしおり${saved.includes(p.id)?'から削除':'に保存'}`} aria-pressed={saved.includes(p.id)} onClick={()=>toggleSave(p.id)}>{saved.includes(p.id)?<Check size={19}/>:<Bookmark size={19}/>}</button><button className="icon-button" onClick={dismissDetail} aria-label="地点詳細を閉じる"><X size={20}/></button></div></div>
         <div className="detail-scroll" key={p.id}>
           <div className="detail-heading"><span className="place-number">{String(pois.indexOf(p)+1).padStart(2,'0')} <span>/ {String(stats.verified).padStart(2,'0')}</span></span><h2 ref={detailHeading} tabIndex={-1}>{p.name}</h2><div className="place-meta"><MapPin size={13}/>{p.island}<span/> {p.categories[0].split(' / ')[0]}</div><LocationMapLink lat={p.coordinates.lat} lng={p.coordinates.lng}/></div>
+          {reachControls(p.name)}
           <div className="detail-tabs"><button className={!deep?'active':''} aria-pressed={!deep} onClick={()=>{setDeep(false);setSheet('detail');}}>場所のこと</button><button className={deep?'active':''} aria-pressed={deep} onClick={()=>{setDeep(true);setSheet('deep');}}><BookOpen size={14}/> 深掘り</button></div>
           {!deep?<><p className="description">{p.description}</p><div className="tag-row">{p.related_topics.slice(0,4).map(t=><button key={t} onClick={()=>chooseTopic(t)}>{t}<ArrowUpRight size={10}/></button>)}</div></>:<>
             <div className="deep-heading"><h3>この場所について</h3><p>公式資料をもとに紹介します。</p></div>
@@ -141,6 +185,7 @@ export default function App(){
         <button className="sheet-handle" onClick={()=>setSheet(sheet==='compact'?'detail':'compact')} aria-label="詳細パネルの高さを切り替え" aria-expanded={sheet!=='compact'}><span/></button>
         <div className="detail-top"><span className="eyebrow">{cp.municipality}</span><div><button className="icon-button" aria-label={`${cp.name}をしおり${saved.includes(cp.id)?'から削除':'に保存'}`} aria-pressed={saved.includes(cp.id)} onClick={()=>toggleSave(cp.id)}>{saved.includes(cp.id)?<Check size={19}/>:<Bookmark size={19}/>}</button><button className="icon-button" onClick={dismissDetail} aria-label="地点詳細を閉じる"><X size={20}/></button></div></div>
         <div className="detail-scroll" key={cp.id}><div className="detail-heading"><h2 ref={detailHeading} tabIndex={-1}>{cp.name}</h2><div className="place-meta"><MapPin size={13}/>{cp.municipality} <span/> {cp.source_name||(cp.source_data_url?'自治体公開データ':'県観光情報')}</div><LocationMapLink lat={cp.lat} lng={cp.lng} address={cp.address}/></div>
+          {reachControls(cp.name)}
           {cp.summary&&<p className="description">{cp.summary}</p>}<p className="description">{cp.location_scope}</p>
           <section className="access-card"><div className="section-label"><MapPin size={15}/> 場所を確認</div><p>営業時間や休業日は公式情報をご確認ください。</p><div className="access-links"><a href={`https://www.google.com/maps/dir/?api=1&destination=${cp.lat},${cp.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer">徒歩ルートを外部地図で確認 <ArrowUpRight size={13}/></a><a href={cp.source_url} target="_blank" rel="noopener noreferrer">掲載元のページ <ArrowUpRight size={13}/></a></div></section>
           <details className="sources" open><summary><CheckCircle2 size={14}/>出典・確認情報 <ChevronDown size={14}/></summary><div><dl><dt>確認日</dt><dd>{cp.checked_at}</dd><dt>資料更新日</dt><dd>{cp.source_updated_at||'記載なし'}</dd><dt>利用条件</dt><dd>{cp.license_url?<><span>{cp.municipality}の観光施設一覧を加工（</span><a href={cp.license_url} target="_blank" rel="noopener noreferrer">{cp.license}</a><span>）</span></>:cp.license}</dd><dt>地点について</dt><dd>{cp.location_scope}</dd></dl><div className="source-links">{cp.source_data_url&&<a href={cp.source_data_url} target="_blank" rel="noopener noreferrer">自治体の公開データ（CSV） <ArrowUpRight size={12}/></a>}<a href={cp.source_url} target="_blank" rel="noopener noreferrer">データの公開元 <ArrowUpRight size={12}/></a></div></div></details>
@@ -148,6 +193,7 @@ export default function App(){
       </section>}
       {!p&&!cp&&<div className="journey-strip glass"><div className="journey-mark"><Compass size={23}/></div><div><strong>{activeTopic?.name||selectedIsland?.name||'観光スポット'}</strong><small>{totalVisible}件 · {modeNames[mode]}</small></div><button onClick={openFilters} aria-expanded={filtersOpen} aria-controls="explorer-panel" aria-label="島と場所の一覧を表示"><ChevronRight size={20}/></button></div>}
       <button className="mobile-explore-toggle" onClick={openFilters} aria-expanded={filtersOpen} aria-controls="explorer-panel"><Compass size={15}/>場所を探す <span>{totalVisible}</span><ChevronUp size={14}/></button>
+      {activeReach&&<a className="reachability-attribution" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>}
       <nav className="landscape-dock" aria-label="地図メニュー">
         <button onClick={reset} aria-label="愛媛県の地図を全域表示"><Globe size={19}/><span>全域</span></button>
         <button className="landscape-explore" onClick={openFilters} aria-expanded={filtersOpen} aria-controls="explorer-panel"><Search size={19}/><span>探す</span></button>

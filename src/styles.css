@@ -281,3 +281,25 @@ dialog{padding:32px;border-radius:16px}dialog h2{margin:16px 0}dialog p{margin-b
 .location-map-link:hover{background:#dfefe6}
 .location-map-link:focus-visible{outline:2px solid #287d70;outline-offset:2px}
 @media (orientation:landscape) and (max-height:480px){.location-map-link{margin-top:8px}}
+
+.reachability-panel{margin:16px 0;border:1px solid #c5ddd3;border-radius:8px;background:#f5faf7;color:#245b56}
+.reachability-panel>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;padding:8px 16px;list-style:none;cursor:pointer;font-size:13px;font-weight:600}
+.reachability-panel>summary::-webkit-details-marker{display:none}
+.reachability-panel[open]>summary>svg{transform:rotate(180deg)}
+.reachability-panel>summary:focus-visible,.reachability-content select:focus-visible,.reachability-content button:focus-visible{outline:2px solid #287d70;outline-offset:2px}
+.reachability-content{display:grid;gap:8px;padding:0 16px 16px}
+.reachability-content p{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.reachability-content label{display:grid;gap:4px;font-size:12px;font-weight:600}
+.reachability-content select{width:100%;min-width:0;min-height:48px;padding:8px;border:1px solid #b5d4c8;border-radius:8px;background:#fff;color:#214f4b;font-size:14px}
+.reachability-content button{min-width:0;min-height:48px;padding:8px;border-radius:8px;font-size:13px;font-weight:600;overflow-wrap:anywhere}
+.reachability-calculate{background:#1b6c66;color:white}
+.reachability-calculate:disabled{opacity:.65;cursor:wait}
+.reachability-clear{border:1px solid #b5d4c8;background:#fff;color:#245b56}
+.reachability-status{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.reachability-status:empty{display:none}
+.reachability-legend{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;line-height:1.5}
+.reachability-legend>span{flex:none;width:16px;height:16px;border:2px solid #147d78;border-radius:4px;background:#48b6ad66}
+@media (orientation:landscape) and (max-height:480px){.reachability-panel{margin:8px 0}.reachability-panel>summary{padding-inline:8px}.reachability-content{padding:0 8px 8px}}
+
+.reachability-attribution{position:absolute;z-index:8;left:8px;bottom:104px;padding:4px 8px;border:1px solid #d6e7de;border-radius:8px;background:#fffefa;color:#315b57;font:9px/1.3 Arial,sans-serif;white-space:nowrap}
+@media (orientation:portrait){.reachability-attribution{left:auto;right:8px;bottom:calc(var(--sheet-height, 0px) + 72px)}}

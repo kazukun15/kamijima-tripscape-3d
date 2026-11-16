@@ -53,6 +53,7 @@ npm run serve:dist
 - 3D/2D、陰影、淡色地図/航空写真を切り替えられます。Ctrl＋ドラッグで回転・傾斜、右下の視点スライダーで0〜80度。地形の標高強調は1.0です。
 - スマートフォンでは検索パネルと詳細のボトムシートを使います。ハンドルで小さくし、「深掘り」で大きくできます。
 - 共有ボタンは現在の選択地点・島・検索・カテゴリ・テーマ・季節・移動手段・表示モードをURLに保存します。しおりはブラウザー内のみ。現在地はボタン操作時だけ取得し、保存しません。
+- 地点詳細の「到達圏を調べる」から、徒歩・車・自転車と10・20・30・60分を選び、事前計算した道路網の目安を表示できます。出発地点近くに対応する道路がない場合は表示しません。船の航路は計算から除外しています。範囲は道路間を補間した概算で、渋滞・通行止め・気象・運航状況は反映せず、塗られた全地点への到達を保証しません。
 - 住所を収録している地点では住所を押すとGoogle マップで掲載位置を開けます。住所未収録の地点も「Google マップで場所を開く」から確認できます。位置は代表地点の場合があり、入口とは異なることがあります。
 - 港/現在地から徒歩・自転車の外部地図を開けます。船の航路・時刻は町の最新公式アクセス案内へ進みます。船を含むルートをアプリ内で計算する機能はありません。
 
@@ -83,6 +84,8 @@ GitHub Pages: `.github/workflows/pages.yml` が `main` へのpushでデータ検
 
 配布ZIPには生成済み観光データ、上島町周辺の地形・背景地図の一部、公開用distとソースを同梱しています。元のHTML/PDF、公式ページ全文の抽出ファイル、実行キャッシュは同梱しません。通常のインストール・ビルドでは原典を再取得する必要はありません。観光データを原典から再生成する場合は、調査スクリプトで資料を再取得してから照合してください。
 
+到達圏はOpenStreetMapの道路データをValhallaで事前計算し、地点ごとの静的ファイルとして同梱しています。ブラウザーから経路計算サービスに位置やAPIキーは送信しません。計算に使った道路網・設定・入力元とハッシュ・ライセンス・再計算手順は[到達圏の道路データ](https://github.com/kazukun15/kamijima-tripscape-3d/releases/tag/reachability-data-20261116)に公開しています。更新方法は `scripts/reachability-build/README.md` を参照してください。
+
 ## データ・調査の場所
 
 | ファイル | 内容 |
@@ -94,6 +97,7 @@ GitHub Pages: `.github/workflows/pages.yml` が `main` へのpushでデータ検
 | `data/islands.json` | 主要8島。国土地理院の島名注記と公式ガイド |
 | `data/topics.json` | 15テーマの関係と出典 |
 | `public/data/pois.geojson` | 上島町の公開地点18件のGeoJSON |
+| `public/data/reachability/` | 各地点の事前計算した到達圏と道路データの出典 |
 | `research/pending.json` | 133件の未確認候補と理由。座標null |
 | `research/RESEARCH_REPORT.md` | 出典、座標採用条件、取れなかったデータ、追加調査 |
 | `research/fetch-log.json` | 元ページ取得の記録 |
@@ -104,6 +108,8 @@ GitHub Pages: `.github/workflows/pages.yml` が `main` へのpushでデータ検
 ## 出典・権利
 
 町公式観光ガイド: https://kamijima.info/ ／ 愛媛県公式観光: https://www.iyokannet.jp/ ／ 地理院タイル: https://maps.gsi.go.jp/development/ichiran.html
+
+到達圏の道路網: [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright)、[Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/)。道路の収録状況やアクセス制限は現地と異なる場合があります。
 
 松山市・久万高原町の観光施設一覧を加工して利用しています（[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)）。県観光サイト「いよ観ネット」から採録した地点名・市町名・座標はCC BYとして扱わず、各掲載元と[サイト利用条件](https://www.iyokannet.jp/site)を明記しています。県内の地点の原典と確認日は `research/EHIME_POI_SOURCES.json` を参照してください。
 

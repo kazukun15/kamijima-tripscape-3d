@@ -12,7 +12,7 @@ export function installMarkerLabels(host:HTMLElement){
     const lines:string[]=[];
     const inside=(r:Rect)=>r.left>=bounds.left+gap&&r.right<=bounds.right-gap&&r.top>=bounds.top+gap&&r.bottom<=bounds.bottom-gap;
     const obstacles:Rect[]=[];
-    for(const el of (host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.journey-strip,.welcome-card,.mobile-browse,.mobile-explore-toggle,.map-breadcrumb,.map-status,.map-instruction,.landscape-dock,.dock-attribution,.leaflet-control,.maplibregl-ctrl,.island-marker,.county-cluster')){
+    for(const el of (host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.journey-strip,.welcome-card,.mobile-browse,.mobile-explore-toggle,.map-breadcrumb,.map-status,.map-instruction,.landscape-dock,.dock-attribution,.reachability-attribution,.leaflet-control,.maplibregl-ctrl,.island-marker,.county-cluster')){
       const r=el.getBoundingClientRect();if(r.width&&r.height&&getComputedStyle(el).visibility!=='hidden')obstacles.push(r);
     }
     const markers=Array.from(host.querySelectorAll<HTMLButtonElement>('.poi-marker')).map(el=>{

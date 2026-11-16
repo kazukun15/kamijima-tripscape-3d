@@ -1,0 +1,30 @@
+{
+  "source_url": "https://download.openstreetmap.fr/extracts/asia/japan.osm.pbf",
+  "source_date": "2026-11-15T00:14:20Z",
+  "source_sha256": "9dc9727d97e89e30c2e3e2e1f0f4be4a4825b64aa9b2a83d2a5d39074784d746",
+  "valhalla_image": "ghcr.io/valhalla/valhalla-scripted:3.9.1@sha256:6238809f9dc3057743d70a20efd3911ec38e458bfa13a0601909b58f68dfd956",
+  "graph_sha256": "54eb9f3ac6793f9635eaab121d4f4ab80e5e9220e9323a39ed689f72be3a7d9d",
+  "admin_sha256": "b7b6338d8b91f47b8478f4fcec1292b8504773a51f65b50433bdd3d6bd571f7c",
+  "speed_config_sha256": "9953f78c2407b8d2e3701fce6cc93c6a91b207a365a5d2f5564a6d1c231e5ba7",
+  "runtime_config_sha256": "1b0e072fbde1310286dcd96d748318bcd0b2e5d0d1c72f93efd5aceba34f6892",
+  "bbox": [
+    131.4,
+    32.4,
+    134.6,
+    35.0
+  ],
+  "extract_strategy": "smart: multipolygon,boundary",
+  "max_snap_m": 100,
+  "build_admins": true,
+  "build_elevation": false,
+  "build_time_zones": false,
+  "ferry_exclusion": "experimental hard exclusion; separate canaries passed",
+  "contour_processing": {
+    "algorithm": "cumulative-union-with-precision-guard",
+    "grid_degrees": 1e-07,
+    "guard_degrees": 2e-07,
+    "numpy_version": "2.3.1",
+    "shapely_version": "2.1.2",
+    "geos_version": "3.13.1"
+  }
+}

@@ -5,8 +5,8 @@
 - `valhalla_tiles.tar`: OpenStreetMapの道路データからValhallaで構築したグラフ。
 - `admins.sqlite`: 道路の行政区情報。`default_speeds.json`: 使用した道路速度設定。
 - `valhalla.json`: 渡船のハード除外を有効にした実際の計算設定。
-- `manifest.json`: グラフ構築時の入力PBFのURL・日時・SHA-256、領域、各ファイルのSHA-256、Valhallaイメージ。
-- `source-meta.json`: 表示データの出典と計算条件。生成コードは `scripts/` に同梱。
+- `manifest.json`: グラフ構築時のキャッシュの記録。入力PBFのURL・日時・SHA-256、領域、当時の各ファイルのSHA-256、Valhallaイメージを記録しています。`file_hashes.txt` と `.file_hashes.txt` はキャッシュ内部用のため、このアーカイブには含めていません。
+- `source-meta.json`: 表示データの出典と計算条件、同梱ファイルのSHA-256。特に `runtime_config_sha256` は、構築後に渡船の除外を設定した同梱 `valhalla.json` のハッシュです。構築時の設定を記録した `manifest.json` の `valhalla.json` ハッシュとは異なります。生成コードは `scripts/` に同梱。
 - `scripts/requirements.txt`: 幾何処理に使用するNumPy 2.3.1とShapely 2.1.2の固定依存関係。
 
 道路データ © OpenStreetMap contributors、Open Database License (ODbL) 1.0。<https://www.openstreetmap.org/copyright> および <https://opendatacommons.org/licenses/odbl/1-0/> を参照してください。速度設定のライセンスは `LICENSE-OSMSpeeds.txt`、Valhallaのライセンスは `LICENSE-Valhalla.txt` です。

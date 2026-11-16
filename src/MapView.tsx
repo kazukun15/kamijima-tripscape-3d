@@ -9,7 +9,7 @@ import {loadGsiTerrain} from './gsiTerrain';
 
 export interface CountyMapPoi {id:string;name:string;lat:number;lng:number;}
 export interface ViewRequest {kind:'overview'|'island'|'poi'|'countyPoi'|'location';id?:string;coordinates?:[number,number];nonce:number;}
-interface Props {pois:Poi[];visible:Poi[];islands:Island[];selected:string|null;countyPois?:CountyMapPoi[];selectedCountyPoi?:string|null;onCountyPoi?:(id:string)=>void;view:ViewRequest;mobileSheet:'compact'|'detail'|'deep';onPoi:(id:string)=>void;onIsland:(name:string)=>void;terrain:boolean;onTerrain:(value:boolean)=>void;onStatus:(text:string)=>void;onLocate:()=>void;}
+interface Props {pois:Poi[];visible:Poi[];islands:Island[];selected:string|null;countyPois?:CountyMapPoi[];selectedCountyPoi?:string|null;onCountyPoi?:(id:string)=>void;view:ViewRequest;mobileSheet:'compact'|'detail'|'deep';onPoi:(id:string)=>void;onIsland:(name:string)=>void;terrain:boolean;onTerrain:(value:boolean)=>void;onStatus:(text:string)=>void;onLocate:()=>void;reachability:GeoJSON.FeatureCollection<GeoJSON.Polygon|GeoJSON.MultiPolygon>|null;}
 const base=import.meta.env.BASE_URL;
 const localTiles=(folder:string)=>new URL(`${base}${folder}/{z}/{x}/{y}.png`,location.href).href.replace(/%7B/g,'{').replace(/%7D/g,'}');
 const bounds:[number,number,number,number]=[133.05,34.10,133.43,34.34];
@@ -69,11 +69,14 @@ export function createMapStyle():StyleSpecification {
     'base-local':{type:'raster',tiles:[localTiles('basemap')],tileSize:256,minzoom:8,maxzoom:14,bounds},
     terrain:{type:'raster-dem',tiles:['gsi-dem://{z}/{x}/{y}'],tileSize:256,minzoom:1,maxzoom:14,encoding:'mapbox',attribution},
     buildings:{type:'geojson',data:emptyGeo},
+    reachability:{type:'geojson',data:emptyGeo,attribution:'<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>'},
   },layers:[
     {id:'sea',type:'background',paint:{'background-color':'#dcecf0'}},
     {id:'base',type:'raster',source:'base',paint:{'raster-saturation':-.12,'raster-fade-duration':0}},
     {id:'base-local',type:'raster',source:'base-local',paint:{'raster-saturation':-.12,'raster-fade-duration':0}},
     {id:'shade',type:'hillshade',source:'terrain',paint:{'hillshade-exaggeration':.32,'hillshade-shadow-color':'#385a50','hillshade-highlight-color':'#f9f7dd','hillshade-accent-color':'#a8b1a0'}},
+    {id:'reachability-fill',type:'fill',source:'reachability',paint:{'fill-color':'#007a78','fill-opacity':.25}},
+    {id:'reachability-line',type:'line',source:'reachability',paint:{'line-color':'#006660','line-width':2.5,'line-opacity':.9}},
     // Empty until geometry AND explicit numeric heights have been verified. No invented default height.
     {id:'buildings',type:'fill-extrusion',source:'buildings',filter:['all',['has','height'],['>', ['get','height'],0]],paint:{'fill-extrusion-height':['get','height'],'fill-extrusion-base':0,'fill-extrusion-color':'#829994','fill-extrusion-opacity':.7}},
   ]};
@@ -104,10 +107,28 @@ function cameraPadding(host:HTMLElement,selected:boolean){
   return padding;
 }
 
+function reachBounds(data:GeoJSON.FeatureCollection<GeoJSON.Polygon|GeoJSON.MultiPolygon>):[[number,number],[number,number]]|null {
+  let west=Infinity,south=Infinity,east=-Infinity,north=-Infinity;
+  for(const feature of data.features){
+    const polygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
+    for(const polygon of polygons)for(const ring of polygon)for(const [lng,lat] of ring){
+      if(!Number.isFinite(lat)||!Number.isFinite(lng))continue;
+      west=Math.min(west,lng);east=Math.max(east,lng);south=Math.min(south,lat);north=Math.max(north,lat);
+    }
+  }
+  return Number.isFinite(west)&&west<east&&south<north?[[west,south],[east,north]]:null;
+}
+function reachPadding(host:HTMLElement){
+  const p=cameraPadding(host,true),r=host.getBoundingClientRect();
+  const x=Math.min(1,Math.max(0,r.width-48)/Math.max(1,p.left+p.right));
+  const y=Math.min(1,Math.max(0,r.height-48)/Math.max(1,p.top+p.bottom));
+  return {left:Math.floor(p.left*x),right:Math.floor(p.right*x),top:Math.floor(p.top*y),bottom:Math.floor(p.bottom*y)};
+}
+
 function selectedPinOffset(host:HTMLElement):[number,number]|null {
   const pin=host.querySelector<HTMLElement>('.poi-marker.selected');if(!pin)return null;
   const rect=pin.getBoundingClientRect(),bounds=host.getBoundingClientRect(),gap=6;
-  const obstacles=Array.from((host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.welcome-card,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.map-breadcrumb,.journey-strip,.mobile-explore-toggle,.landscape-dock,.dock-attribution,.map-status')).map(el=>el.getBoundingClientRect()).filter(r=>r.width&&r.height);
+  const obstacles=Array.from((host.closest('main')||host).querySelectorAll<HTMLElement>('.explorer,.detail-panel,.welcome-card,.map-toolbar,.mobile-map-settings,.mobile-search,.map-actions,.pitch-control,.map-breadcrumb,.journey-strip,.mobile-explore-toggle,.landscape-dock,.dock-attribution,.reachability-attribution,.map-status')).map(el=>el.getBoundingClientRect()).filter(r=>r.width&&r.height);
   const valid=(left:number,top:number)=>left>=bounds.left+gap&&top>=bounds.top+gap&&left+rect.width<=bounds.right-gap&&top+rect.height<=bounds.bottom-gap&&!obstacles.some(r=>left<r.right+gap&&left+rect.width>r.left-gap&&top<r.bottom+gap&&top+rect.height>r.top-gap);
   if(valid(rect.left,rect.top))return null;
   const xs=new Set([rect.left,bounds.left+gap,bounds.right-gap-rect.width]),ys=new Set([rect.top,bounds.top+gap,bounds.bottom-gap-rect.height]);
@@ -226,6 +247,7 @@ export default function MapView(props:Props){
   },[props.terrain,ready,demFailed]);
   useEffect(()=>{
     const m=map.current;if(!m||!ready)return;
+    if(props.reachability)return;
     const v=props.view,active=props.selected||props.selectedCountyPoi,padding=host.current?cameraPadding(host.current,!!active):{top:55,bottom:100,left:40,right:40};
     // Terrain can lift a pin away from the requested camera center. After an
     // automatic flight only, ensure the real pin stays clear of the controls.
@@ -254,7 +276,15 @@ export default function MapView(props:Props){
     }
     if(active){m.once('idle',onIdle);m.on('movestart',onUserMove);}
     return()=>{cancelled=true;cancelAnimationFrame(correctionFrame);m.off('idle',onIdle);m.off('movestart',onUserMove);};
-  },[props.view,ready,props.mobileSheet,props.selected,props.selectedCountyPoi,props.countyPois,viewportRevision]);
+  },[props.view,ready,props.mobileSheet,props.selected,props.selectedCountyPoi,props.countyPois,viewportRevision,props.reachability]);
+  useEffect(()=>{
+    const m=map.current;if(!m||!ready)return;
+    const source=m.getSource('reachability') as maplibregl.GeoJSONSource|undefined;
+    source?.setData(props.reachability??emptyGeo);
+    if(host.current)host.current.dataset.reachability=props.reachability?'shown':'none';
+    const b=props.reachability&&reachBounds(props.reachability);
+    if(b&&host.current){m.stop();m.fitBounds(b,{padding:reachPadding(host.current),pitch:0,bearing:0,duration:500,maxZoom:15});}
+  },[props.reachability,ready]);
   useEffect(()=>{
     const m=map.current;if(!m||!ready)return;
     if(mapType==='photo'){
@@ -293,6 +323,7 @@ export default function MapView(props:Props){
 
 function RasterMap(props:Props&{onReady:(map:import('leaflet').Map|null)=>void;expandedKamijima:boolean;onExpandKamijima:(value:boolean)=>void}){
   const host=useRef<HTMLDivElement>(null),leaf=useRef<import('leaflet').Map|null>(null),group=useRef<import('leaflet').LayerGroup|null>(null),latest=useRef(props);
+  const reachGroup=useRef<import('leaflet').LayerGroup|null>(null);
   const countyGroup=useRef<import('leaflet').LayerGroup|null>(null),islandElements=useRef<HTMLButtonElement[]>([]);
   const markers=useRef(new Map<string,import('leaflet').Marker>());
   const [loaded,setLoaded]=useState(false),[viewportRevision,setViewportRevision]=useState(0),[clusterKamijima,setClusterKamijima]=useState(true);latest.current=props;
@@ -304,14 +335,14 @@ function RasterMap(props:Props&{onReady:(map:import('leaflet').Map|null)=>void;e
       L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{tileSize:256,minNativeZoom:5,maxNativeZoom:18,attribution}).on('tileerror',()=>latest.current.onStatus('背景地図を読み込めません。通信状況をご確認ください。オフラインでは上島町周辺の一部のみ表示できます。')).addTo(m);
       L.tileLayer(localTiles('basemap'),{tileSize:256,minNativeZoom:8,maxNativeZoom:14,bounds:[[34.10,133.05],[34.34,133.43]]}).addTo(m);
       for(const i of latest.current.islands){const el=document.createElement('button');el.className='island-marker';el.textContent=i.name;el.style.display=m.getZoom()<9.5?'none':'';islandElements.current.push(el);el.setAttribute('aria-label',`地図から${i.name}を選択`);el.onclick=()=>latest.current.onIsland(i.name);L.marker([i.coordinates[1],i.coordinates[0]],{keyboard:false,icon:L.divIcon({html:el,className:'island-leaflet'})}).addTo(m);}
-      leaf.current=m;group.current=L.layerGroup().addTo(m);countyGroup.current=L.layerGroup().addTo(m);setLoaded(true);
+      leaf.current=m;reachGroup.current=L.layerGroup().addTo(m);group.current=L.layerGroup().addTo(m);countyGroup.current=L.layerGroup().addTo(m);setLoaded(true);
       labels=installMarkerLabels(host.current);m.on('move zoomend',labels.schedule);
       const updateCamera=()=>{const clustered=m.getZoom()<9.5;setClusterKamijima(clustered);if(m.getZoom()<8.8)latest.current.onExpandKamijima(false);islandElements.current.forEach(el=>{el.style.display=clustered?'none':'';});if(host.current){const b=m.getBounds();host.current.dataset.mapBounds=[b.getWest(),b.getSouth(),b.getEast(),b.getNorth()].join(',');host.current.dataset.mapZoom=String(m.getZoom());host.current.dataset.mapPitch='0';host.current.dataset.mapBearing='0';host.current.dataset.terrainActive='false';}};
       m.on('moveend zoomend',updateCamera);updateCamera();latest.current.onReady(m);
       latest.current.onTerrain(false);latest.current.onStatus('2D地図を表示中');host.current.setAttribute('data-map-ready','true');
       observer=new ResizeObserver(()=>{m.invalidateSize();setViewportRevision(v=>v+1);});observer.observe(host.current);
     }).catch(()=>latest.current.onStatus('地図を読み込めません。地点一覧から探してください。'));
-    return()=>{cancelled=true;labels?.destroy();observer?.disconnect();leaf.current?.remove();leaf.current=null;group.current=null;countyGroup.current=null;islandElements.current=[];markers.current.clear();latest.current.onReady(null);};
+    return()=>{cancelled=true;labels?.destroy();observer?.disconnect();leaf.current?.remove();leaf.current=null;reachGroup.current=null;group.current=null;countyGroup.current=null;islandElements.current=[];markers.current.clear();latest.current.onReady(null);};
   },[]);
   useEffect(()=>{
     if(!loaded||!group.current)return;
@@ -360,7 +391,7 @@ function RasterMap(props:Props&{onReady:(map:import('leaflet').Map|null)=>void;e
     let cleanup=()=>{};return()=>{cancelled=true;cleanup();};
   },[loaded,props.countyPois,props.selectedCountyPoi]);
   useEffect(()=>{
-    if(!loaded||!leaf.current||!host.current)return;const m=leaf.current,v=props.view,active=props.selected||props.selectedCountyPoi,padding=cameraPadding(host.current,!!active);
+    if(!loaded||!leaf.current||!host.current||props.reachability)return;const m=leaf.current,v=props.view,active=props.selected||props.selectedCountyPoi,padding=cameraPadding(host.current,!!active);
     const aimAt=(coordinates:[number,number],zoom:number)=>{
       // Leaflet setView has no panel padding. Offset the geographic center so
       // that the destination is centered in the uncovered part of the map.
@@ -374,6 +405,20 @@ function RasterMap(props:Props&{onReady:(map:import('leaflet').Map|null)=>void;e
     else if(v.coordinates)aimAt([v.coordinates[1],v.coordinates[0]],14);
     const frame=requestAnimationFrame(()=>{if(!host.current||!active)return;const offset=selectedPinOffset(host.current);if(offset)m.panBy(offset,{animate:false});});
     return()=>cancelAnimationFrame(frame);
-  },[props.view,loaded,props.mobileSheet,props.selected,props.selectedCountyPoi,props.countyPois,viewportRevision]);
+  },[props.view,loaded,props.mobileSheet,props.selected,props.selectedCountyPoi,props.countyPois,viewportRevision,props.reachability]);
+  useEffect(()=>{
+    if(!loaded||!leaf.current||!reachGroup.current)return;
+    let cancelled=false;const m=leaf.current,data=props.reachability;
+    reachGroup.current.clearLayers();if(host.current)host.current.dataset.reachability=data?'shown':'none';
+    const osmAttribution='<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>';
+    if(data)m.attributionControl.addAttribution(osmAttribution);else m.attributionControl.removeAttribution(osmAttribution);
+    if(data)import('leaflet').then(L=>{
+      if(cancelled||!reachGroup.current||!host.current)return;
+      L.geoJSON(data,{interactive:false,style:{color:'#006660',weight:2.5,opacity:.9,fillColor:'#007a78',fillOpacity:.25}}).addTo(reachGroup.current);
+      const bounds=reachBounds(data),p=reachPadding(host.current);
+      if(bounds){m.stop();m.fitBounds([[bounds[0][1],bounds[0][0]],[bounds[1][1],bounds[1][0]]],{paddingTopLeft:[p.left,p.top],paddingBottomRight:[p.right,p.bottom],maxZoom:15,animate:false});}
+    });
+    return()=>{cancelled=true;if(data)m.attributionControl.removeAttribution(osmAttribution);};
+  },[loaded,props.reachability]);
   return <div className="map-host" ref={host} aria-label="愛媛県2D観光地図"/>;
 }
