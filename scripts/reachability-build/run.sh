@@ -4,7 +4,9 @@ set -euo pipefail
 TASK_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 REPO_DIR="$(cd -- "$TASK_DIR/../.." && pwd -P)"
 IMAGE='ghcr.io/valhalla/valhalla-scripted:3.9.1@sha256:6238809f9dc3057743d70a20efd3911ec38e458bfa13a0601909b58f68dfd956'
-PBF_URL='https://download.geofabrik.de/asia/japan-261115.osm.pbf'
+PRIMARY_PBF_URL='https://download.geofabrik.de/asia/japan-261115.osm.pbf'
+FALLBACK_PBF_URL='https://download.openstreetmap.fr/extracts/asia/japan.osm.pbf'
+PBF_URL=''
 CONTAINER="iso-valhalla-${GITHUB_RUN_ID:-local}-$$"
 DOWNLOAD="$TASK_DIR/download"
 CUSTOM="$TASK_DIR/custom_files"
@@ -15,7 +17,13 @@ for file in "$DOWNLOAD/japan.osm.pbf" "$DOWNLOAD/japan.osm.pbf.part" "$CUSTOM/eh
   [[ ! -e "$file" ]] || { echo "Refusing to overwrite existing task file: $file" >&2; exit 1; }
 done
 
-curl --fail --location --retry 3 --retry-delay 3 --output "$DOWNLOAD/japan.osm.pbf.part" "$PBF_URL"
+for url in "$PRIMARY_PBF_URL" "$FALLBACK_PBF_URL"; do
+  if curl --ipv4 --fail --location --retry 3 --retry-all-errors --retry-delay 3 --connect-timeout 20 --output "$DOWNLOAD/japan.osm.pbf.part" "$url"; then
+    PBF_URL="$url"; break
+  fi
+  echo "Unable to fetch source from $url; trying next source" >&2
+done
+[[ -n "$PBF_URL" ]] || { echo 'OSM data download failed' >&2; exit 1; }
 mv -- "$DOWNLOAD/japan.osm.pbf.part" "$DOWNLOAD/japan.osm.pbf"
 SOURCE_DATE="$(osmium fileinfo -g header.option.osmosis_replication_timestamp "$DOWNLOAD/japan.osm.pbf")"
 [[ -n "$SOURCE_DATE" ]] || { echo 'OSM replication timestamp missing' >&2; exit 1; }
