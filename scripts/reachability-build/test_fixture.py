@@ -61,17 +61,19 @@ class IsoFixtures(unittest.TestCase):
         self.assertIn('"error_code":100',str(result.exception))
 
     def test_all_contours_and_snap(self):
-        d, contours = generate.parse_isochrone(sample(), ORIGIN)
+        d, contours, limited = generate.parse_isochrone(sample(), ORIGIN)
         self.assertGreater(d, 0)
         self.assertLess(d, 100)
         self.assertEqual(set(contours), {'10','20','30','60'})
+        self.assertEqual(limited, [])
         self.assertEqual(contours['10']['geometry']['type'], 'Polygon')
 
     def test_multiple_features_preserved(self):
         doc = sample();doc['features'].append(copy.deepcopy(doc['features'][0]))
-        _, contours = generate.parse_isochrone(doc, ORIGIN)
+        _, contours, limited = generate.parse_isochrone(doc, ORIGIN)
         self.assertEqual(contours['10']['geometry']['type'], 'MultiPolygon')
         self.assertEqual(len(contours['10']['geometry']['coordinates']), 2)
+        self.assertEqual(limited, [])
 
     def test_any_distant_candidate_means_no_road(self):
         doc=sample();doc['features'][-1]['geometry']['coordinates'].append([132.71,33.8])
@@ -88,11 +90,39 @@ class IsoFixtures(unittest.TestCase):
         doc=sample();doc['warnings']=[{'code':1}]
         with self.assertRaises(generate.BuildFailure): generate.parse_isochrone(doc, ORIGIN)
 
-    def test_bad_or_near_boundary_ring_rejected(self):
+    def test_bad_ring_rejected(self):
         doc=sample();doc['features'][0]['geometry']['coordinates']=[[[132.7,33.8],[132.71,33.8],[132.71,33.81]]]
         with self.assertRaises(generate.BuildFailure): generate.parse_isochrone(doc, ORIGIN)
-        doc=sample();doc['features'][0]['geometry']['coordinates']=[[[131.41,33.8],[131.42,33.8],[131.42,33.81],[131.41,33.8]]]
-        with self.assertRaises(generate.BuildFailure): generate.parse_isochrone(doc, ORIGIN)
+
+    def test_boundary_discards_only_affected_intervals(self):
+        doc=sample();boundary=[[[131.41,33.8],[131.42,33.8],[131.42,33.81],[131.41,33.8]]]
+        doc['features'][3]['geometry']['coordinates']=boundary
+        result=generate.mode_result(doc,ORIGIN)
+        self.assertEqual(result['status'],'ok')
+        self.assertEqual(result['limited_contours'],['60'])
+        self.assertEqual(set(result['contours']),{'10','20','30'})
+        self.assertGreater(result['snapped_distance_m'],0)
+
+    def test_all_boundary_intervals_have_explicit_outside_data_status(self):
+        doc=sample();boundary=[[[131.41,33.8],[131.42,33.8],[131.42,33.81],[131.41,33.8]]]
+        for feature in doc['features'][:4]:feature['geometry']['coordinates']=boundary
+        result=generate.mode_result(doc,ORIGIN)
+        self.assertEqual(result['status'],'outside_data')
+        self.assertEqual(result['contours'],{})
+        self.assertEqual(result['limited_contours'],['10','20','30','60'])
+        self.assertGreater(result['snapped_distance_m'],0)
+
+    def test_boundary_multipolygon_discards_entire_interval(self):
+        doc=sample();boundary=[[[131.41,33.8],[131.42,33.8],[131.42,33.81],[131.41,33.8]]]
+        doc['features'].append({'type':'Feature','properties':{'contour':20,'metric':'time'},'geometry':{'type':'Polygon','coordinates':boundary}})
+        result=generate.mode_result(doc,ORIGIN)
+        self.assertEqual(result['limited_contours'],['20'])
+        self.assertNotIn('20',result['contours'])
+        self.assertEqual(set(result['contours']),{'10','30','60'})
+
+    def test_malformed_boundary_interval_still_rejected(self):
+        doc=sample();doc['features'][3]['geometry']['coordinates']=[[[131.41,33.8],[131.42,33.8],[131.42,33.81]]]
+        with self.assertRaises(generate.BuildFailure):generate.mode_result(doc,ORIGIN)
 
     def test_payload_hard_exclusion(self):
         p=generate.payload(33.8,132.7,'bicycle')

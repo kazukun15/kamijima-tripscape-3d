@@ -54,3 +54,29 @@ jobs:
           path: scripts/reachability-build/generated/
           if-no-files-found: error
           retention-days: 7
+      - name: Package the exact routing source
+        if: success()
+        run: |
+          set -euo pipefail
+          source_dir="$RUNNER_TEMP/reachability-source"
+          mkdir -p "$source_dir/scripts"
+          cp scripts/reachability-build/custom_files/{valhalla_tiles.tar,admins.sqlite,default_speeds.json,valhalla.json} "$source_dir/"
+          cp scripts/reachability-build/graph-cache/manifest.json "$source_dir/"
+          cp scripts/reachability-build/generated/source-meta.json "$source_dir/"
+          cp scripts/reachability-build/{run.sh,generate.py,canary.py,configure.py,verify-status.py,test_fixture.py,README.md} "$source_dir/scripts/"
+          cp scripts/reachability-build/SOURCE_README.md "$source_dir/README.md"
+          cp scripts/reachability-build/{LICENSE-OSMSpeeds.txt,LICENSE-Valhalla.txt} "$source_dir/"
+          archive="$RUNNER_TEMP/reachability-source.tar.gz"
+          tar -C "$RUNNER_TEMP" -czf "$archive" reachability-source
+          test "$(stat -c %s "$archive")" -lt 2147483648
+          sha256sum "$archive" > "$archive.sha256"
+      - name: Upload exact routing source
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reachability-source
+          path: |
+            ${{ runner.temp }}/reachability-source.tar.gz
+            ${{ runner.temp }}/reachability-source.tar.gz.sha256
+          if-no-files-found: error
+          retention-days: 7

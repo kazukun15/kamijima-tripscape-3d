@@ -121,13 +121,22 @@ def parse_isochrone(doc, origin):
         by_time[contour].extend(rings(feature.get('geometry')))
     if any(not polygons for polygons in by_time.values()):
         raise BuildFailure('A requested contour is missing')
-    if any(near_boundary(polygons) for polygons in by_time.values()):
-        raise BuildFailure('Contour approaches the clipped OSM graph boundary')
-    contours = {}
+    contours, limited = {}, []
     for minutes, polys in by_time.items():
+        # Discard the entire interval if any of its polygons approach the
+        # graph boundary. Other intervals remain independently usable.
+        if near_boundary(polys):
+            limited.append(str(minutes))
+            continue
         shape = {'type': 'Polygon', 'coordinates': polys[0]} if len(polys) == 1 else {'type': 'MultiPolygon', 'coordinates': polys}
         contours[str(minutes)] = {'type': 'Feature', 'properties': {'contour': minutes, 'metric': 'time'}, 'geometry': shape}
-    return round(max(distances), 1), contours
+    return round(max(distances), 1), contours, limited
+
+
+def mode_result(doc, origin):
+    snapped_m, contours, limited = parse_isochrone(doc, origin)
+    return {'status': 'ok' if contours else 'outside_data', 'snapped_distance_m': snapped_m,
+            'contours': contours, 'limited_contours': limited}
 
 
 def call_api(base, path, payload):
@@ -187,19 +196,20 @@ def main():
     if not out.is_relative_to(WORK):
         raise BuildFailure('Output must remain under work/iso-build')
     out.mkdir(parents=True, exist_ok=True)
-    failed, counts = [], {'ok': 0, 'no_road': 0, 'error': 0}
+    failed, counts = [], {'ok': 0, 'no_road': 0, 'outside_data': 0, 'error': 0}
     for index, p in enumerate(load_points(), 1):
         result = {'version': 1, **p, 'generated_at': dt.datetime.now(dt.timezone.utc).isoformat(), 'source_date': args.source_date, 'results': {}}
         for mode, costing in MODES.items():
             try:
                 doc = call_api(args.base, '/isochrone', payload(p['lat'], p['lng'], costing))
-                snapped_m, contours = parse_isochrone(doc, [p['lng'], p['lat']])
-                item = {'status': 'ok', 'snapped_distance_m': snapped_m, 'contours': contours}
+                item = mode_result(doc, [p['lng'], p['lat']])
+                if item['limited_contours']:
+                    print(f"LIMITED {p['id']} {mode}: {','.join(item['limited_contours'])}", flush=True)
             except NoRoad as exc:
-                item = {'status': 'no_road', 'snapped_distance_m': None, 'contours': {}}
+                item = {'status': 'no_road', 'snapped_distance_m': None, 'contours': {}, 'limited_contours': []}
                 print(f"NO_ROAD {p['id']} {mode}: {exc}", flush=True)
             except BuildFailure as exc:
-                item = {'status': 'error', 'snapped_distance_m': None, 'contours': {}}
+                item = {'status': 'error', 'snapped_distance_m': None, 'contours': {}, 'limited_contours': []}
                 failed.append((p['id'], mode, str(exc)))
                 print(f"ERROR {p['id']} {mode}: {exc}", file=sys.stderr, flush=True)
             counts[item['status']] += 1

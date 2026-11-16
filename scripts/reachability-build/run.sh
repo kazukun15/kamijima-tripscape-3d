@@ -148,10 +148,18 @@ wait_for_server
 python3 "$TASK_DIR/verify-status.py"
 python3 "$TASK_DIR/canary.py"
 python3 "$TASK_DIR/generate.py" --source-date "$SOURCE_DATE" --out "$OUTPUT"
-SOURCE_DATE="$SOURCE_DATE" SOURCE_SHA="$SOURCE_SHA" PBF_URL="$PBF_URL" IMAGE="$IMAGE" python3 - "$OUTPUT/source-meta.json" <<'PY'
-import json, os, pathlib, sys
+SOURCE_DATE="$SOURCE_DATE" SOURCE_SHA="$SOURCE_SHA" PBF_URL="$PBF_URL" IMAGE="$IMAGE" python3 - "$OUTPUT/source-meta.json" "$CUSTOM" <<'PY'
+import hashlib, json, os, pathlib, sys
+custom=pathlib.Path(sys.argv[2])
+def sha(path):
+    h=hashlib.sha256()
+    with path.open('rb') as f:
+        for block in iter(lambda:f.read(1024*1024),b''): h.update(block)
+    return h.hexdigest()
 doc = {'source_url':os.environ['PBF_URL'],'source_date':os.environ['SOURCE_DATE'],
        'source_sha256':os.environ['SOURCE_SHA'],'valhalla_image':os.environ['IMAGE'],
+       'graph_sha256':sha(custom/'valhalla_tiles.tar'),'admin_sha256':sha(custom/'admins.sqlite'),
+       'speed_config_sha256':sha(custom/'default_speeds.json'),'runtime_config_sha256':sha(custom/'valhalla.json'),
        'bbox':[131.4,32.4,134.6,35.0],'extract_strategy':'smart: multipolygon,boundary',
        'max_snap_m':100,'build_admins':True,'build_elevation':False,'build_time_zones':False,
        'ferry_exclusion':'experimental hard exclusion; separate canaries passed'}
