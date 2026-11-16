@@ -1,0 +1,248 @@
+{
+  "base": "https://kazukun15.github.io/kamijima-tripscape-3d/",
+  "dataDir": "public/data/reachability",
+  "checkedAt": "2026-11-16T02:23:23.822Z",
+  "checks": [
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 10,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 20,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 60,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 10,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 20,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 60,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 10,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 20,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 60,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "2d",
+      "id": "kushi",
+      "mode": "walking",
+      "minutes": 10,
+      "state": "no_road",
+      "sourceSha256": "9c4b2c2865b91c38bcbe6b0925a772734719226d3631809d5dc3105061bd79ad"
+    },
+    {
+      "renderer": "2d",
+      "id": "iyokannet-3764",
+      "mode": "driving",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "05fca765d0d43f3769d2c5bb4b70275f0f81d937ae821f4efd04696538d3a171"
+    },
+    {
+      "renderer": "2d",
+      "id": "iyokannet-3764",
+      "mode": "driving",
+      "minutes": 60,
+      "state": "limited",
+      "sourceSha256": "05fca765d0d43f3769d2c5bb4b70275f0f81d937ae821f4efd04696538d3a171"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 10,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 20,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "walking",
+      "minutes": 60,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 10,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 20,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "cycling",
+      "minutes": 60,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 10,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 20,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "382019-001",
+      "mode": "driving",
+      "minutes": 60,
+      "state": "ok",
+      "sourceSha256": "fad5c3f723f240b9654727382e4916b4fd6148253084697408897add2a5c62e0"
+    },
+    {
+      "renderer": "3d",
+      "id": "kushi",
+      "mode": "walking",
+      "minutes": 10,
+      "state": "no_road",
+      "sourceSha256": "9c4b2c2865b91c38bcbe6b0925a772734719226d3631809d5dc3105061bd79ad"
+    },
+    {
+      "renderer": "3d",
+      "id": "iyokannet-3764",
+      "mode": "driving",
+      "minutes": 30,
+      "state": "ok",
+      "sourceSha256": "05fca765d0d43f3769d2c5bb4b70275f0f81d937ae821f4efd04696538d3a171"
+    },
+    {
+      "renderer": "3d",
+      "id": "iyokannet-3764",
+      "mode": "driving",
+      "minutes": 60,
+      "state": "limited",
+      "sourceSha256": "05fca765d0d43f3769d2c5bb4b70275f0f81d937ae821f4efd04696538d3a171"
+    }
+  ],
+  "result": "PASS"
+}
