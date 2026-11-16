@@ -18,6 +18,19 @@ def sample():
     return {'type':'FeatureCollection','features':features}
 
 
+def ferry_iso(body, force_positive=False):
+    mode=body['costing']; origin=canary.POINTS[mode][0]; target=canary.POINTS[mode][1]
+    excluded=body['costing_options'][mode].get('exclude_ferries',False)
+    center=origin if excluded and not force_positive else target
+    x,y=center['lon'],center['lat']
+    ring=[[x-.002,y-.002],[x+.002,y-.002],[x+.002,y+.002],[x-.002,y+.002],[x-.002,y-.002]]
+    return {'type':'FeatureCollection','features':[
+        {'type':'Feature','properties':{'contour':60,'metric':'time'},'geometry':{'type':'Polygon','coordinates':[ring]}},
+        {'type':'Feature','properties':{'type':'input'},'geometry':{'type':'Point','coordinates':[origin['lon'],origin['lat']]}},
+        {'type':'Feature','properties':{'type':'snapped'},'geometry':{'type':'MultiPoint','coordinates':[[origin['lon'],origin['lat']]]}},
+    ]}
+
+
 class IsoFixtures(unittest.TestCase):
     def test_all_contours_and_snap(self):
         d, contours = generate.parse_isochrone(sample(), ORIGIN)
@@ -71,8 +84,9 @@ class IsoFixtures(unittest.TestCase):
 
     def test_ferry_canary_all_modes_valid(self):
         def fake(path, body):
+            if path=='/isochrone':return ferry_iso(body)
             if path=='/trace_attributes':return {'edges':[{'drive_on_right':False,'use':'road'}]}
-            if body['locations'][0]['lat'] in (33.84989,34.2467164,33.91338434607816,33.2294974) and body.get('costing_options',{}).get('auto',{}).get('use_ferry')==0:
+            if body['locations'][0]['lat'] in (33.84989,34.2467164,33.91338434607816,33.2294974) and body.get('costing_options',{}).get('auto',{}).get('use_ferry')==0 and not body.get('costing_options',{}).get('auto',{}).get('exclude_ferries'):
                 return {'trip':{'status':0,'legs':[{'shape':'x'}],'summary':{'has_ferry':False}}}
             mode=body['costing'];opts=body['costing_options'][mode]
             if opts.get('exclude_ferries'):return {'error_code':170}
@@ -84,6 +98,30 @@ class IsoFixtures(unittest.TestCase):
     def test_right_driving_is_rejected(self):
         with patch.object(canary,'post',side_effect=[{'trip':{'status':0,'legs':[{'shape':'x'}],'summary':{'has_ferry':False}}}, {'edges':[{'drive_on_right':True,'use':'road'}]}]):
             with self.assertRaises(RuntimeError):canary.verify_driving_side()
+
+    def test_isochrone_ignored_exclusion_rejected(self):
+        with patch.object(canary,'post',side_effect=lambda path,body:ferry_iso(body,force_positive=True)):
+            with self.assertRaises(RuntimeError):canary.verify_isochrone('auto')
+
+    def test_isochrone_warning_and_distant_snap_rejected(self):
+        body={'costing':'auto','costing_options':{'auto':{'use_ferry':1}}}
+        doc=ferry_iso(body);doc['warnings']=[{'code':1}]
+        origin=canary.POINTS['auto'][0];point=[origin['lon'],origin['lat']]
+        with self.assertRaises(RuntimeError):canary.isochrone_polygons(doc,point)
+        doc=ferry_iso(body);doc['features'][-1]['geometry']['coordinates'].append([origin['lon']+.01,origin['lat']])
+        with self.assertRaises(RuntimeError):canary.isochrone_polygons(doc,point)
+
+    def test_boundary_holes_and_multipolygon(self):
+        outer=[[0,0],[10,0],[10,10],[0,10],[0,0]]
+        hole=[[3,3],[7,3],[7,7],[3,7],[3,3]]
+        other=[[20,20],[22,20],[22,22],[20,22],[20,20]]
+        polygons=[[outer,hole],[other]]
+        self.assertTrue(canary.covers([1,1],polygons))
+        self.assertFalse(canary.covers([5,5],polygons))
+        self.assertTrue(canary.covers([3,5],polygons))
+        self.assertTrue(canary.covers([0,5],polygons))
+        self.assertTrue(canary.covers([21,21],polygons))
+        self.assertFalse(canary.covers([15,15],polygons))
 
 
 if __name__=='__main__':unittest.main()

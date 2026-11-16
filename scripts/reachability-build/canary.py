@@ -4,6 +4,7 @@ import json
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+import generate
 
 BASE = 'http://127.0.0.1:8002'
 POINTS = {
@@ -26,7 +27,10 @@ def post(path, body):
     req = Request(BASE+path, json.dumps(body).encode(), {'Content-Type': 'application/json'}, method='POST')
     try:
         with urlopen(req, timeout=120) as response:
-            return json.loads(response.read(1_000_000))
+            raw = response.read(25_000_001)
+            if len(raw) > 25_000_000:
+                raise RuntimeError('Unexpectedly large canary response')
+            return json.loads(raw)
     except HTTPError as exc:
         try:
             return json.loads(exc.read(1_000_000))
@@ -48,6 +52,78 @@ def request(costing, excluded):
 
 def warnings(doc):
     return (doc.get('warnings') or []) + (doc.get('trip', {}).get('warnings') or [])
+
+
+def ring_position(point, ring):
+    """Return 0 outside, 1 inside, 2 on boundary; input order is lon/lat."""
+    x,y=point;inside=False
+    for a,b in zip(ring,ring[1:]):
+        ax,ay=a;bx,by=b
+        cross=(x-ax)*(by-ay)-(y-ay)*(bx-ax)
+        if abs(cross)<=1e-12 and min(ax,bx)-1e-12<=x<=max(ax,bx)+1e-12 and min(ay,by)-1e-12<=y<=max(ay,by)+1e-12:
+            return 2
+        if (ay>y)!=(by>y) and x<(bx-ax)*(y-ay)/(by-ay)+ax:
+            inside=not inside
+    return 1 if inside else 0
+
+
+def covers(point, polygons):
+    for polygon in polygons:
+        outer=ring_position(point,polygon[0])
+        if outer==0:continue
+        if outer==2:return True
+        holes=[ring_position(point,ring) for ring in polygon[1:]]
+        if 2 in holes:return True
+        if 1 not in holes:return True
+    return False
+
+
+def isochrone_request(mode, excluded):
+    origin=POINTS[mode][0]
+    location={**origin,'search_cutoff':100,'minimum_reachability':1,'search_filter':{'exclude_ferry':True}}
+    options={'use_ferry':0 if excluded else 1}
+    if excluded:options['exclude_ferries']=True
+    return post('/isochrone',{'locations':[location],'costing':mode,'costing_options':{mode:options},
+                              'contours':[{'time':60}],'polygons':True,'denoise':0,'show_locations':True})
+
+
+def isochrone_polygons(doc, origin):
+    if warnings(doc) or doc.get('type')!='FeatureCollection' or not isinstance(doc.get('features'),list):
+        raise RuntimeError('Isochrone warning or invalid response')
+    features=doc['features']
+    inputs=[f for f in features if isinstance(f,dict) and f.get('properties',{}).get('type')=='input']
+    snaps=[f for f in features if isinstance(f,dict) and f.get('properties',{}).get('type')=='snapped']
+    if len(inputs)!=1 or len(snaps)!=1 or inputs[0].get('geometry',{}).get('type')!='Point' or snaps[0].get('geometry',{}).get('type')!='MultiPoint':
+        raise RuntimeError('Isochrone input/snap features missing')
+    try:
+        if generate.distance_m(generate.xy(inputs[0]['geometry']['coordinates']),origin)>2:
+            raise RuntimeError('Isochrone input mismatch')
+        candidates=snaps[0]['geometry']['coordinates']
+        if not isinstance(candidates,list) or not candidates or any(generate.distance_m(generate.xy(p),origin)>100 for p in candidates):
+            raise RuntimeError('Isochrone snap exceeds 100m')
+        polygons=[]
+        for feature in features:
+            properties=feature.get('properties',{})
+            if properties.get('contour')==60 and properties.get('metric','time')=='time':
+                polygons.extend(generate.rings(feature.get('geometry')))
+    except (generate.BuildFailure,KeyError,TypeError,ValueError) as exc:
+        raise RuntimeError('Malformed isochrone geometry') from exc
+    if not polygons:raise RuntimeError('60-minute isochrone missing')
+    return polygons
+
+
+def verify_isochrone(mode):
+    origin=POINTS[mode][0];target=POINTS[mode][1]
+    xy=[origin['lon'],origin['lat']]
+    positive=isochrone_polygons(isochrone_request(mode,False),xy)
+    negative=isochrone_polygons(isochrone_request(mode,True),xy)
+    x,y=target['lon'],target['lat']
+    probes=[[x,y],[x-.0002,y],[x+.0002,y],[x,y-.0002],[x,y+.0002]]
+    if not all(covers(point,positive) for point in probes):
+        raise RuntimeError(f'{mode}: positive isochrone does not reach all opposite-shore probes')
+    if any(covers(point,negative) for point in probes):
+        raise RuntimeError(f'{mode}: excluded isochrone still reaches an opposite-shore probe')
+    print(json.dumps({'mode':mode,'isochrone_ferry_canary':'passed','probes':len(probes)}),flush=True)
 
 
 def verify_driving_side():
@@ -98,6 +174,7 @@ def main():
         else:
             raise RuntimeError(f"{mode}: unexpected error {without_ferry.get('error_code')}")
         print(json.dumps({'mode': mode, 'positive': 'has_ferry', 'excluded': result}), flush=True)
+        verify_isochrone(mode)
 
 
 if __name__ == '__main__':
