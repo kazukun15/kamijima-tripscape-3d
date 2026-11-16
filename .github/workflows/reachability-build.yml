@@ -1,0 +1,31 @@
+name: Build reachability data
+on:
+  push:
+    paths:
+      - .github/workflows/reachability-build.yml
+      - scripts/reachability-build/**
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test data validation
+        run: python3 scripts/reachability-build/test_fixture.py
+      - name: Install OSM tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y osmium-tool
+      - name: Build and verify candidate data
+        run: bash scripts/reachability-build/run.sh
+      - name: Upload validated candidate
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reachability-candidate
+          path: scripts/reachability-build/generated/
+          if-no-files-found: error
+          retention-days: 7
