@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 """Synthetic fixtures only; does not claim a real Valhalla build works."""
 import copy
+import importlib.util
+import io
+from pathlib import Path
 import unittest
 from unittest.mock import patch
+from urllib.error import HTTPError
+from urllib.parse import unquote
 import canary
 import generate
+
+spec = importlib.util.spec_from_file_location('verify_status', Path(__file__).with_name('verify-status.py'))
+verify_status = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(verify_status)
 
 ORIGIN = [132.7, 33.8]
 RING = [[132.69,33.79],[132.71,33.79],[132.71,33.81],[132.69,33.79]]
@@ -32,6 +41,25 @@ def ferry_iso(body, force_positive=False):
 
 
 class IsoFixtures(unittest.TestCase):
+    def test_status_url_has_compact_json_without_form_plus(self):
+        url=verify_status.status_url()
+        self.assertNotIn('+',url)
+        self.assertTrue(url.startswith('http://127.0.0.1:8002/status?json='))
+        self.assertEqual(unquote(url.split('json=',1)[1]),'{"verbose":true}')
+
+    def test_status_rejects_missing_admins_bad_version_and_warnings(self):
+        good={'version':'3.9.1','has_tiles':True,'has_admins':True}
+        verify_status.verify_status(good)
+        for change in ({'has_admins':False},{'has_tiles':False},{'version':'3.8.0'},{'warnings':[{'code':1}]}):
+            with self.assertRaises(SystemExit):verify_status.verify_status({**good,**change})
+
+    def test_status_http_error_body_is_visible(self):
+        error=HTTPError('http://127.0.0.1:8002/status',400,'Bad Request',{},io.BytesIO(b'{"error_code":100}'))
+        with patch.object(verify_status,'urlopen',side_effect=error):
+            with self.assertRaises(SystemExit) as result:verify_status.main()
+        self.assertIn('HTTP 400',str(result.exception))
+        self.assertIn('"error_code":100',str(result.exception))
+
     def test_all_contours_and_snap(self):
         d, contours = generate.parse_isochrone(sample(), ORIGIN)
         self.assertGreater(d, 0)

@@ -19,8 +19,33 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y osmium-tool
+      - name: Restore completed routing graph
+        id: graph-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: scripts/reachability-build/graph-cache
+          key: ${{ runner.os }}-reachability-graph-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            ${{ runner.os }}-reachability-graph-v1-
       - name: Build and verify candidate data
         run: bash scripts/reachability-build/run.sh
+      # The graph checkpoint is finalized before status/canary/generation, so
+      # preserve it even if those later validations fail. Never save a partial
+      # build or duplicate an already-restored cache.
+      - name: Check completed graph checkpoint
+        id: graph-ready
+        if: ${{ always() }}
+        run: |
+          if [ -s scripts/reachability-build/graph-cache/READY ]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Save completed routing graph
+        if: ${{ always() && steps.graph-ready.outputs.ready == 'true' && steps.graph-cache.outputs.cache-matched-key == '' }}
+        uses: actions/cache/save@v4
+        continue-on-error: true
+        with:
+          path: scripts/reachability-build/graph-cache
+          key: ${{ steps.graph-cache.outputs.cache-primary-key }}
       - name: Upload validated candidate
         if: success()
         uses: actions/upload-artifact@v4
